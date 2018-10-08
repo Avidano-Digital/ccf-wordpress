@@ -9,11 +9,14 @@
 ////////////////////////////////////////
 
 $breakpoints-bar: false;
-
 $breakpoints-bar-bg: fade-out(purple, 0.1);
 
 @if $breakpoints-bar{
-    body{
+    html{
+
+        // Remove height added by Google Translate
+        height: auto !important;
+        
         &::before{
             @extend .d-block;
             @extend .text-white;
@@ -21,8 +24,7 @@ $breakpoints-bar-bg: fade-out(purple, 0.1);
             @extend .p-3;
             @extend .sticky-top;
             @extend .shadow-sm;
-            @extend .fs-md;
-            @extend .font-weight-bold;
+            z-index: 5000;
             background: $breakpoints-bar-bg;
         }
 
@@ -40,12 +42,13 @@ $breakpoints-bar-bg: fade-out(purple, 0.1);
 // Highlight Containers
 ////////////////////////////////////////
 
-$highlight-containers: false;
+$highlight-containers: true;
 
 @if $highlight-containers{
     .container{ background: fade-out(red, 0.25) !important; }
-    .narrow{ background: fade-out(yellow, 0.25) !important; }
+    .narrow{ background: fade-out(orange, 0.25) !important; }
     .wide{ background: fade-out(green, 0.25) !important; }
-    .matrix-border{ background: fade-out(blue, 0.25) !important; }
-    .matrix-gutter{ background: fade-out(purple, 0.25) !important; }
+    .matrix{ background: fade-out(blue, 0.25) !important; }
+    .link-list{ background: fade-out(purple, 0.25) !important; }
+    .link-list li{ background: fade-out(pink, 0.25) !important; }
 } // end if

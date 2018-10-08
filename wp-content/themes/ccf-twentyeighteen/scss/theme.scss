@@ -64,7 +64,7 @@ p{ @extend .f-serif; }
 }
 
 
-@include media-breakpoint-down(lg){
+@include media-breakpoint-down(xs){
   #wrap-logo{
     text-align: center;
   }

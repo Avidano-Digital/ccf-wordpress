@@ -24,44 +24,53 @@
 
             <div class="row align-items-center">
 
-                <div id="wrap-logo" class="col-lg py-3">
+                <div id="wrap-logo" class="col-sm py-3">
                     <a class="d-inline-block" href="/" title="Home">
                         <?php the_custom_logo(); ?>
                     </a>
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-auto d-flex d-sm-none align-items-center border-top py-2">
+                <!-- separator -->
+                <div class="col-12 border-top d-sm-none"></div>
 
-                    <button class="btn no-btn-style fs-lg" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false"
-                        aria-controls="mobile-menu">
-                        <span class="fas fa-bars"></span>
-                        <span class="sr-only">Main Navigation</span>
-                    </button>
+                <div class="col d-xl-none py-2">
 
-                    <a class="ml-auto" href="#" title="For Kids">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
-                    </a>
+                    <div class="row align-items-center justify-content-between justify-content-sm-end">
 
-                    <a class="btn btn-primary donate ml-3" href="#" title="Donate">Donate</a>
+                        <div class="col-auto order-sm-last">
+                        
+                            <button class="btn no-btn-style fs-lg" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#mobile-menu" 
+                                aria-expanded="false"
+                                aria-controls="mobile-menu">
+                                    <span class="fas fa-bars"></span>
+                                    <span class="sr-only">Main Navigation</span>
+                            </button>
 
-                </div>
-                <!-- .col -->
+                        </div>
+                        <!-- .col -->
 
-                <!-- col c -->
-                <div class="col-sm-auto d-none d-sm-flex d-xl-none align-items-center">
+                        <div class="col-auto">
 
-                    <a class="ml-auto" href="#" title="For Kids">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
-                    </a>
-
-                    <a class="btn btn-primary donate ml-3" href="#" title="Donate">Donate</a>
-
-                    <button class="btn no-btn-style ml-3" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false"
-                        aria-controls="mobile-menu">
-                        <span class="fas fa-bars fa-lg"></span>
-                        <span class="sr-only">Main Navigation</span>
-                    </button>
+                            <ul class="link-list horizontal">
+                                <li>
+                                    <a href="#" title="For Kids">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-primary donate" href="#" title="Donate">Donate</a>
+                                </li>
+                            </ul>
+                        
+                        </div>
+                        <!-- .col -->
+                    
+                    </div>
+                    <!-- .row -->
 
                 </div>
                 <!-- .col -->

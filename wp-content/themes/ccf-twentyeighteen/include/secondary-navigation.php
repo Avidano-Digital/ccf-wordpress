@@ -1,4 +1,4 @@
-<ul class="link-list horizontal justify-content-end d-flex align-items-center p-0">
+<ul class="link-list horizontal">
 
     <li>
         <a href="/tear-sheet/accessibility" title="For Kids">
