@@ -109,7 +109,7 @@
   margin-left: -($card-spacer-x / 2);
 }
 
-// Placeholder
+// Card image
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -124,7 +124,7 @@
   @include border-radius($card-inner-border-radius);
 }
 
-// Placeholder caps
+// Card image caps
 .card-img-top {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-top-radius($card-inner-border-radius);
