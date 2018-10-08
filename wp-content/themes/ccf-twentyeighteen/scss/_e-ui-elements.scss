@@ -1,0 +1,770 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Local Header and primary navigation 
+//
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////
+// Skip to Content
+////////////////////////////////////////
+
+// Note : Skip to Content is only visible on first keyboard tab
+
+$skip-to-content: true;
+
+@if($skip-to-content){
+
+  #skip-to-content{
+    position: absolute;
+    top: $spacer/2;
+    left: $spacer/2;
+
+    @extend .z-index-900;
+    @extend .bg-light;
+    @extend .py-2; 
+    @extend .px-3; 
+    @extend .text-body; 
+    @extend .shadow;
+  }
+
+} // end if
+
+////////////////////////////////////////
+// Gradient Classes
+////////////////////////////////////////
+
+// Note: Gradients call a custom mixin in '_c-custom-mixins.scss'
+
+$gradients: true;
+
+@if($gradients){
+
+  [class^="overlay-gradient-"]{
+    position: relative; 
+  
+    &::before {
+      content: "\00a0";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left:0;
+      right: 0;
+    }
+  }
+
+  .overlay-gradient-y-black::before{
+    @include linear-gradient();
+  }
+
+  .overlay-gradient-y-black-tall::before{
+    @include linear-gradient(
+      $direction: to bottom,
+      $first-color: black,
+      $second-color: black,
+      $first-color-opacity: 0,
+      $second-color-opacity: 0.85,
+      $first-color-position: 25%,
+      $second-color-position: 100%
+        );
+  }
+
+} // end if
+
+////////////////////////////////////////
+// Featured Panel
+////////////////////////////////////////
+
+@mixin featured-panel-responsive-settings(){
+  [class^="overlay-gradient-"]::before{ display: none; }
+  .card-img-overlay{ position: relative; }
+  img{ @include opacity(1); }
+
+  .bg-white{
+    h1, h2, h3, h4, p{ color: $body-color; }
+    h1, h2, h3, h4, p, a.link{ text-shadow: none; }
+    a.link{ color: $orange !important; }
+  }
+  .bg-info{
+    h1, h2, h3, h4, p, a.link{ text-shadow: none; }
+  }
+  
+}
+
+$featured-panel: true;
+
+@if($featured-panel){
+
+  .featured-block, 
+  .featured-panel, 
+  .banner
+  {
+    .card, 
+    .card-img
+    {
+      // @extend .border-0;
+      @extend .rounded-0;
+    }
+
+    .card-img,
+    .align-self-end, 
+    .align-self-center{ @extend .w-100; }
+
+  }
+
+  .featured-panel{
+
+    .align-self-end{
+      > div{ max-width: $grid-bp-xl; }
+    }
+
+    .bg-white{
+      h1, h2, h3, h4, p, a.link{ @extend .text-shadow; }
+    }
+    
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @if $next {
+        &.responsive-#{$next}{
+          @include media-breakpoint-down($breakpoint) {
+            @include featured-panel-responsive-settings();
+          }
+        }
+      }
+    }
+  }
+
+  .featured-block{
+    .card-img-overlay{ 
+      @extend .p-0;
+      @extend .p-md-3;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: $border-width;
+    }
+  }
+
+  .banner{
+    overflow: hidden;
+
+    h1{ 
+      line-height: 1;
+      margin-bottom: -($spacer-3);
+      font-size: 8rem;
+    }
+
+    .card-img-overlay{ @extend .p-0; }
+
+    .align-self-end{ @extend .opacity-50; }
+    
+    @include media-breakpoint-down(lg) {
+      h1{ display: none; }
+    }
+  }
+
+} // end if
+
+////////////////////////////////////////
+// Matrix
+////////////////////////////////////////
+
+// Note: Matrix classes should be added to the '.row' selector
+
+$matrix-border-padding: ($border-width / 2);
+$matrix-gutter-padding: ($grid-gutter-width / 2);
+
+.matrix-border{
+  margin-left: -($matrix-border-padding);
+  margin-right: -($matrix-border-padding);
+
+  > [class^="col-"]{ padding: $matrix-border-padding; }
+}
+
+
+.matrix-gutter{
+  margin-left: -($matrix-gutter-padding);
+  margin-right: -($matrix-gutter-padding);
+
+  > [class^="col-"]{ padding: $matrix-gutter-padding; }
+}
+
+////////////////////////////////////////
+// Toggle Buttons and Accordions
+////////////////////////////////////////
+
+$toggles-and-accordions: true;
+
+// Accordion  
+
+$accordion-title-color: theme-color("info");
+$accordion-title-bg: $white;
+$accordion-button-border: true;
+$accordion-button-shadow: false;
+
+@if($toggles-and-accordions){
+
+  .fa-icon{
+    font-family: $font-awesome;
+    font-weight: 900;
+    font-size: inherit;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    @extend .ml-auto;
+  }
+
+  .btn-toggle a,
+  .accordion-group a,
+  .accordion-group button
+  {
+    &[data-toggle="collapse"]{
+      @extend .d-flex;
+      @extend .align-items-center;
+    }
+  }
+
+  // Generic toggle button
+
+    a.btn[data-toggle="collapse"] {
+      overflow: hidden;
+
+      &:after {
+        content: "\f067";
+        @extend .fa-icon;
+      }
+
+      &[aria-expanded="true"]:after {
+        content: "\f068";
+      }
+
+      &[aria-expanded="false"]:after {
+        content: "\f067";
+      }
+  }
+
+  // Accordions
+    
+  .accordion-group{
+
+    .card, 
+    .card-header
+    { border: none; }
+    
+    .card-header{ background-color: $accordion-title-bg; }
+    
+    [data-toggle="collapse"]{
+      
+      @if $accordion-button-border { @extend .border-top; }
+      @if $accordion-button-shadow { @extend .shadow-sm; }
+
+      color: $accordion-title-color;
+    
+      &:after{ 
+        content: "\f067";
+        @extend .fa-icon;
+      }
+
+      &[aria-expanded="true"]{
+
+        background-color: $transparent;
+        
+        @if $accordion-button-shadow {
+          @extend .shadow;
+        }
+
+      }
+
+      // Change the right icon here. Go to https://fontawesome.com/icons
+      // Find your icons and paste the unicode below
+      
+      &[aria-expanded="true"]:after{ content: "\f106"; }
+      &[aria-expanded="false"]:after{ content: "\f107"; }
+    }
+    
+  }
+
+} // end if
+
+////////////////////////////////////////
+// Custom Link
+////////////////////////////////////////
+
+$custom-link: true;
+
+@if($custom-link){
+
+.link{
+  @extend .fs-md;
+  @extend .font-weight-bold;
+  @extend .text-uppercase;
+  @extend .text-primary;
+  
+  &:before{ 
+    content: "\f105";
+    @extend .fa-icon;
+    @extend .mr-1;
+  }
+}
+
+} // end if
+
+////////////////////////////////////////
+// Responsive Nav Tabs and Pills
+////////////////////////////////////////
+
+@mixin responsive-nav-pills-and-tabs-settings(){
+  border-color: $transparent;
+
+  .nav-link.active{ border-bottom-color: $border-color; }
+
+  @if $enable-rounded {
+    .nav-link.active{ 
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+}
+
+$responsive-nav-pills-and-tabs: true;
+
+@if($responsive-nav-pills-and-tabs){
+
+  .nav-pills,
+  .nav-tabs
+  {
+    &[class*="responsive-"]{
+      .nav-link{ @extend .text-center; }
+      @extend .flex-column;
+    } 
+
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @if $breakpoint != '0'{
+        &.responsive#{$infix}{ @extend .flex#{$infix}-row; }
+      }
+    }
+  }
+  
+  .nav-tabs{
+    
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @if $next {
+        &.responsive-#{$next}{
+          @include media-breakpoint-down($breakpoint) {
+            @include responsive-nav-pills-and-tabs-settings();
+          }
+        }
+      }
+    }
+    
+  } // end each
+
+  @if $enable-rounded {
+    .nav-pills{ @extend .rounded; }
+  }
+
+} // end if
+
+////////////////////////////////////////
+// YouTube Embed
+////////////////////////////////////////
+
+$youtube-embed: true;
+@if($youtube-embed){
+
+  .youtube-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .youtube-embed iframe,
+  .youtube-embed object,
+  .youtube-embed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+} // end if
+
+////////////////////////////////////////
+// CSS Arrows
+////////////////////////////////////////
+
+$css-arrows: false;
+@if($css-arrows){
+
+  $arrow-size: 24px;
+  $arrow-color: $border-color;
+
+  .arrow-up, 
+  .arrow-right,
+  .arrow-down,
+  .arrow-left{
+    width: 0; 
+    height: 0;
+  }
+
+  .arrow-up {
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid $arrow-color; 
+  }
+
+  .arrow-right {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent;
+    border-left: $arrow-size solid $arrow-color;
+  }
+
+  .arrow-down {
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    border-top: $arrow-size solid $arrow-color;
+  }
+
+  .arrow-left {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent; 
+    border-right:$arrow-size solid $arrow-color; 
+  }
+
+} // end if
+
+////////////////////////////////////////
+// Gallery (Not Finished)
+////////////////////////////////////////
+
+.enlarge{
+
+  > a{
+    position: relative;
+    display: block;
+    outline: none;
+
+    > span{ 
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+      color: white;
+      @extend .p-1;
+    }
+  }
+}
+
+$gallery: true;
+@if($gallery){
+
+  .gallery{
+    a, img{ margin: 0; }
+    img{ min-width: 100%; }
+  }
+
+  .gallery, 
+  figure
+  { @extend .enlarge; }
+
+} @else {
+
+  // figure{ @extend .enlarge; }
+
+} // end if else
+
+////////////////////////////////////////
+// Two Column List Group
+////////////////////////////////////////
+
+.two-column-list-group{
+  background: green;
+  @extend .list-group;
+  @extend .fs-md;
+  @extend .mt-4;
+
+  > li{
+    @extend .list-group-item;
+    @extend .px-0;
+    @extend .border-left-0;
+    @extend .border-right-0;
+    
+    > span{
+      display: block; 
+
+      &.title{ @extend .font-weight-bold; }
+    }
+
+  }
+
+  @include media-breakpoint-up(sm){
+    > li > span{ 
+      width: 50%;
+      
+      &.title{ float: left; }
+      &.info{
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.list-group.thumbnail-links{
+  .list-group-item{
+    @extend .border-0;
+    @extend .p-0;
+    @extend .list-group-item-secondary;
+    margin-bottom: $border-width;
+  }
+  img{
+    @extend .border-right;
+    @extend .border-info;
+    width: 75px;
+  }
+  span{ @extend .px-3; }
+}
+
+////////////////////////////////////////
+// Link Lists
+////////////////////////////////////////
+
+// Note: Link lists can be used in place of Bootstrap's .nav when Link padding is unneeded.
+// Link lists are ideal for horizontal navs when supporting 'rtl' 
+
+$link-lists: true;
+$link-list-margin:0.5em;
+
+@mixin link-list-stack {
+  margin-bottom: $link-list-margin;
+  &:last-child{ margin-bottom: 0; }
+}
+
+@mixin responsive-link-list-settings(){ 
+  
+  // Remove flex properties
+  display: block !important;
+
+  // Remove side margin and padding 
+  margin-right:  0;
+  margin-left:  0;
+  padding-right:  0;
+  padding-left:  0;
+
+  li{ 
+    @include link-list-stack;
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+   }
+}
+
+@if($link-lists){
+
+  .link-list{
+    @include list-unstyled();
+    
+    // fixed padding added by user agent stylesheet after translation
+    -webkit-padding-start: 0;
+
+    li > ul{ 
+
+      margin-top: $link-list-margin;
+
+      // Nested lists indent by default
+      padding-left: $nav-link-padding-x;
+      padding-right: $nav-link-padding-x; 
+
+    }
+
+    li{ @include link-list-stack; }
+
+    a{ @extend .d-inline-block; }
+
+    &.horizontal{
+      @extend .d-flex;
+      @extend .flex-row;
+      margin-left: -($link-list-margin);
+      margin-right: -($link-list-margin);
+
+      li{
+        @extend .text-center;
+        @extend .d-flex;
+        @extend .align-items-center;
+        
+        margin-bottom: 0;
+        margin-left: $link-list-margin;
+        margin-right: $link-list-margin;
+      }
+
+      @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @if $next {
+          &.responsive-#{$next}{
+            @include media-breakpoint-down($breakpoint) {
+              @include responsive-link-list-settings();
+            }
+          }
+        }
+      }
+    }
+  }
+
+} // end if
+
+$simple-margin: $spacer-3;
+
+.nav.simple{
+
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  
+  .nav-link{
+    @extend .d-inline-block;
+    @extend .p-0;
+  }
+
+  .nav-item{
+    @extend .bg-danger;
+    margin-right: $simple-margin;
+  }
+
+
+  &[class*="justify-content-center"]{
+    .nav-item {
+      margin-left: $simple-margin/2;
+      margin-right: $simple-margin/2;
+    }
+  }
+
+  &[class*="justify-content-end"]{
+    .nav-item {
+      margin-left: $simple-margin;
+      margin-right: 0;
+    }
+  }
+
+  &[class*="column"]{
+
+    .nav-item{
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: $spacer-3;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  
+  }
+
+  &[class*="row"]{
+
+    .nav-item{
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: $spacer-3;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  
+  }
+
+}
+
+////////////////////////////////////////
+// Cards
+////////////////////////////////////////
+
+$default-card-borders: false;
+$default-card-backgrounds: false;
+
+@if ($default-card-borders == false) {
+  .card, 
+  .card-header,
+  .card-footer
+  { border: none; }
+} // end if
+
+@if ($default-card-backgrounds == false) {
+  .card, 
+  .card-header,
+  .card-footer
+  { background-color: transparent; }
+} // end if
+
+////////////////////////////////////////
+// Carousel
+////////////////////////////////////////
+ 
+$carousel: true;
+ 
+@if($carousel){
+ 
+  .carousel{
+ 
+    a[data-slide="prev"],
+    a[data-slide="next"]
+    { color: $carousel-control-color; }
+
+    .row{
+      background-color:  $carousel-control-bg;
+    }
+ 
+    .carousel-indicators{
+      @extend .position-static;
+      @extend .m-0;
+      @extend .p-0;
+ 
+      > li{
+        cursor: pointer;
+        @extend .rounded-circle;
+ 
+        &::before,
+        &::after
+        { @extend .d-none; }
+      }
+    }
+
+    .carousel-caption{
+      @extend .p-0;
+      bottom: 0.75rem;
+
+      > p{ 
+        @extend .f-sans-serif;
+        @extend .d-inline-block;
+        @extend .shadow-sm;
+        @extend .py-1;
+        @extend .px-2;
+        @extend .fs-md;
+        @extend .text-black;
+        @include background-opacity($light, .9);
+      }
+    }
+ 
+    @include media-breakpoint-down(md){
+ 
+      .carousel-caption{
+        position: static;
+        background: $light;
+
+        > p{
+          @include border-radius(0);
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+ 
+} // end if

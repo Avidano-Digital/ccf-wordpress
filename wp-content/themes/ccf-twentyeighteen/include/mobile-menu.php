@@ -1,0 +1,136 @@
+<div id="search-site" class="bg-light">
+	<form class="container narrow py-4" aria-label="Search" role="search">
+		<div class="form-group mb-0">
+			<input class="form-control form-control-lg shadow" placeholder="Search cheetah.org">
+				<button type="button" class="btn btn-lg btn-white">
+					<span class="fas fa-search"></span>
+					<span class="sr-only">Search</span>
+				</button>
+			</div>
+	</form>
+</div>
+
+<nav class="py-4">
+    
+    <div id="accordion" class="accordion-group" role="tablist">
+
+        <div>
+
+            <button
+            data-toggle="collapse" 
+            data-target="#about-us" 
+            aria-expanded="false" 
+            aria-controls="about-us">
+                <span class="title">About Us</span>
+            </button>
+
+            <div id="about-us" class="collapse" data-parent="#accordion">
+
+                <div class="bg-dark py-3">
+                
+                    <ul>
+                        <li class="leader">What We Do</li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Conservation</a></li>
+                        <li><a href="#">International Cheetah Day</a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li class="leader">Who We Are</li>
+                        <li><a href="#">Mission and Vision</a></li>
+                        <li><a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a></li>
+                        <li><a href="#">Our Centre</a></li>
+                        <li><a href="#">Staff and Board</a></li>
+                        <li><a href="/about-us/who-we-are/ccf-global/">CCF Global</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <button data-toggle="collapse" 
+            data-target="#take-action" 
+            aria-expanded="false" 
+            aria-controls="take-action">
+                <span class="title">Take Action</span>
+            </button>
+
+            <div id="take-action" class="collapse" data-parent="#accordion">
+                <div class="bg-dark py-3">
+                    <ul>
+                        <li><a href="#">Ways to Give</a></li>
+                        <li><a href="#">Volunteer Locally</a></li>
+                        <li><a href="#">Volunteer in Namibia</a></li>
+                        <li><a href="#">Visit CCF</a></li>
+                        <li><a href="#">Share</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <button data-toggle="collapse" 
+            data-target="#learn" 
+            aria-expanded="false" 
+            aria-controls="learn">
+                <span class="title">Learn</span>
+            </button>
+
+            <div id="learn" class="collapse" data-parent="#accordion">
+                <div class="bg-dark py-3">
+                    <ul>
+                        <li><a href="#">Resource Library</a></li>
+                        <li><a href="#">About Cheetahs</a></li>
+                        <li><a href="#">Human Wildlife Conflict</a></li>
+                        <li><a href="#">Illegal Pet Trade</a></li>
+                        <li><a href="#">Habitat Loss</a></li>
+                        <li><a href="#">CCF Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button data-toggle="collapse" 
+            data-target="#news" 
+            aria-expanded="false" 
+            aria-controls="news">
+                <span class="title">News</span>
+            </button>
+
+            <div id="news" class="collapse" data-parent="#accordion">
+                <div class="bg-dark py-3">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button data-toggle="collapse" 
+            data-target="#events" 
+            aria-expanded="false" 
+            aria-controls="events">
+                <span class="title">Events</span>
+            </button>
+
+            <div id="events" class="collapse" data-parent="#accordion">
+                <div class="bg-dark py-3">
+                    <ul>
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Past Event Highlights</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- #accordion -->
+
+</nav>

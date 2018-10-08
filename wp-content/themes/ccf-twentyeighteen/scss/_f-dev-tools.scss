@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Development Tools 
+//
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////
+// Breakpoints Bar
+////////////////////////////////////////
+
+$breakpoints-bar: false;
+
+$breakpoints-bar-bg: fade-out(purple, 0.1);
+
+@if $breakpoints-bar{
+    body{
+        &::before{
+            @extend .d-block;
+            @extend .text-white;
+            @extend .text-center;
+            @extend .p-3;
+            @extend .sticky-top;
+            @extend .shadow-sm;
+            @extend .fs-md;
+            @extend .font-weight-bold;
+            background: $breakpoints-bar-bg;
+        }
+
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            &::before{
+                @include media-breakpoint-up($breakpoint) {
+                    content: 'breakpoint: ' + $breakpoint;
+                }
+            } 
+        }
+    }
+} // end if
+
+////////////////////////////////////////
+// Highlight Containers
+////////////////////////////////////////
+
+$highlight-containers: false;
+
+@if $highlight-containers{
+    .container{ background: fade-out(red, 0.25) !important; }
+    .narrow{ background: fade-out(yellow, 0.25) !important; }
+    .wide{ background: fade-out(green, 0.25) !important; }
+    .matrix-border{ background: fade-out(blue, 0.25) !important; }
+    .matrix-gutter{ background: fade-out(purple, 0.25) !important; }
+} // end if

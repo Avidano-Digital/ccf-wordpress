@@ -1,0 +1,382 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// General HTML Tags
+//
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////
+// Generic Tags
+////////////////////////////////////////
+
+$device-fs-reduce: false;
+
+html{
+  @extend .bg-light;
+  
+  @if($device-fs-reduce){
+  	@include media-breakpoint-down(sm) { font-size: 90%; }
+  }
+
+  &.popup-active{
+    main{ filter: grayscale(1); }
+  }
+}
+
+body{
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+	min-width: 375px;
+  max-width: $site-width;
+  
+  @extend .fs-rg;
+	@extend .mx-auto;
+  @extend .shadow;
+}
+
+// Make all images responsive
+
+img{ @extend .img-fluid; }
+
+// <hr> classes
+
+hr.dark{ border-top-color: $black; }
+
+////////////////////////////////////////
+// Sticky Top
+////////////////////////////////////////
+
+// Note: Fixes Bootstraps 'sticky-top' class in Safari
+
+@supports (position:-webkit-sticky) or (position:sticky) {
+  .sticky-top {
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    z-index: 1020; 
+  }
+}
+
+////////////////////////////////////////
+// Blockquote
+////////////////////////////////////////
+
+// Note: Add hanging left quote to blockquote
+
+$hanging-left-quote-width: 1rem;
+
+.hanging-left-quote {
+  @extend .position-relative;
+
+  &::before{
+    content: "\201C";
+    @extend .position-absolute;
+    margin-left: -($hanging-left-quote-width);
+  }
+}
+
+////////////////////////////////////////
+// Tables
+////////////////////////////////////////
+
+// table{ min-width: 600px; }
+
+th, td{ @extend .fs-md; }
+
+th, td{ white-space: nowrap; }
+
+
+////////////////////////////////////////
+// Forms
+////////////////////////////////////////
+
+// Note: Add 'cuistom-select' class to all select boxes
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  @extend .custom-select;
+}
+
+label{ @extend .fs-md; }
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Margin bottom 
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// Note: Remove Bootstrap default bottom margins to 'last-child' selectors 
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+p,
+a, 
+ul, 
+ol, 
+li, 
+dl, 
+dd, 
+address
+{ 
+	&:last-child{ margin-bottom: 0; }
+}
+
+// Remove Bootstrap default to <hr> tags 
+
+hr{ margin: 0; }
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Accessibility (Tabbing and Visual Cues)
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// Note: We add 'text-decoration: underline' on particular :focus selectors
+
+$accessible-hover-focus: false;
+
+@if($accessible-hover-focus){
+
+  a, 
+  .btn, 
+  .nav-link,
+  .na-item, 
+  .dropdown-item,
+  .list-group-item{
+    @include hover-focus{
+      text-decoration: underline;
+    }
+  }
+
+  .accordion-group a,
+  .btn.d-flex.align-items-center{
+    @include hover-focus{
+      text-decoration: none;
+      > span.title{ text-decoration: underline; }
+    }
+  }
+
+  article section p > a,
+  article section p > a:hover,
+  article section p > a:focus,
+  { text-decoration: underline; }
+
+} // end if
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Supplementary classes 
+//
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////
+// Fonts and Sizes
+////////////////////////////////////////
+
+// Note: Define Font Awesome for use in psuedo classes
+
+.font-awesome{
+	font-family: $font-awesome;
+	font-weight: 900;
+	font-style: normal;
+	font-size: inherit;
+}
+
+// Font-size classes
+
+.fs-sm{ font-size: $fs-sm; }
+.fs-md{ font-size: $fs-md; }
+.fs-rg{ font-size: $fs-rg; }
+.fs-lg{ font-size: $fs-lg; }
+.fs-xl{ font-size: $fs-xl; }
+
+.font-weight-light{  font-weight: $font-weight-light; }
+
+// Font Size Media Queries
+
+@include media-breakpoint-down(md){
+  .display-1{ font-size: $display1-size * 0.75; }
+  .display-2{ font-size: $display2-size * 0.75; }
+  .display-3{ font-size: $display3-size * 0.75; }
+  .display-4{ font-size: $display4-size * 0.75; }
+}
+
+// @include media-breakpoint-down(md){
+//   main{
+//     .fs-xl{ font-size: $fs-lg; }
+//     .fs-lg{ font-size: $fs-rg; }
+//   }
+// }
+
+////////////////////////////////////////
+// Opacity
+////////////////////////////////////////
+
+.opacity-10{ @include opacity(0.10); }
+.opacity-20{ @include opacity(0.20); }
+.opacity-30{ @include opacity(0.30); }
+.opacity-40{ @include opacity(0.40); }
+.opacity-50{ @include opacity(0.50); }
+.opacity-60{ @include opacity(0.60); }
+.opacity-70{ @include opacity(0.70); }
+.opacity-80{ @include opacity(0.80); }
+.opacity-90{ @include opacity(0.90); }
+
+////////////////////////////////////////
+// Background Opacity Classes
+////////////////////////////////////////
+
+.bg-opacity-black-10{ @include background-opacity(black, 0.1); }
+.bg-opacity-black-20{ @include background-opacity(black, 0.2); }
+.bg-opacity-black-80{ @include background-opacity(black, 0.8); }
+.bg-opacity-black-90{ @include background-opacity(black, 0.9); }
+
+////////////////////////////////////////
+// Z-index
+////////////////////////////////////////
+
+.z-index-100,
+.z-index-200,
+.z-index-300,
+.z-index-400,
+.z-index-500,
+.z-index-600,
+.z-index-700,
+.z-index-800,
+.z-index-900
+
+{ position: relative; }
+
+.z-index-100{ z-index: 100; }
+.z-index-200{ z-index: 200; }
+.z-index-300{ z-index: 300; }
+.z-index-400{ z-index: 400; }
+.z-index-500{ z-index: 500; }
+.z-index-600{ z-index: 600; }
+.z-index-700{ z-index: 700; }
+.z-index-800{ z-index: 800; }
+.z-index-900{ z-index: 900; }
+
+////////////////////////////////////////
+// Narrow and Wide Classes
+////////////////////////////////////////
+
+.wide,
+.narrow,
+{ @extend .mx-auto; }
+
+.wide{ max-width: $wide-width; }
+.narrow{ max-width: $narrow-width; }
+
+////////////////////////////////////////
+// Text Shadow
+////////////////////////////////////////
+
+.text-shadow{ @include text-shadow; }
+
+////////////////////////////////////////
+// Border Offset (Left and Right)
+////////////////////////////////////////
+
+// Note: Apply left and right negative margin to parent selector
+// when child selectors have border applied 
+
+.offset-border-x{
+  margin-left: -$border-width;
+  margin-right: -$border-width;
+}
+
+.offset-gutter-x{
+  margin-left: (-$grid-gutter-width/2) !important;
+  margin-right: (-$grid-gutter-width/2) !important;
+}
+
+////////////////////////////////////////
+// No Button Style
+////////////////////////////////////////
+
+// Note: Remove Bootstrap default padding, color, hover, and focus states to '.btn' classes
+
+.no-btn-style{
+  color: currentColor;
+  font-weight: inherit;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+  line-height: 100%;
+
+  &:hover, 
+  &:active
+  { 
+    color: currentColor;
+    border-color: transparent;
+    background-color: transparent;
+    text-decoration: none;
+  }
+}
+
+////////////////////////////////////////
+// Buttons, links, and lists
+////////////////////////////////////////
+
+// Blended Link
+
+.blended-link,
+.blended-link:hover{
+  color: currentColor;
+  text-decoration: underline;
+}
+
+// Font Awesome List
+
+.fa-ul {
+	margin-left: 0; 
+	padding-left: 2rem; 
+}
+
+// Generic Vertical Nav
+
+nav > .list-unstyled{
+
+  li{ 
+    @extend .mb-4;
+    &:last-child{ @extend .mb-0; } 
+  }
+  
+  a{
+    @extend .text-white;
+    &.active{ @extend .text-primary; } 
+  }
+}
+
+////////////////////////////////////////
+// Blockquotes and Figures
+////////////////////////////////////////
+
+figure{
+  @extend .my-0; 
+}
+
+.figure-img, 
+.figure-info 
+{ @extend .mb-1; }
+
+figcaption a { @extend .blended-link; }
+
+////////////////////////////////////////
+// IE 10 and 11 Fixes 
+////////////////////////////////////////
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  // Fixes d-flex bug 
+  .card,
+  .figure{ display: block !important; }
+
+  // IE character count (ch) is too narrow, so for IE we use pixel width instead 
+  .narrow{ max-width: $narrow-width-ie; }
+}

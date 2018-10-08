@@ -1,0 +1,374 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Layout and Spacing Utilites
+//
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////
+// Breakpoints
+////////////////////////////////////////
+
+// Note: Convert static numbers to variables
+
+$grid-bp-xxs:   0;
+$grid-bp-xs:    400px;
+$grid-bp-sm:    600px;
+$grid-bp-md:    800px;
+$grid-bp-lg:    1000px;
+$grid-bp-xl:    1200px;
+$grid-bp-xxl:   1600px;
+$grid-bp-xxxl:  1800px;
+
+$grid-breakpoints: (
+  xxs:  $grid-bp-xxs,
+  xs:   $grid-bp-xs,
+  sm:   $grid-bp-sm,
+  md:   $grid-bp-md,
+  lg:   $grid-bp-lg,
+  xl:   $grid-bp-xl,
+  xxl:  $grid-bp-xxl,
+  xxxl: $grid-bp-xxxl
+);
+
+////////////////////////////////////////
+// Spacing Utilities
+////////////////////////////////////////
+
+// Note: Bootstrap defines margins `.m-*` and padding `.p-*` classes
+// Reference: https://getbootstrap.com/docs/4.1/utilities/spacing/
+
+$spacer: 1rem; // 16px
+
+$spacer-1: ($spacer * .5);  // 8px
+$spacer-2: ($spacer);       // 16px
+$spacer-3: ($spacer * 1.5); // 24px
+$spacer-4: ($spacer * 2);   // 32px
+$spacer-5: ($spacer * 3);   // 48px
+$spacer-6: ($spacer * 4);   // 64px
+$spacer-7: ($spacer * 5);   // 80px
+$spacer-8: ($spacer * 6);   // 96px
+
+$spacers: (
+  0: 0,
+  1: $spacer-1,
+  2: $spacer-2,
+  3: $spacer-3,
+  4: $spacer-4,
+  5: $spacer-5,
+  6: $spacer-6,
+  7: $spacer-7,
+  8: $spacer-8
+);
+
+////////////////////////////////////////
+// Grid and Container
+////////////////////////////////////////
+
+// Grid Gutter Width
+// Note: Default is 30px
+
+$grid-gutter-width: $spacer-5;
+
+// Max container width
+
+$container-max-widths: (
+  sm: ($grid-bp-sm),
+  md: ($grid-bp-md),
+  lg: ($grid-bp-lg),
+  xl: ($grid-bp-xl)
+);
+
+////////////////////////////////////////
+// Width Helpers
+////////////////////////////////////////
+
+// Note: Find '.narrow' and '.wide' classes in c-enhancements.scss
+
+$site-width: 2400px;
+$wide-width: $grid-bp-xxxl;     // 1800px
+$narrow-width: 60ch;            // 65 characters
+$narrow-width: $grid-bp-md;     // grid-bp-md
+     
+$narrow-width-ie: $grid-bp-md;  // IE character count (ch) is too narrow, so for IE we use pixel width instead 
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Fonts, Weights, Sizes, and Styles
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// Font Awesome for icons
+// Reference: https://fontawesome.com/
+
+$font-awesome: 'Font Awesome 5 Free';
+
+// Font sizes
+// Note: Instead of manipulation Bootstrap Default variables, 
+// we create our own opt-in font size variables
+
+$fs-sm: 0.875rem;   // 14px
+$fs-md: 1rem;       // 16px
+$fs-rg: 1.25rem;    // 18px
+$fs-lg: 1.5rem;     // 20px
+$fs-xl: 1.75rem;    // 28px
+$fs-xxl: 2.5rem;    // 28px
+
+// Match font sizes
+
+$font-size-sm:    $fs-sm;
+$font-size-base:  $fs-md; // 16px
+$font-size-lg:    $fs-rg;
+
+// Font weights (required)
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Header Font Size
+
+$display1-size:   $font-size-base * 6;
+$display2-size:   $font-size-base * 5;
+$display3-size:   $font-size-base * 4;
+$display4-size:   $font-size-base * 3;
+
+$h1-font-size:    $font-size-base * 2.5;
+$h2-font-size:    $font-size-base * 2;
+$h3-font-size:    $font-size-base * 1.75;
+$h4-font-size:    $font-size-base * 1.5;
+$h5-font-size:    $font-size-base * 1.25;
+$h6-font-size:    $font-size-base * 1.125;
+
+// h1 - h6 font weight
+
+$headings-font-weight: $font-weight-bold;
+
+// Lead font style
+
+$lead-font-size: $fs-lg;
+$lead-font-weight: $font-weight-light;
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Color Palette
+//
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////
+// Colors (Predefined)
+////////////////////////////////////////
+
+// Note: Colors must be defined before Bootstrap import, 
+// in this way, colors are injected across all utilites
+
+$white:     #fff;
+$black:     #000;
+$transparent: transparent;
+
+// Bootstrap Default Grays
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #cccccc; // Changed to match 20% black (used on card borders)
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+// Bootstrap Default Colors
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+// Accessible Colors
+
+$accessible-colors: true;
+@if($accessible-colors){
+
+  $blue:    #0072ef;
+  $indigo:  #8f51f4;
+  $purple:  #8762cd;
+  // $pink:    #e8006d;
+  $red:     #ea172b;
+  $orange:  #d3d3d3;
+  // $yellow:  #967100;
+  $green:   #21883f;
+  $teal:    #0c8763;
+  $cyan:    #008299;
+
+} // end if
+
+////////////////////////////////////////
+// Theme Colors (Custom)
+////////////////////////////////////////
+
+// Note: Every color added into the theme-color map adds 2-3k to the theme.css file size
+
+$purple:  #462B41;
+$yellow:  #fec34e;
+$orange:  #E3982E;
+$green:   #375339;
+$umber:   #896258;
+
+$theme-colors: (
+
+  "white": $white,
+  "black": $black,
+
+  "primary": $yellow,
+  "secondary": $orange,
+  "info": $purple,
+  "umber": $umber,
+  "green": $green,
+);
+
+////////////////////////////////////////
+// Consolidated Grays
+////////////////////////////////////////
+
+// Common Defaults
+
+$body-bg: $white;
+$body-color: $gray-900;
+$border-color: $gray-400;
+
+$light: $gray-200;
+$dark: $gray-900;
+$text-muted: $gray-600;
+
+// Accessible Gray Assignments
+
+$blockquote-small-color: $gray-700;
+$input-placeholder-color: $gray-700;
+$dropdown-header-color: $gray-700;
+$figure-caption-color: $body-color;
+
+// Set other border colors to the global $border-color value
+
+$hr-border-color: $border-color;
+$list-group-border-color: $border-color;
+$nav-tabs-border-color: $border-color;
+$input-border-color: $border-color;
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Theme Style Preferences
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// Note: Here is where we customize the content and components of our theme
+
+////////////////////////////////////////
+// Borders and Border Radius
+////////////////////////////////////////
+
+// Border width
+
+$border-width: 1px;
+
+// Enable Rounded
+
+$enable-rounded: false;
+
+// Border Radius
+
+$border-radius-sm: 0.25rem;
+$border-radius: .75rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 2rem;
+
+// Set Others to Global Border Radius
+
+$input-border-radius-lg: $border-radius;
+$btn-border-radius-lg: $border-radius;
+
+////////////////////////////////////////
+// Links, Buttons, and Form Elements
+////////////////////////////////////////
+
+// Links
+
+$link-color: $blue;
+$link-hover-decoration: none;
+
+// Buttons 
+
+$btn-font-weight: $font-weight-bold;
+
+////////////////////////////////////////
+// Bootstrap Components
+////////////////////////////////////////
+
+// Global Components
+
+$component-active-color: $body-color;
+// $component-active-bg: $secondary;
+$component-link-color: $text-muted;
+
+// Navs (.nav)
+
+$input-btn-padding-x: $grid-gutter-width/2;
+$nav-link-padding-x: $input-btn-padding-x;
+$nav-link-padding-y: .75rem;
+
+// Global Component Styles
+
+$component-active-color: $body-color;
+$component-active-bg: $yellow;
+
+// List Group
+
+$list-group-action-color: $body-color;
+$list-group-hover-bg: $white;
+$list-group-action-active-bg: $light;
+
+// Box shadows 
+
+$box-shadow-opacity: .2;
+
+$box-shadow-sm:   0 .125rem .5rem rgba($black, $box-shadow-opacity);
+$box-shadow:      0 .25rem 1.5rem rgba($black, $box-shadow-opacity);
+$box-shadow-lg:   0 .5rem 2.5rem rgba($black, $box-shadow-opacity);
+
+// Modals 
+
+$modal-backdrop-opacity: 0.85;
+
+// Figures
+
+$figure-caption-font-size:          $fs-md;
+$figure-caption-color:              $text-muted;
+
+////////////////////////////////////////
+// Cards
+////////////////////////////////////////
+
+$card-spacer-y:                     $spacer-3;
+$card-spacer-x:                     $grid-gutter-width / 2;
+$card-cap-bg:                       rgba($black, .05);
+$card-border-color:                 rgba($black, .2);
+
+////////////////////////////////////////
+// Carousel
+////////////////////////////////////////
+
+$carousel-control-color:            $white;
+$carousel-control-bg:               $purple;
+$carousel-control-opacity:          .5;
+ 
+$carousel-indicator-width:          0.75rem;
+$carousel-indicator-height:         0.75rem;
+$carousel-indicator-spacer:         .25rem;
+$carousel-indicator-active-bg:      $carousel-control-color;
+ 
+$carousel-caption-width:            100%;

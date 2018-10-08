@@ -1,0 +1,151 @@
+{
+    "key": "group_5ba09c8276a32",
+    "title": "News and Blog",
+    "fields": [
+        {
+            "key": "field_5ba33296d1e98",
+            "label": "Author",
+            "name": "author",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "A. Schmidt-Küntzel": "A. Schmidt-Küntzel",
+                "Anne Schmidt-Küntzel": "Anne Schmidt-Küntzel",
+                "Bill Young": "Bill Young",
+                "Brandy Morenko Campbell": "Brandy Morenko Campbell",
+                "Brandy Morenko Campbell DVM": "Brandy Morenko Campbell DVM",
+                "Bruce Brewer": "Bruce Brewer",
+                "CCF Staff": "CCF Staff",
+                "Dr. Gabrielle Flacke": "Dr. Gabrielle Flacke",
+                "Dr. Laurie Marker": "Dr. Laurie Marker",
+                "Flavia Placidus": "Flavia Placidus",
+                "Jenny Bartlett": "Jenny Bartlett",
+                "Kate Vannelli": "Kate Vannelli",
+                "Katrin Hils": "Katrin Hils",
+                "Lee Tyree": "Lee Tyree",
+                "Marisa Katnic": "Marisa Katnic",
+                "Misty Tyree": "Misty Tyree",
+                "Nadja le Roux": "Nadja le Roux",
+                "Patricia Tricorache": "Patricia Tricorache",
+                "Ryan Marcel": "Ryan Marcel",
+                "Selma Kaulinge": "Selma Kaulinge",
+                "Sophie Edwards": "Sophie Edwards"
+            },
+            "default_value": [
+                "CCF Staff"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b9f65a04232f",
+            "label": "Post Content",
+            "name": "post_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5b9f661132f4a": {
+                    "key": "5b9f661132f4a",
+                    "name": "text_block",
+                    "label": "Text Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b9f666542330",
+                            "label": "WYSIWYG",
+                            "name": "wysiwyg",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ba353899bb9b": {
+                    "key": "layout_5ba353899bb9b",
+                    "name": "figure_block",
+                    "label": "Figure Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ba353939bb9c",
+                            "label": "Figure Inline Single",
+                            "name": "figure_inline_single",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5b967efe3ffb4"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1537430796
+}
