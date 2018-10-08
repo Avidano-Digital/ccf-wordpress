@@ -80,4 +80,34 @@ jQuery(document).ready(function($) {
     }));
   
   });
+
+
+  // select the target node
+var target = document.querySelector('html');
+
+// create an observer instance
+var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        var classes = target.getAttribute('class');
+        var single_class = 'translated-rtl';
+        
+        console.log(classes);
+
+        if(classes.includes(single_class)){
+        target.setAttribute('dir', 'rtl');
+        } else {
+        target.removeAttribute('dir');
+        }
+
+    });
+});
+
+// configuration of the observer:
+var config = { attributes: true, attributeFilter: ['class'] }
+    
+// pass in the target node, as well as the observer options
+observer.observe(target, config);
+    
+// later, you can stop observing
+// observer.disconnect();
   
