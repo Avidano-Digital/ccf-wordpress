@@ -24,7 +24,7 @@
 
             <div class="row align-items-center">
 
-                <div id="wrap-logo" class="col-sm py-3">
+                <div id="wrap-logo" class="col-sm py-2">
                     <a class="d-inline-block" href="/" title="Home">
                         <?php the_custom_logo(); ?>
                     </a>
@@ -77,7 +77,7 @@
 
                 <div class="col-sm-auto d-none d-xl-flex flex-column align-self-stretch">
 
-                    <div class="py-2 ml-auto">
+                    <div class="py-2">
                         <nav id="secondary-navigation">
                             <?php include( 'include/secondary-navigation.php' );?>
                         </nav>

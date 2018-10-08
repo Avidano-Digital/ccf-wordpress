@@ -532,7 +532,6 @@ $gallery: true;
   }
   span{ @extend .px-3; }
 }
-
 ////////////////////////////////////////
 // Link Lists
 ////////////////////////////////////////
@@ -541,7 +540,7 @@ $gallery: true;
 // Link lists are ideal for horizontal navs when supporting 'rtl' 
 
 $link-lists: true;
-$link-list-margin:0.5em;
+$link-list-margin: 0.5em;
 
 @mixin link-list-stack {
   margin-bottom: $link-list-margin;
@@ -577,7 +576,7 @@ $link-list-margin:0.5em;
 
     li > ul{ 
 
-      margin-top: $link-list-margin;
+      // margin-top: $link-list-margin;
 
       // Nested lists indent by default
       padding-left: $nav-link-padding-x;
@@ -620,7 +619,30 @@ $link-list-margin:0.5em;
     }
   }
 
+
 } // end if
+
+////////////////////////////////////////
+// Side by Side
+////////////////////////////////////////
+
+$side-by-side: true;
+$side-by-side-margin: 0.25em;
+
+.side-by-side{
+
+  @extend .d-flex;
+  @extend .flex-row;
+
+  margin-left: -($side-by-side-margin);
+  margin-right: -($side-by-side-margin);
+
+  > span{
+    margin-left: $side-by-side-margin;
+    margin-right: $side-by-side-margin;
+  }
+} 
+
 
 $simple-margin: $spacer-3;
 

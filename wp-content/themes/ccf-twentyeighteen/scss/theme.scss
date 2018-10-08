@@ -63,7 +63,6 @@ p{ @extend .f-serif; }
   }
 }
 
-
 @include media-breakpoint-down(xs){
   #wrap-logo{
     text-align: center;
@@ -76,19 +75,14 @@ p{ @extend .f-serif; }
 
 #primary-navigation-desktop{
 
-  ul{ @extend .list-unstyled; }
-
-  > ul, 
-  > ul > li
-  { @extend .d-flex; }
-
-  > ul > li{
-    @extend .position-relative;
-    @extend .ml-4;
+  > ul{ 
+    @extend .link-list;
+    @extend .horizontal;
   }
 
+  > ul > li{ @extend .position-relative; }
+
   > ul > li > a{
-    @extend .align-self-center;
     @extend .fs-lg;
     @extend .text-body;
 
@@ -102,13 +96,12 @@ p{ @extend .f-serif; }
 
   .sub{
     @extend .position-absolute;
-    @extend .p-4;
+    @extend .p-3;
     @extend .fs-md;
     @extend .link-list;
 
     top: 100%;
     left: -($spacer-4);
-    // width: auto;
 
     @extend .bg-dark;
     @extend .shadow;
