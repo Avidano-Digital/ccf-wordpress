@@ -11,6 +11,58 @@
 html{
   @extend .bg-light;
 
+    // Note: RTL Language Translation
+
+    &[dir="rtl"]{
+
+      .text-right{ @extend .text-left; }
+      .float-left{ @extend .float-right; }
+  
+      body,
+      .dropdown-item
+      { @extend .text-right; }
+  
+      .link-list:not(.justify-content-center){
+        .horizontal{
+          @extend .justify-content-start;
+        }
+      }
+      
+      .accordion-group,  
+      .btn-toggle
+      { 
+        a[data-toggle="collapse"]{
+          &::after {
+            @extend .ml-0;
+            @extend .mr-auto;
+          }
+        }
+      }
+  
+      // Note: Remove Google's added padding and margin for rtl translation
+  
+      ul, 
+      ol, 
+      dl 
+      { -webkit-padding-start: 0 !important;  }
+  
+      dd { -webkit-margin-start: 0 !important; }
+  
+      // Mobile Menu Float
+  
+      #device-menu a.dropdown-item{ @extend .float-right; }
+  
+      // Note: Flip Custom Control Background from left to right
+  
+      .custom-control-label{
+        &::before, 
+        &::after
+        {
+          right: -$custom-control-gutter;
+        }
+      }
+    }
+
   &.popup-active{
     main{ filter: grayscale(1); }
   }

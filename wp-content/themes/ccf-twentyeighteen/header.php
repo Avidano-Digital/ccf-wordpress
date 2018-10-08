@@ -24,11 +24,12 @@
 
             <div class="row align-items-center">
 
-                <div id="logo" class="col-sm text-center text-sm-left py-2">
-                    <a href="/" class="home" title="Cheetah Conservation Fund home">
+                <div id="wrap-logo" class="col-lg py-3">
+                    <a class="d-inline-block" href="/" title="Home">
                         <?php the_custom_logo(); ?>
                     </a>
                 </div>
+                <!-- .col -->
 
                 <div class="col-sm-auto d-flex d-sm-none align-items-center border-top py-2">
 

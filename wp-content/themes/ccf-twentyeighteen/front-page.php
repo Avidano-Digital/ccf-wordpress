@@ -396,7 +396,7 @@
 
         <div class="card-img-overlay d-flex p-0">
           <div class="container-fluid wide align-self-center">
-            <div class="row">
+            <div class="row" dir="ltr">
               <div class="col-xl-6">
                 <div class="narrow text-white mb-5 mb-xl-0">
 

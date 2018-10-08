@@ -63,6 +63,13 @@ p{ @extend .f-serif; }
   }
 }
 
+
+@include media-breakpoint-down(lg){
+  #wrap-logo{
+    text-align: center;
+  }
+}
+
 #secondary-navigation{
   a { @extend .text-body; }
 }
