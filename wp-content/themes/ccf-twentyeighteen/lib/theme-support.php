@@ -94,6 +94,7 @@
             $labels->all_items = 'All News';
             $labels->menu_name = 'News';
             $labels->name_admin_bar = 'News';
+            $labels->menu_position = '10';
     }
 
     ////////////////////////////////////////
