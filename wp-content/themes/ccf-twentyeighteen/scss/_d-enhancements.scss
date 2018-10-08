@@ -8,14 +8,8 @@
 // Generic Tags
 ////////////////////////////////////////
 
-$device-fs-reduce: false;
-
 html{
   @extend .bg-light;
-  
-  @if($device-fs-reduce){
-  	@include media-breakpoint-down(sm) { font-size: 90%; }
-  }
 
   &.popup-active{
     main{ filter: grayscale(1); }
