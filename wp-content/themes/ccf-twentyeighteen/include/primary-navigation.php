@@ -7,7 +7,7 @@
                 <div class="row no-gutters" style="width:480px;">
 
                     <div class="col-6">
-
+ 
                         <ul>
                             <li class="leader">What We Do</li>
                             <li><a href="#">Research</a></li>
