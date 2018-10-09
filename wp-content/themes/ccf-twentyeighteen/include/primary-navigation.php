@@ -4,26 +4,37 @@
         
         <ul class="sub">
             <li>
-                <div class="row no-gutters" style="width: 460px;">
+                <div class="row no-gutters" style="width:480px;">
 
-                    <ul class="col-6">
-                        <li class="leader">What We Do</li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Conservation</a></li>
-                        <li><a href="#">International Cheetah Day</a></li>
-                    </ul>
+                    <div class="col-6">
 
-                    <ul class="col-6">
-                        <li class="leader">Who We Are</li>
-                        <li><a href="#">Mission and Vision</a></li>
-                        <li><a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a></li>
-                        <li><a href="#">Our Centre</a></li>
-                        <li><a href="#">Staff and Board</a></li>
-                        <li><a href="/about-us/who-we-are/ccf-global/">CCF Global</a></li>
-                    </ul>
+                        <ul>
+                            <li class="leader">What We Do</li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Conservation</a></li>
+                            <li><a href="#">International Cheetah Day</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-6">
+
+                        <ul>
+                            <li class="leader">Who We Are</li>
+                            <li><a href="#">Mission and Vision</a></li>
+                            <li><a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a></li>
+                            <li><a href="#">Our Centre</a></li>
+                            <li><a href="#">Staff and Board</a></li>
+                            <li><a href="/about-us/who-we-are/ccf-global/">CCF Global</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- .col -->
 
                 </div>
+                <!-- .row -->
 
             </li>
         </ul>
@@ -58,11 +69,7 @@
         </ul>
     </li>
     <li>
-        <a href="/about" title="Events">Events</a>
-        <ul class="sub">
-            <li><a href="#">Upcoming Events</a></li>
-            <li><a href="#">Past Event Highlights</a></li>
-        </ul>
+        <a href="#" title="Events">Events</a>
     </li>
     <li>
         <a class="btn btn-primary donate" href="#" title="Donate">Donate</a>

@@ -75,16 +75,23 @@ p{ @extend .f-serif; }
 
 #primary-navigation-desktop{
 
+  ul{ @extend .link-list; }
+
   > ul{ 
-    @extend .link-list;
     @extend .horizontal;
+    margin-left: -($link-list-margin * 1.25);
+    margin-right: -($link-list-margin * 1.25);
   }
 
-  > ul > li{ @extend .position-relative; }
+  > ul > li{ 
+    @extend .position-relative; 
+    margin-left: ($link-list-margin * 1.25);
+    margin-right: ($link-list-margin * 1.25);
+  }
 
   > ul > li > a{
-    @extend .fs-lg;
     @extend .text-body;
+    @extend .fs-lg;
 
     &.active{ @extend .text-muted; }
 
@@ -96,19 +103,24 @@ p{ @extend .f-serif; }
 
   .sub{
     @extend .position-absolute;
-    @extend .p-3;
+    @extend .px-2;
+    @extend .py-3;
     @extend .fs-md;
     @extend .link-list;
 
     top: 100%;
-    left: -($spacer-4);
+    left: -($spacer-3);
 
     @extend .bg-dark;
     @extend .shadow;
 
     a{
       white-space: nowrap;
+      @extend .text-left;
+      line-height: 1.25rem;
     }
+
+    > div a{ white-space: wrap;  }
 
     display: none;
 

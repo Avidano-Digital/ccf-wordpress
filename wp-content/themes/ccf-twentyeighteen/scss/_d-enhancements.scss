@@ -64,6 +64,11 @@ html{
           right: -$custom-control-gutter;
         }
       }
+
+      #primary-navigation-desktop .sub{
+        left: auto !important;
+        right: -($spacer-3);
+      }
     }
 
   &.popup-active{

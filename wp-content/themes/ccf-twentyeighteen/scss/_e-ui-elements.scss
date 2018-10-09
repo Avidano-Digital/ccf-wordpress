@@ -300,12 +300,6 @@ $custom-link: true;
   @extend .font-weight-bold;
   @extend .text-uppercase;
   @extend .text-primary;
-  
-  // &:before{ 
-  //   content: "\f105";
-  //   @extend .fa-icon;
-  //   @extend .mr-1;
-  // }
 }
 
 } // end if
@@ -570,14 +564,9 @@ $link-list-margin: 0.5em;
 
   .link-list{
     @include list-unstyled();
-    
-    // fixed padding added by user agent stylesheet after translation
-    -webkit-padding-start: 0;
 
-    li > ul{ 
-
-      // margin-top: $link-list-margin;
-
+    li > ul{
+      
       // Nested lists indent by default
       padding-left: $nav-link-padding-x;
       padding-right: $nav-link-padding-x; 
@@ -591,6 +580,7 @@ $link-list-margin: 0.5em;
     &.horizontal{
       @extend .d-flex;
       @extend .flex-row;
+      
       margin-left: -($link-list-margin);
       margin-right: -($link-list-margin);
 
@@ -599,9 +589,9 @@ $link-list-margin: 0.5em;
         @extend .d-flex;
         @extend .align-items-center;
         
-        margin-bottom: 0;
         margin-left: $link-list-margin;
         margin-right: $link-list-margin;
+        margin-bottom: 0;
       }
 
       @each $breakpoint in map-keys($grid-breakpoints) {
