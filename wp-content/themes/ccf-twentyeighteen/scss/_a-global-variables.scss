@@ -119,6 +119,11 @@ $font-size-sm:    $fs-sm;
 $font-size-base:  $fs-md; // 16px
 $font-size-lg:    $fs-rg;
 
+// Line Height Adjustments
+
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.75;
+
 // Font weights (required)
 
 $font-weight-light: 300;
@@ -372,3 +377,6 @@ $carousel-indicator-spacer:         .25rem;
 $carousel-indicator-active-bg:      $carousel-control-color;
  
 $carousel-caption-width:            100%;
+
+
+// $custom-select-font-size-sm:        $fs-sm;
