@@ -301,11 +301,11 @@ $custom-link: true;
   @extend .text-uppercase;
   @extend .text-primary;
   
-  &:before{ 
-    content: "\f105";
-    @extend .fa-icon;
-    @extend .mr-1;
-  }
+  // &:before{ 
+  //   content: "\f105";
+  //   @extend .fa-icon;
+  //   @extend .mr-1;
+  // }
 }
 
 } // end if
