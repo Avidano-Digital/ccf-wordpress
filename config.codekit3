@@ -16783,6 +16783,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap-grid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap-grid-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap-grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -16796,6 +16806,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap-reboot.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap-reboot-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap-reboot.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -16808,6 +16828,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/bootstrap.scss": {
 		"aP": 0,

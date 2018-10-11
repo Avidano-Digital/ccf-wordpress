@@ -287,10 +287,15 @@ $enable-rounded: false;
 
 // Border Radius
 
-$border-radius-sm: 0.25rem;
-$border-radius: .75rem;
-$border-radius-lg: 1rem;
-$border-radius-xl: 2rem;
+$border-radius:               .25rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-sm:            .2rem !default;
+
+
+// $border-radius-sm: 0.25rem;
+// $border-radius: .5rem;
+// $border-radius-lg: 1rem;
+// $border-radius-xl: 2rem;
 
 // Set Others to Global Border Radius
 
@@ -339,9 +344,9 @@ $list-group-action-active-bg: $light;
 
 // Box shadows 
 
-$box-shadow-opacity: .2;
+$box-shadow-opacity: .25;
 
-$box-shadow-sm:   0 .125rem .5rem rgba($black, $box-shadow-opacity);
+$box-shadow-sm:   0 0 .5rem rgba($black, $box-shadow-opacity);
 $box-shadow:      0 .25rem 1.5rem rgba($black, $box-shadow-opacity);
 $box-shadow-lg:   0 .5rem 2.5rem rgba($black, $box-shadow-opacity);
 

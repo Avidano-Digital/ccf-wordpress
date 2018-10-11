@@ -488,6 +488,10 @@ figure,
 
 }
 
-.test{
-  color: green;
+#gtranslate_selector{
+  @extend .rounded;
+  @extend .custom-select;
+  @extend .custom-select-sm;
+  @extend .shadow-sm;
+  border-color: transparent;
 }

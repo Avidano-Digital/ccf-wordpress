@@ -1,5 +1,5 @@
 <ul class="link-list horizontal justify-content-end">
-
+               
     <li>
         <a href="/tear-sheet/accessibility" title="For Kids">
             <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
@@ -11,11 +11,11 @@
     <li><a href="#"><span class="fab fab fa-instagram"></span></a></li>
     <li><a href="#"><span class="fab fab fa-youtube"></span></a></li>
     <li><a href="#"><span class="fab fa-pinterest"></span></a></li>    -->
-    
-    <!-- Search --> 
+               
+    <!-- Language --> 
     <li>
         <?php echo do_shortcode('[gtranslate]'); ?>
-    </li>                 
+    </li>        
     <!-- Search --> 
     <li>
         <button class="btn no-btn-style"
@@ -28,5 +28,5 @@
                 <span class="fas fa-search fs-lg"></span>
                 <span class="sr-only">Global Search</span>
         </button>
-    </li>                 
+    </li>
 </ul>
