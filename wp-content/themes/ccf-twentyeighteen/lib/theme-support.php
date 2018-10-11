@@ -24,6 +24,12 @@
         update_option( 'large_size_h', 525 );
         update_option( 'large_crop', 1 );
         
+        // Custom Sizes
+
+        add_image_size( 'Feature Primary', 1500, 750, true );
+        add_image_size( 'Feature Secondary', 1000, 500, true );
+        add_image_size( 'Feature Tertiary', 500, 250, true );
+
         add_image_size( 'Hero', 1500, 500, true );
 
         ////////////////////////////////////////
