@@ -159,7 +159,7 @@ p{ @extend .f-serif; }
   #accordion button{
 
     &[aria-expanded="true"]{ 
-      .title{ @extend .text-muted; }
+      // .title{ @extend .text-muted; }
     }
   }
 

@@ -1,3 +1,13 @@
+%fa-icon{
+  font-family: $font-awesome;
+  font-weight: 900;
+  font-size: inherit;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: currentColor;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 //
 // Local Header and primary navigation 
@@ -193,29 +203,19 @@ $matrix-gutter-padding: ($grid-gutter-width / 2);
 }
 
 ////////////////////////////////////////
-// Toggle Buttons and Accordions
+// Accordions and Toggle Buttons 
 ////////////////////////////////////////
 
 $toggles-and-accordions: true;
 
-// Accordion  
-
-$accordion-title-color: theme-color("info");
-$accordion-title-bg: $white;
-$accordion-button-border: true;
-$accordion-button-shadow: false;
-
 @if($toggles-and-accordions){
 
-  .fa-icon{
-    font-family: $font-awesome;
-    font-weight: 900;
-    font-size: inherit;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    @extend .ml-auto;
-  }
+  // Accordion Preferences
+
+  $accordion-title-color: $info;
+  $accordion-title-bg: theme-color("light");
+  $accordion-button-border: false;
+  $accordion-button-shadow: false;
 
   .btn-toggle a,
   .accordion-group a,
@@ -224,26 +224,29 @@ $accordion-button-shadow: false;
     &[data-toggle="collapse"]{
       @extend .d-flex;
       @extend .align-items-center;
+      @extend .justify-content-between;
     }
   }
 
   // Generic toggle button
 
-    a.btn[data-toggle="collapse"] {
-      overflow: hidden;
+  a.btn[data-toggle="collapse"] {
+    overflow: hidden;
 
-      &:after {
-        content: "\f067";
-        @extend .fa-icon;
-      }
+    &::after {
+      content: "\f067";
+      @extend %fa-icon;
 
-      &[aria-expanded="true"]:after {
-        content: "\f068";
-      }
+      // @extend .ml-auto;
+    }
 
-      &[aria-expanded="false"]:after {
-        content: "\f067";
-      }
+    &[aria-expanded="true"]::after {
+      content: "\f068";
+    }
+
+    &[aria-expanded="false"]::after {
+      content: "\f067";
+    }
   }
 
   // Accordions
@@ -252,20 +255,31 @@ $accordion-button-shadow: false;
 
     .card, 
     .card-header
-    { border: none; }
-    
+    { 
+      @extend .border-0; 
+      @extend .rounded-0;
+    }
+
     .card-header{ background-color: $accordion-title-bg; }
     
-    [data-toggle="collapse"]{
+    a[data-toggle="collapse"], 
+    button[data-toggle="collapse"]{
       
-      @if $accordion-button-border { @extend .border-top; }
+      @if $enable-rounded {
+        @extend .rounded;
+      } @else{
+        @extend .rounded-0;
+      }
+
+      @if $accordion-button-border { @extend .border; }
       @if $accordion-button-shadow { @extend .shadow-sm; }
 
       color: $accordion-title-color;
     
       &:after{ 
         content: "\f067";
-        @extend .fa-icon;
+        @extend %fa-icon;
+        // @extend .ml-auto;
       }
 
       &[aria-expanded="true"]{
