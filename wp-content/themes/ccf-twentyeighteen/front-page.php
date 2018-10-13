@@ -396,28 +396,25 @@
 
         <div class="card-img-overlay d-flex p-0">
           <div class="container-fluid wide align-self-center">
-            <div class="row" dir="ltr">
-              <div class="col-xl-6">
+            <div class="row">
+              <div class="col-xl-5">
                 <div class="narrow text-white mb-5 mb-xl-0">
 
-                  <h3 class="h3">Shrinking habitat</h3>
+                  <h3 class="h1 text-primary">Shrinking habitat</h3>
                   <p class="mb-4">In the last 100 years, the world has lost 90% of the wild cheetah population. Today, one-third of wild
                     cheetahs live in southern Africa. CCF is working in Namibia and across Africa to save the species throughout
                     its range.</p>
 
-                  <ul class="fa-ul fs-md mb-5">
+                  <ul class="fa-bullets mb-5">
                     <li>
-                      <span class="fa-li">
-                        <span class="fas fas fa-circle text-umber"></span>
-                      </span> Cheetah range pre-1900</li>
+                      <span class="fas fa-circle fa-fw text-umber"></span>
+                      <span>Cheetah range pre-1900</span>
                     <li>
-                      <span class="fa-li">
-                        <span class="fas fas fa-circle text-primary"></span>
-                      </span>Cheetah range today</li>
+                        <span class="fas fa-circle fa-fw text-primary"></span>
+                        <span>Cheetah range today</span>
                     <li>
-                      <span class="fa-li">
-                        <span class="fas fas fas fa-star text-white"></span>
-                      </span>CCF Headquarters, Namibia</li>
+                      <span class="fas fa-star fa-fw text-white"></span>
+                      <span>CCF Headquarters, Namibia</span>
                   </ul>
 
                   <!-- <hr class="mb-4 opacity-20"> -->
