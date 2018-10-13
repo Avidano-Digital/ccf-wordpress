@@ -55,7 +55,7 @@
 
                         <div class="col-auto">
 
-                            <ul class="link-list horizontal">
+                            <ul class="link-list horizontal no-reverse">
                                 <li>
                                     <a href="#" title="For Kids">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
