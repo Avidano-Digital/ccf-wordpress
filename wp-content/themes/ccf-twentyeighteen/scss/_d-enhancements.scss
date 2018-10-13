@@ -18,6 +18,13 @@ html{
       .text-right{ @extend .text-left; }
       .float-left{ @extend .float-right; }
 
+
+      .link-list:not(.justify-content-center):not(.justify-content-end):not(.lenny){
+        &.horizontal{
+          @extend .flex-row-reverse;
+        }
+      }
+
       #cheetah-range{
         .container-fluid > .row{
           @extend .flex-row-reverse; 

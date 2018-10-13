@@ -1,4 +1,4 @@
-<ul>
+<ul class="lenny">
     <li>
         <a href="#" title="About Us">About Us</a>
         

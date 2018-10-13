@@ -237,7 +237,8 @@
 
                 <div class="col-sm-10 col-lg-4 mb-4 mb-lg-0 mx-auto">
 
-                    <h5 class="text-primary mb-2">Cheetah Conservation Fund</h5>
+                    <h5 class="text-primary">Cheetah Conservation Fund</h5>
+                    <p class="text-white fs-md mb-2">Research and Education Centre</p>
 
                     <div class="row">
 
@@ -268,11 +269,10 @@
 
                 <div class="col-sm-10 col-lg-4 mb-4 mb-lg-0 mx-auto text-white">
 
-                    <h5 class="text-primary mb-2">CCF Global</h5>
-                    <p class="fs-md">CCF is an international non-profit organization headquartered in Namibia, with operations and partners
-                        around the world.</p>
+                    <h5 class="text-primary">CCF Global</h5>
+                    <p class="fs-md">Cheetah Conservation Fund is an international non-profit organization with fundraising operations located in: Australia, Canada, Italy, The United Kingdom, and The United States, working in cooperation with staff and partners around the world.</p>
                     <p class="fs-md">
-                        <a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Where We Work</a>
+                        <a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Contact Us</a>
                     </p>
 
                 </div>
@@ -283,9 +283,9 @@
                     <div class="row">
 
                         <div class="col-xxl mb-4 mb-xxl-0">
-                            <h5 class="text-primary mb-2">Follow Us</h5>
+                            <h5 class="text-primary mb-2">Follow CCF</h5>
 
-                            <ul class="link-list horizontal p-0">
+                            <ul class="link-list horizontal">
                                 <li>
                                     <a href="#">
                                         <span class="fab fa-facebook-f"></span>
