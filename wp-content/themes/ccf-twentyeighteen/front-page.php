@@ -210,11 +210,11 @@
 
       <section class="container-fluid wide mb-5" id="latest-news">
 
-        <header class="row align-items-end mb-3">
-          <div class="col-md">
+        <header class="row align-items-end justify-content-between mb-3">
+          <div class="col-md-auto">
             <h3 class="display-4">Latest News</h3>
           </div>
-          <div class="col-md-auto ml-auto">
+          <div class="col-md-auto">
             <a class="blended-link" href="#">All News</a>
           </div>
         </header>
@@ -252,11 +252,11 @@
 
       <section class="container-fluid wide" id="videos">
 
-        <header class="row align-items-end mb-3">
-          <div class="col-md">
+        <header class="row align-items-end justify-content-between mb-3">
+          <div class="col-md-auto">
             <h3 class="display-4">Videos</h3>
           </div>
-          <div class="col-md-auto ml-auto">
+          <div class="col-md-auto">
             <a class="blended-link" href="#">All Videos</a>
           </div>
         </header>
