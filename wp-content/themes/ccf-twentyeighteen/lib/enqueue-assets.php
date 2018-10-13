@@ -74,6 +74,16 @@
             true 
         );
 
+
+        wp_enqueue_script( 
+            'cookies', 
+            'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js',
+            ['jquery'],
+            '3.4.4', 
+            true 
+        );
+
+
         wp_enqueue_script( 
             'main', 
             get_template_directory_uri() . '/js/main.js',

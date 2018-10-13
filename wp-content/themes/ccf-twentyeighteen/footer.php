@@ -13,10 +13,10 @@
 
         <div class="featured-block col-lg-4">
 
-            <div class="card">
+            <div class="card bg-dark">
 
                 <div class="overlay-gradient-y-black">
-                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                 </div>
 
                 <div class="card-img-overlay d-flex p-md-3">

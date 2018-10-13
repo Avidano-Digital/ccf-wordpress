@@ -82,16 +82,15 @@ jQuery(document).ready(function($) {
   });
 
 
-  // select the target node
+// Select the target node
 var target = document.querySelector('html');
 
-// create an observer instance
+// Create an observer instance
 var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
+
         var classes = target.getAttribute('class');
         var single_class = 'translated-rtl';
-        
-        console.log(classes);
 
         if(classes.includes(single_class)){
         target.setAttribute('dir', 'rtl');
@@ -108,6 +107,25 @@ var config = { attributes: true, attributeFilter: ['class'] }
 // pass in the target node, as well as the observer options
 observer.observe(target, config);
     
-// later, you can stop observing
+// Stop observing
 // observer.disconnect();
-  
+
+
+    ////////////////////////////////////////
+    // Google Translate Links
+    ////////////////////////////////////////
+
+    jQuery(function ($) {
+
+        $('#language-select').change(function() {
+
+            Cookies.set('currentLang', $(this).val());
+
+        });
+
+        // On page load, read out the cookie, and select the corresponding country
+        // If no cookie, take country1 as default
+        var lang = Cookies && Cookies.get('currentLang') || '#googtrans(en)';
+        $('#language-select').val(lang);
+    })
+    

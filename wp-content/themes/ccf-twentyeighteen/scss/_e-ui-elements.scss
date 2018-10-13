@@ -41,14 +41,16 @@ $gradients: true;
 
   [class^="overlay-gradient-"]{
     position: relative; 
+    overflow: hidden;
   
     &::before {
       content: "\00a0";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      left:0;
-      right: 0;
+      @extend .position-absolute;
+      width: 100.5%;
+      height: 100.5%;
+      bottom: -0.25%;
+      left: -0.25;
+      right: -0.25;
     }
   }
 

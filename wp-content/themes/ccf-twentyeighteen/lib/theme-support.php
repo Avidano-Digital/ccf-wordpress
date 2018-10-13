@@ -32,6 +32,14 @@
 
         add_image_size( 'Hero', 1500, 500, true );
 
+        // Custom JPG Compression
+
+        function my_prefix_regenerate_thumbnail_quality() {
+            return 85;
+        }
+         
+        add_filter( 'jpeg_quality', 'my_prefix_regenerate_thumbnail_quality');
+
         ////////////////////////////////////////
         // Gutenberg support
         ////////////////////////////////////////
