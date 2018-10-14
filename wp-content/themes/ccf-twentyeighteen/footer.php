@@ -40,14 +40,54 @@
 
         <div class="narrow px-3">
 
-            <form>
-                <h3 class="text-info text-center mb-3">Join Our Newsletter</h3>
+            <h3 class="display-4 mb-5 text-center">Keep up with the cheetahs</h3>
+            
+            <div class="row no-gutters bg-white shadow">
+
+                <div class="col-12">
+                    <a href="#" class="btn btn-lg btn-white btn-block text-info">
+                        <span class="d-none d-sm-block">Receive Our Newsletter</span>
+                        <span class="fas fa-plus d-sm-none"></span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="btn btn-lg btn-info btn-block">
+                        <span class="fab fa-facebook-f"></span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="btn btn-lg btn-info btn-block">
+                        <span class="fab fa-twitter"></span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="btn btn-lg btn-info btn-block">
+                        <span class="fab fab fa-instagram"></span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="btn btn-lg btn-info btn-block">
+                        <span class="fab fab fa-youtube"></span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="btn btn-lg btn-info btn-block">
+                        <span class="fab fa-pinterest"></span>
+                    </a>
+                </div>
+
+            </div>
+
+            <form class="d-none">
                 <div class="input-group shadow-sm">
                     <input class="form-control form-control-lg border-0" placeholder="Your email address">
                     <div class="input-group-btn">
                         <button type="button" class="btn btn-lg btn-info">
-                            <span class="d-none d-sm-block">Subscribe</span>
-                            <span class="fas fa-plus d-sm-none"></span>
                         </button>
                     </div>
                 </div>
