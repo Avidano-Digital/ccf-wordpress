@@ -7,20 +7,32 @@
         <div class="container">
             <div class="narrow">
                 <figcaption>
-                    <span class="d-block mb-2">Map tiles by
+                    <span class="d-block mb-1">Map tiles by
                         <a href="http://stamen.com/" target="_blank">Stamen Design</a>, under
                         <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>. Data by
                         <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a>, under
                         <a href="http://www.openstreetmap.org/copyright" target="_blank">ODbL</a>
                     </span>
-                    <span class="mr-3 d-block d-md-inline">
-                        <span class="fas fas fa-circle office mr-1"></span>Headquarters</span>
-                    <span class="mr-3 d-block d-md-inline">
-                        <span class="fas fas fa-circle affiliate mr-1"></span>Affiliates</span>
-                    <span class="mr-3 d-block d-md-inline">
-                        <span class="fas fas fa-circle chapter mr-1"></span>Chapters</span>
-                    <span class="mr-3 d-block d-md-inline">
-                        <span class="fas fas fa-circle partner-organization mr-1"></span>Partner Organisations</span>
+
+                    <ul class="link-list horizontal responsive-sm">
+                        <li>
+                            <span class="fas fas fa-circle office"></span>
+                            <span class="mx-1">Headquarters</span> 
+                        </li>
+                        <li>
+                            <span class="fas fas fa-circle affiliate"></span>
+                            <span class="mx-1">Affiliates</span> 
+                        </li>
+                        <li>
+                            <span class="fas fas fa-circle chapter"></span>
+                            <span class="mx-1">Chapters</span> 
+                        </li>
+                        <li>
+                            <span class="fas fas fa-circle partner-organization"></span>
+                            <span class="mx-1">Partner Organisations</span> 
+                        </li>
+                    </ul>
+   
                 </figcaption>
             </div>
         </div>
