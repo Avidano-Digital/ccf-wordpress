@@ -280,14 +280,23 @@
                     <h5 class="">Support CCF</h5>
                     <p class="fs-md">You can help save the cheetah from exinction! Support our research and conservation initiatives.</p>
 
-                    <div class="row matrix-border mt-3">
+                    <ul class="link-list horizontal">
+                        <li>
+                            <a class="btn btn-primary" href="#" title="Donate">Donate</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
+                        </li>
+                    </ul>
 
-                        <div class="col-sm-6 col-lg-12 col-xxl-6">
+                    <div class="row matrix-border mt-3 d-none">
+
+                        <div class="col-auto">
                             <a class="btn btn-block btn-primary" href="#" title="Donate">Donate</a>
                         </div>
                         <!-- .col -->
 
-                        <div class="col-sm-6 col-lg-12 col-xxl-6">
+                        <div class="col-auto">
                             <a class="btn btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
                         </div>
                         <!-- .col -->
