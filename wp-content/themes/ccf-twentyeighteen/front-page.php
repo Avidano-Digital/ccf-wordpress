@@ -63,7 +63,7 @@
 
       <?php endif; /* Primary Feature */ ?>
 
-      <div class="row no-gutters">
+      <div class="row no-gutters overflow-hidden">
 
         <div class="col-xl-8 d-none d-sm-block">
 

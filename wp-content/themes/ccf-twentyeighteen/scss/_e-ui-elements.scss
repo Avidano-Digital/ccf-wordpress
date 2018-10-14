@@ -55,11 +55,9 @@ $gradients: true;
     &::before {
       content: "\00a0";
       @extend .position-absolute;
-      width: 100%;
-      height: 100%;
-      // bottom: -0.25%;
-      // left: -0.25;
-      // right: -0.25;
+      @extend .w-100;
+      @extend .h-100;
+      bottom: -1px;
     }
   }
 
@@ -109,20 +107,13 @@ $featured-panel: true;
   .featured-panel, 
   .banner
   {
-    .card, 
-    .card-img
-    {
-      // @extend .border-0;
-      @extend .rounded-0;
-    }
-
     .card-img,
     .align-self-end, 
     .align-self-center{ @extend .w-100; }
-
   }
 
   .featured-panel{
+    overflow: hidden;
 
     .align-self-end{
       > div{ max-width: $grid-bp-xl; }
