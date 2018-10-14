@@ -225,20 +225,13 @@ $orange:  #E3982E;
 $green:   #375339;
 $umber:   #896258;
 
-
-$facebook:    #3b5998;
-$twitter:    #1DA1F3;
-$pinterest:    #BD081A;
-$youtube:    #FF0000;
-
 $light: #F7F5F0;
-
-
 
 $theme-colors: (
 
   "white": $white,
   "black": $black,
+  "light": $light,
 
   "primary": $yellow,
   "secondary": $orange,
@@ -246,10 +239,6 @@ $theme-colors: (
   "umber": $umber,
   "green": $green,
 
-  "facebook": $facebook,
-  "twitter": $twitter,
-  "pinterest": $pinterest,
-  "light": $light,
 );
 
 ////////////////////////////////////////
