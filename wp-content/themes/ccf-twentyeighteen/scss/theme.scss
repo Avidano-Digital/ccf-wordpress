@@ -482,9 +482,13 @@ figure,
 }
 
 #gtranslate_selector{
-  // @extend .rounded;
+  @extend .bg-light;
+  @extend .rounded;
   @extend .custom-select;
   @extend .custom-select-sm;
-  @extend .shadow-sm;
   border-color: transparent;
+  &:focus{
+    box-shadow: none;
+
+  }
 }
