@@ -184,7 +184,7 @@ $gray-900: #212529 !default;
 
 // Bootstrap Default Colors
 
-$blue:    #007bff !default;
+$blue:    #007bff !default
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -225,6 +225,16 @@ $orange:  #E3982E;
 $green:   #375339;
 $umber:   #896258;
 
+
+$facebook:    #3b5998;
+$twitter:    #1DA1F3;
+$pinterest:    #BD081A;
+$youtube:    #FF0000;
+
+$light: #F7F5F0;
+
+
+
 $theme-colors: (
 
   "white": $white,
@@ -235,6 +245,11 @@ $theme-colors: (
   "info": $purple,
   "umber": $umber,
   "green": $green,
+
+  "facebook": $facebook,
+  "twitter": $twitter,
+  "pinterest": $pinterest,
+  "light": $light,
 );
 
 ////////////////////////////////////////

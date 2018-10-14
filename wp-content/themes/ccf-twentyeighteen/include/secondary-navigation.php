@@ -6,11 +6,6 @@
         </a>
     </li>
     
-    <!-- Language --> 
-    <li>
-        <?php echo do_shortcode('[gtranslate]'); ?>
-    </li>
-
     <!-- Search --> 
     <li>
         <button class="btn no-btn-style"
@@ -25,4 +20,9 @@
         </button>
     </li>
     
+    <!-- Language --> 
+    <li>
+        <?php echo do_shortcode('[gtranslate]'); ?>
+    </li>
+
 </ul>

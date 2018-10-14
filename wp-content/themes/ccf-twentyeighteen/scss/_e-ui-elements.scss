@@ -181,7 +181,7 @@ $matrix-gutter-padding: ($grid-gutter-width / 2);
   margin-left: -($matrix-border-padding);
   margin-right: -($matrix-border-padding);
 
-  > [class^="col-"]{ padding: $matrix-border-padding; }
+  > [class^="col"]{ padding: $matrix-border-padding; }
 }
 
 
@@ -189,7 +189,7 @@ $matrix-gutter-padding: ($grid-gutter-width / 2);
   margin-left: -($matrix-gutter-padding);
   margin-right: -($matrix-gutter-padding);
 
-  > [class^="col-"]{ padding: $matrix-gutter-padding; }
+  > [class^="col"]{ padding: $matrix-gutter-padding; }
 }
 
 ////////////////////////////////////////

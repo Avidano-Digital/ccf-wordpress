@@ -20,7 +20,7 @@
 
     <header id="global-header">
 
-        <div class="container-fluid shadow-sm z-index-900">
+        <div class="container-fluid z-index-900">
 
             <div class="row align-items-center">
 

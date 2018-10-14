@@ -36,71 +36,9 @@
     
     <?php endif; /* footer_features */ ?>
     
-    <section id="newsletter" class="container-fluid px-0 py-6 cheetah-spots">
-
-        <div class="narrow px-3">
-
-            <h3 class="display-4 mb-5 text-center">Keep up with the cheetahs</h3>
-            
-            <div class="row no-gutters bg-white shadow">
-
-                <div class="col-12">
-                    <a href="#" class="btn btn-lg btn-white btn-block text-info">
-                        <span class="d-none d-sm-block">Receive Our Newsletter</span>
-                        <span class="fas fa-plus d-sm-none"></span>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="#" class="btn btn-lg btn-info btn-block">
-                        <span class="fab fa-facebook-f"></span>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="#" class="btn btn-lg btn-info btn-block">
-                        <span class="fab fa-twitter"></span>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="#" class="btn btn-lg btn-info btn-block">
-                        <span class="fab fab fa-instagram"></span>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="#" class="btn btn-lg btn-info btn-block">
-                        <span class="fab fab fa-youtube"></span>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="#" class="btn btn-lg btn-info btn-block">
-                        <span class="fab fa-pinterest"></span>
-                    </a>
-                </div>
-
-            </div>
-
-            <form class="d-none">
-                <div class="input-group shadow-sm">
-                    <input class="form-control form-control-lg border-0" placeholder="Your email address">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-lg btn-info">
-                        </button>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-        <!-- .narrow -->
-
-    </section>
-
     <section class="container-fluid" id="all-links">
 
-        <div class="wide py-5">
+        <div class="wide py-6">
 
             <nav class="row">
 
@@ -269,48 +207,27 @@
 
     </section>
 
-    <section class="container-fluid bg-dark">
+    <section class="container-fluid bg-light">
 
         <div class="wide py-5">
 
             <div class="row">
 
-                <div class="col-sm-10 col-lg-4 mb-4 mb-lg-0 mx-auto">
+                <div class="col-sm-10 col-md-6 col-xl-3 mb-4 mb-lg-0 mx-auto">
 
-                    <h5 class="text-primary">Cheetah Conservation Fund</h5>
-                    <p class="text-white fs-md mb-2">Research and Education Centre</p>
-
-                    <div class="row">
-
-                        <div class="col-xxl mb-2 mb-xxl-0 text-white">
-                            <address class="f-serif fs-md">
-                                <strong>Address:</strong>
-                                <br> P.O. Box 1755
-                                <br> Otjiwarongo, Namibia
-                            </address>
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-xxl text-white">
-                            <p class="fs-md">
-                                <strong>Phone:</strong> +264 (0) 67 306 255
-                                <br>
-                                <strong>Email:</strong>
-                                <a class="blended-link" href="mailTo:ccfinfo@iway.na">ccfinfo@iway.na</a>
-                            </p>
-                        </div>
-                        <!-- .col -->
-
-                    </div>
-                    <!-- .row -->
-
+                    <h5 class="">Cheetah Conservation Fund</h5>
+                    <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
+                        visitors to see our facilities in person.</p>
+                    <p class="fs-md"><a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Come Join Us!</a></p>
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-10 col-lg-4 mb-4 mb-lg-0 mx-auto text-white">
+                <div class="col-sm-10 col-md-6 col-xl-3 mb-4 mb-lg-0 mx-auto">
 
-                    <h5 class="text-primary">CCF Global</h5>
-                    <p class="fs-md">Cheetah Conservation Fund is an international non-profit organization with fundraising operations located in: Australia, Canada, Italy, The United Kingdom, and The United States, working in cooperation with staff and partners around the world.</p>
+                    <h5 class="">Where We Work</h5>
+                    <p class="fs-md">Cheetah Conservation Fund is an international non-profit organization with fundraising
+                        operations located in: Australia, Canada, Italy, The United Kingdom, and The United States, working
+                        in cooperation with staff and partners around the world.</p>
                     <p class="fs-md">
                         <a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Contact Us</a>
                     </p>
@@ -318,61 +235,60 @@
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-10 col-lg-4 mb-4 mb-lg-0 mx-auto text-white">
+                <div class="col-sm-10 col-md-6 col-xl-3 mb-4 mb-lg-0 mx-auto">
+                    <h5 class="">Keep Up With the Cheetahs</h5>
+                    <p class="fs-md">Never miss an update. Subscribe to the <a href="#" class="blended-link">CCF Newsletter</a>
+                        and follow us on social media.</p>
 
-                    <div class="row">
+                    <ul class="link-list horizontal">
+                        <li>
+                            <a class="text-body" href="#">
+                                <span class="fas fa-envelope"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#">
+                                <span class="fab fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#">
+                                <span class="fab fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#">
+                                <span class="fab fab fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#">
+                                <span class="fab fab fa-youtube"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-body" href="#">
+                                <span class="fab fa-pinterest"></span>
+                            </a>
+                        </li>
+                    </ul>
 
-                        <div class="col-xxl mb-4 mb-xxl-0">
-                            <h5 class="text-primary mb-2">Follow CCF</h5>
+                </div>
+                <!-- .col -->
 
-                            <ul class="link-list horizontal">
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-facebook-f"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-twitter"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fab fa-instagram"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fab fa-youtube"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-pinterest"></span>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="col-sm-10 col-md-6 col-xl-3 mx-auto">
+                    <h5 class="">Support CCF</h5>
+                    <p class="fs-md">You can help save the cheetah from exinction! Support our research and conservation initiatives.</p>
 
+                    <div class="row matrix-border mt-3">
+
+                        <div class="col-sm-6 col-lg-12 col-xxl-6">
+                            <a class="btn btn-block btn-primary" href="#" title="Donate">Donate</a>
                         </div>
                         <!-- .col -->
 
-                        <div class="col-xxl">
-
-                            <div class="row matrix-border">
-
-                                <div class="col-sm-6 col-lg-12">
-                                    <a class="btn btn-block btn-primary" href="#" title="Donate">Donate</a>
-                                </div>
-                                <!-- .col -->
-
-                                <div class="col-sm-6 col-lg-12">
-                                    <a class="btn btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
-                                </div>
-                                <!-- .col -->
-
-                            </div>
-                            <!-- .matrix-border -->
-
+                        <div class="col-sm-6 col-lg-12 col-xxl-6">
+                            <a class="btn btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
                         </div>
                         <!-- .col -->
 
