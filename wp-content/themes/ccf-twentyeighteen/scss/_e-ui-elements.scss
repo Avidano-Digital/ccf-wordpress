@@ -51,13 +51,14 @@ $gradients: true;
 
   [class^="overlay-gradient-"]{
     position: relative; 
+    @extend .overflow-hidden;
   
     &::before {
       content: "\00a0";
       @extend .position-absolute;
       @extend .w-100;
       @extend .h-100;
-      bottom: -1px;
+      // bottom: -1px;
     }
   }
 
@@ -113,7 +114,6 @@ $featured-panel: true;
   }
 
   .featured-panel{
-    overflow: hidden;
 
     .align-self-end{
       > div{ max-width: $grid-bp-xl; }
@@ -183,7 +183,6 @@ $matrix-gutter-padding: ($grid-gutter-width / 2);
 
   > [class^="col"]{ padding: $matrix-border-padding; }
 }
-
 
 .matrix-gutter{
   margin-left: -($matrix-gutter-padding);

@@ -13,7 +13,7 @@
 
         <div class="featured-block col-lg-4">
 
-            <div class="card bg-dark">
+            <div class="card">
 
                 <div class="overlay-gradient-y-black">
                     <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
@@ -36,7 +36,7 @@
     
     <?php endif; /* footer_features */ ?>
     
-    <section class="container-fluid" id="all-links">
+    <div class="container-fluid" id="all-links">
 
         <div class="wide py-6">
 
@@ -205,15 +205,17 @@
 
         </div>
 
-    </section>
+    </div>
 
-    <section class="container-fluid bg-light">
+    <div class="container-fluid bg-light">
 
-        <div class="wide py-5">
+        <h4 class="sr-only">Cheetah Conservation Fund Global Navigation</h4>
+
+        <div class="wide py-6">
 
             <div class="row">
 
-                <div class="col-sm-10 col-md-6 col-xl-3 mb-4 mb-lg-0 mx-auto">
+                <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
 
                     <h5 class="">Cheetah Conservation Fund</h5>
                     <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
@@ -222,7 +224,7 @@
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-10 col-md-6 col-xl-3 mb-4 mb-lg-0 mx-auto">
+                <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
 
                     <h5 class="">Where We Work</h5>
                     <p class="fs-md">Cheetah Conservation Fund is an international non-profit organization with fundraising
@@ -235,7 +237,7 @@
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-10 col-md-6 col-xl-3 mb-4 mb-lg-0 mx-auto">
+                <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
                     <h5 class="">Keep Up With the Cheetahs</h5>
                     <p class="fs-md">Never miss an update. Subscribe to the <a href="#" class="blended-link">CCF Newsletter</a>
                         and follow us on social media.</p>
@@ -276,27 +278,18 @@
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-10 col-md-6 col-xl-3 mx-auto">
+                <div class="col-sm-10 col-lg-6 col-xl-3 mx-auto">
                     <h5 class="">Support CCF</h5>
                     <p class="fs-md">You can help save the cheetah from exinction! Support our research and conservation initiatives.</p>
 
-                    <ul class="link-list horizontal">
-                        <li>
-                            <a class="btn btn-primary" href="#" title="Donate">Donate</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
-                        </li>
-                    </ul>
+                    <div class="row matrix-border">
 
-                    <div class="row matrix-border mt-3 d-none">
-
-                        <div class="col-auto">
+                        <div class="col-sm">
                             <a class="btn btn-block btn-primary" href="#" title="Donate">Donate</a>
                         </div>
                         <!-- .col -->
 
-                        <div class="col-auto">
+                        <div class="col-sm">
                             <a class="btn btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
                         </div>
                         <!-- .col -->
@@ -313,7 +306,7 @@
         </div>
         <!-- .wide -->
 
-    </section>
+    </div>
 
     <hr class="dark">
 

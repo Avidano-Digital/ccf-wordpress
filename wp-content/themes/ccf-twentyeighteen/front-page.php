@@ -481,27 +481,36 @@
 
           <div class="container align-self-center">
 
-            <div class="text-white text-center text-shadow">
-              <h5 class="card-title h1">Join the race to
+            <div class="narrow">
+
+              <h5 class="card-title h1 text-white text-center text-shadow">Join the race to
                 <a class="text-primary" href="#">#SaveTheCheetah</a>
               </h5>
-              <p class="card-text mb-4">Support our research and conservation initiatives.</p>
-            </div>
 
-            <div class="row matrix-border narrow shadow">
+              <div class="row matrix-border shadow-lg">
 
-              <div class="col-md-6">
-                <a class="btn btn-lg btn-block btn-primary" href="#" title="Donate">Donate</a>
+                <div class="col-md-6">
+                  <a class="btn btn-lg btn-block btn-primary" href="#" title="Donate">Donate</a>
+                </div>
+                <!-- .col -->
+
+                <div class="col-md-6">
+                  <a class="btn btn-lg btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
+                </div>
+                <!-- .col -->
+
+                <div class="col-12">
+                  <a class="btn btn-lg btn-block btn-light" href="#" title="Join Our Newsletter">
+                    <span class="fas fa-envelope-open"></span>
+                    <span class="mx-1">Join Our Newsletter</span> 
+                  </a>
+                </div>
+                <!-- .col -->
+
               </div>
-              <!-- .col -->
-
-              <div class="col-md-6">
-                <a class="btn btn-lg btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
-              </div>
-              <!-- .col -->
+              <!-- .matrix-border -->
 
             </div>
-            <!-- .matrix-border -->
 
           </div>
           <!-- .container -->
