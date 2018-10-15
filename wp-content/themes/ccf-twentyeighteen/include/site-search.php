@@ -1,4 +1,4 @@
-<div id="search-site" class="bg-light">
+<div id="search-site" class="bg-dark">
 	<form class="container narrow py-4" aria-label="Search" role="search">
 		<div class="form-group mb-0">
 			<input class="form-control form-control-lg shadow" placeholder="Search cheetah.org">
