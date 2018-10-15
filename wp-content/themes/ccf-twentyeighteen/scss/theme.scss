@@ -148,6 +148,8 @@ p{ @extend .f-serif; }
 
     @extend .border-bottom;
     @extend .text-body;
+    
+    background: white;
 
     .title{ @extend .font-weight-normal; }
 
