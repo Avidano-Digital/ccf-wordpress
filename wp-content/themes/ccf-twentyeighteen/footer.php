@@ -44,11 +44,9 @@
 
                 <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
-                    <ul class="link-list px-0">
+                    <ul class="link-list">
                         <li>
-                            <a href="#" title="What We Do">
-                                <span class="font-weight-bold mb-2">What We Do</span>
-                            </a>
+                            <span class="font-weight-bold mb-2">What We Do</span>
                         </li>
                         <li>
                             <a href="#">Research</a>
@@ -69,11 +67,9 @@
 
                 <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
-                    <ul class="link-list px-0">
+                    <ul class="link-list">
                         <li>
-                            <a href="#" title="What We Do">
-                                <span class="font-weight-bold mb-2">Who We Are</span>
-                            </a>
+                            <span class="font-weight-bold mb-2">Who We Are</span>
                         </li>
                         <li>
                             <a href="#">Mission and Vision</a>
@@ -97,11 +93,9 @@
 
                 <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
-                    <ul class="link-list px-0">
+                    <ul class="link-list">
                         <li>
-                            <a href="#" title="Take Action">
-                                <span class="font-weight-bold mb-2">Take Action</span>
-                            </a>
+                            <span class="font-weight-bold mb-2">Take Action</span>
                         </li>
                         <li>
                             <a href="#">Ways to Give</a>
@@ -125,11 +119,9 @@
 
                 <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
-                    <ul class="link-list px-0">
+                    <ul class="link-list">
                         <li>
-                            <a href="#" title="Learn">
-                                <span class="font-weight-bold mb-2">Learn</span>
-                            </a>
+                            <span class="font-weight-bold mb-2">Learn</span>
                         </li>
                         <li>
                             <a href="#">Resource Library</a>
@@ -156,11 +148,9 @@
 
                 <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
-                    <ul class="link-list px-0">
+                    <ul class="link-list">
                         <li>
-                            <a href="#" title="News">
-                                <span class="font-weight-bold mb-2">News</span>
-                            </a>
+                             <span class="font-weight-bold mb-2">News</span>
                         </li>
                         <li>
                             <a href="#">Blog</a>
@@ -172,6 +162,13 @@
                             <a href="#">Press Kit</a>
                         </li>
                     </ul>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#" title="Events">
+                                <span class="font-weight-bold mb-2">Events</span>
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
                 <!-- .col-* -->
@@ -180,17 +177,6 @@
 
                     <ul class="link-list px-0">
                         <li>
-                            <a href="#" title="Events">
-                                <span class="font-weight-bold mb-2">Events</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Upcoming Events</a>
-                        </li>
-                        <li>
-                            <a href="#">Past Event Highlights</a>
-                        </li>
-                        <li class="mt-2">
                             <a href="#" title="For Kids">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
                             </a>

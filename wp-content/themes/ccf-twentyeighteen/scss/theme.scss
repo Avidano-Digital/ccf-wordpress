@@ -47,7 +47,7 @@ p{ @extend .f-serif; }
 #mobile-menu,
 #all-links{
 
-  ul:not(.link-list){ 
+  ul:not(.horizontal){ 
     @extend .list-unstyled;
     @extend .fs-md;
   }
