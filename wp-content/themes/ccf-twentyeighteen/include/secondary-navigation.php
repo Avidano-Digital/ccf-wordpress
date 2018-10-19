@@ -6,23 +6,14 @@
         </a>
     </li>
     
-    <!-- Search --> 
-    <li>
-        <button class="btn no-btn-style"
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#desktop-search" 
-            aria-controls="desktop-search"
-            aria-expanded="false" 
-            aria-label="Toggle Search">
-                <span class="fas fa-search fs-lg"></span>
-                <span class="sr-only">Global Search</span>
-        </button>
-    </li>
-    
     <!-- Language --> 
     <li>
         <?php echo do_shortcode('[gtranslate]'); ?>
     </li>
 
+    <!-- Search --> 
+    <li>
+        <?php get_template_part('template-parts/site-search'); ?>
+    </li>
+    
 </ul>

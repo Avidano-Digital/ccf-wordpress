@@ -79,13 +79,13 @@
 
                     <div class="py-2">
                         <nav id="secondary-navigation">
-                            <?php include( 'include/secondary-navigation.php' );?>
+                            <?php include( 'include/secondary-navigation.php' ); ?>
                         </nav>
                     </div>
 
                     <div class="mt-auto">
                         <nav id="primary-navigation-desktop">
-                            <?php include( 'include/primary-navigation.php' );?>
+                            <?php include( 'include/primary-navigation.php' ); ?>
                         </nav>
                     </div>
 

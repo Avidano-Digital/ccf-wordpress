@@ -47,7 +47,7 @@ p{ @extend .f-serif; }
 #mobile-menu,
 #all-links{
 
-  ul{ 
+  ul:not(.link-list){ 
     @extend .list-unstyled;
     @extend .fs-md;
   }
@@ -135,7 +135,7 @@ p{ @extend .f-serif; }
 #mobile-menu{
 
   ul { @extend .px-3; }
-  ul > li{ @extend .mb-1; }
+  ul:not(.horizontal) > li{ @extend .mb-1; }
 
   li > a { @extend .text-white; }
 
@@ -194,28 +194,28 @@ p{ @extend .f-serif; }
   }
 }
 
-#search-site{
+// #search-site{
 
-  input, 
-  button
-  { @extend .border-0; }
+//   input, 
+//   button
+//   { @extend .border-0; }
 
-  div.form-group{
-    @extend .position-relative;
-  }
+//   div.form-group{
+//     @extend .position-relative;
+//   }
 
-  button{
-    @extend .border-0;
-    @extend .position-absolute;
-    top: 0;
-    right: 0;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    &:hover{
-      @extend .bg-white;
-    }
-  }
-}
+//   button{
+//     @extend .border-0;
+//     @extend .position-absolute;
+//     top: 0;
+//     right: 0;
+//     padding-left: 1rem !important;
+//     padding-right: 1rem !important;
+//     &:hover{
+//       @extend .bg-white;
+//     }
+//   }
+// }
 
 ////////////////////////////////////////
 // Featured Panels and Blocks
@@ -484,11 +484,11 @@ figure,
 }
 
 #gtranslate_selector{
-  @extend .bg-light;
-  @extend .rounded;
+
+  @extend .bg-white;
   @extend .custom-select;
   @extend .custom-select-sm;
-  border-color: transparent;
+  // border-color: transparent;
   &:focus{
     box-shadow: none;
 

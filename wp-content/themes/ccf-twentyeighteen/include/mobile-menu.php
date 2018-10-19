@@ -1,21 +1,36 @@
-<nav class="py-4">
-    
+<div class="container-fluid bg-light py-3">
+
+    <div class="row matrix-gutter">
+
+        <div class="col-xs">
+            <?php echo do_shortcode('[gtranslate]'); ?>
+        </div>
+        <!-- .col -->
+
+        <div class="col-xs">            
+            <?php get_template_part('template-parts/site-search'); ?>
+        </div>
+        <!-- .col -->
+
+    </div>
+    <!-- .row -->
+
+</div>
+
+<nav class="shadow-sm">
+
     <div id="accordion" class="accordion-group" role="tablist">
 
         <div>
 
-            <button
-            data-toggle="collapse" 
-            data-target="#about-us" 
-            aria-expanded="false" 
-            aria-controls="about-us">
+            <button data-toggle="collapse" data-target="#about-us" aria-expanded="false" aria-controls="about-us">
                 <span class="title">About Us</span>
             </button>
 
             <div id="about-us" class="collapse" data-parent="#accordion">
 
                 <div class="bg-dark py-3">
-                
+
                     <ul>
                         <li class="leader">What We Do</li>
                         <li><a href="#">Research</a></li>
@@ -23,7 +38,7 @@
                         <li><a href="#">Conservation</a></li>
                         <li><a href="#">International Cheetah Day</a></li>
                     </ul>
-                    
+
                     <ul>
                         <li class="leader">Who We Are</li>
                         <li><a href="#">Mission and Vision</a></li>
@@ -40,10 +55,7 @@
         </div>
 
         <div>
-            <button data-toggle="collapse" 
-            data-target="#take-action" 
-            aria-expanded="false" 
-            aria-controls="take-action">
+            <button data-toggle="collapse" data-target="#take-action" aria-expanded="false" aria-controls="take-action">
                 <span class="title">Take Action</span>
             </button>
 
@@ -59,12 +71,9 @@
                 </div>
             </div>
         </div>
-        
+
         <div>
-            <button data-toggle="collapse" 
-            data-target="#learn" 
-            aria-expanded="false" 
-            aria-controls="learn">
+            <button data-toggle="collapse" data-target="#learn" aria-expanded="false" aria-controls="learn">
                 <span class="title">Learn</span>
             </button>
 
@@ -83,10 +92,7 @@
         </div>
 
         <div>
-            <button data-toggle="collapse" 
-            data-target="#news" 
-            aria-expanded="false" 
-            aria-controls="news">
+            <button data-toggle="collapse" data-target="#news" aria-expanded="false" aria-controls="news">
                 <span class="title">News</span>
             </button>
 
@@ -102,10 +108,7 @@
         </div>
 
         <div>
-            <button data-toggle="collapse" 
-            data-target="#events" 
-            aria-expanded="false" 
-            aria-controls="events">
+            <button data-toggle="collapse" data-target="#events" aria-expanded="false" aria-controls="events">
                 <span class="title">Events</span>
             </button>
 
