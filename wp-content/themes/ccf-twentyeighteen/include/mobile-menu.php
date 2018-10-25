@@ -107,7 +107,9 @@
             </div>
         </div>
 
-        <div>
+
+        <!-- <div>
+
             <button data-toggle="collapse" data-target="#events" aria-expanded="false" aria-controls="events">
                 <span class="title">Events</span>
             </button>
@@ -120,8 +122,11 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div><!-- #accordion -->
 
+        <a class="" href="/">
+            Events
+        </a>
 </nav>

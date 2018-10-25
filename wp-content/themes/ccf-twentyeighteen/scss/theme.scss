@@ -139,6 +139,16 @@ p{ @extend .f-serif; }
 
   li > a { @extend .text-white; }
 
+  nav > a{
+
+    @extend .btn;
+    @extend .text-body;
+    @extend .fs-rg;
+    @extend .font-weight-normal;
+    
+    background: white;
+  }
+
   #accordion button, 
   #accordion > a{
     @extend .btn;
