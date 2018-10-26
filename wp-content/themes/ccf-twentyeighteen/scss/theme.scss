@@ -204,7 +204,6 @@ p{ @extend .f-serif; }
 ////////////////////////////////////////
 
 a.featured-article{
-  
   @extend .text-body;
 
   div{ 
@@ -234,7 +233,6 @@ a.featured-article{
 // Infographics
 ////////////////////////////////////////
 
-
 #map-affiliates{
   
   @extend .w-100;
@@ -261,7 +259,9 @@ span.fa-circle{
   &.partner-organization{ color: #C1BFB7; }
 }
 
+////////////////////////////////////////
 // Leaflet UI
+////////////////////////////////////////
 
 .leaflet-popup-content-wrapper {
   @extend .rounded;
