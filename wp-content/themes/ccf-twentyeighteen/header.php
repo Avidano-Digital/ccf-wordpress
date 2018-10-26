@@ -24,7 +24,7 @@
 
             <div class="row align-items-center">
 
-                <div id="wrap-logo" class="col-sm py-2">
+                <div id="wrap-logo" class="col-md text-center text-md-left py-2">
                     <a class="d-inline-block" href="/" title="Home">
                         <?php the_custom_logo(); ?>
                     </a>
@@ -32,13 +32,13 @@
                 <!-- .col -->
 
                 <!-- separator -->
-                <div class="col-12 border-top d-sm-none"></div>
+                <div class="col-12 border-top d-md-none"></div>
 
                 <div class="col d-xl-none py-2">
 
-                    <div class="row align-items-center justify-content-between justify-content-sm-end">
+                    <div class="row align-items-center justify-content-between justify-content-md-end">
 
-                        <div class="col-auto order-sm-last">
+                        <div class="col-auto order-md-last">
                         
                             <button class="btn no-btn-style fs-lg" 
                                 type="button" 
@@ -75,7 +75,7 @@
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-auto d-none d-xl-flex flex-column align-self-stretch">
+                <div class="col-md-auto d-none d-xl-flex flex-column align-self-stretch">
 
                     <div class="py-2">
                         <nav id="secondary-navigation">

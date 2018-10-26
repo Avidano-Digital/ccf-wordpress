@@ -63,12 +63,6 @@ p{ @extend .f-serif; }
   }
 }
 
-@include media-breakpoint-down(xs){
-  #wrap-logo{
-    text-align: center;
-  }
-}
-
 #secondary-navigation{
   a { @extend .text-body; }
 }
@@ -134,20 +128,21 @@ p{ @extend .f-serif; }
 
 #mobile-menu{
 
+  // Direct links (not in accordion)
+  
+  nav > a{
+    @extend .fs-rg;
+    @extend .btn;
+    @extend .text-body;
+    @extend .font-weight-normal;
+  }
+
+  // Child links (accordion)
+  
   ul { @extend .px-3; }
   ul:not(.horizontal) > li{ @extend .mb-1; }
 
   li > a { @extend .text-white; }
-
-  nav > a{
-
-    @extend .btn;
-    @extend .text-body;
-    @extend .fs-rg;
-    @extend .font-weight-normal;
-    
-    background: white;
-  }
 
   #accordion button, 
   #accordion > a{
@@ -203,29 +198,6 @@ p{ @extend .f-serif; }
       @extend .font-weight-bold;
   }
 }
-
-// #search-site{
-
-//   input, 
-//   button
-//   { @extend .border-0; }
-
-//   div.form-group{
-//     @extend .position-relative;
-//   }
-
-//   button{
-//     @extend .border-0;
-//     @extend .position-absolute;
-//     top: 0;
-//     right: 0;
-//     padding-left: 1rem !important;
-//     padding-right: 1rem !important;
-//     &:hover{
-//       @extend .bg-white;
-//     }
-//   }
-// }
 
 ////////////////////////////////////////
 // Featured Panels and Blocks
@@ -383,7 +355,6 @@ $leaflet-button-color: white;
   }
 }
 
-
 .pattern-border-top{
   
   @extend .position-relative;
@@ -406,76 +377,7 @@ $leaflet-button-color: white;
 
 dl p{ margin-bottom: 0.5rem; }
 
-article header > p::first-letter {
-    initial-letter: 3;
-}
 
-
-figure{
-  @extend .figure;
-
-  figcaption{
-    @extend .figure-caption;
-    @extend .fs-md;
-  }
-
-}
-
-// Set top and bottom margins
-
-figure, 
-.alignwide, 
-.alignfull
-{ @extend .my-5; }
-
-.gutenberg-compatible-template {
-
-  .entry-content{
-
-    > * {  
-      @extend .container;
-      @extend .narrow;
-    }
-
-    .alignwide,
-    .alignfull
-    { @extend .px-0; }
-      
-    .alignwide { @extend .container; }
-
-    .alignfull {
-      @extend .w-100;
-      @extend .mw-100;
-    }
-
-
-
-    blockquote {
-      p { 
-        @extend .f-sans-serif; 
-        @extend .fs-xl; 
-        @extend .font-weight-light; 
-      }
-    }
-  
-    blockquote.wp-block-pullquote {
-      @extend .border-light;
-      @extend .border-top;
-      @extend .border-bottom;
-      @extend .p-3;
-      @extend .p-xl-5;
-      @extend .offset-gutter-x;
-    }
-    
-    figure.block-embed-youtube{
-      @extend .embed-responsive;
-      @extend .embed-responsive-16by9;
-
-    }
-
-  } 
-
-}
 
 .blog section{
 
@@ -490,14 +392,18 @@ figure,
 
 }
 
-#gtranslate_selector{
 
+
+
+
+////////////////////////////////////////
+// Translate
+////////////////////////////////////////
+
+#gtranslate_selector{
   @extend .bg-white;
   @extend .custom-select;
   @extend .custom-select-sm;
-  // border-color: transparent;
-  &:focus{
-    box-shadow: none;
 
-  }
+  &:focus{ box-shadow: none; }
 }
