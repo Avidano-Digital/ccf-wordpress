@@ -497,19 +497,15 @@ $gallery: true;
   }
 }
 
-.list-group.thumbnail-links{
-  .list-group-item{
-    @extend .border-0;
-    @extend .p-0;
-    @extend .list-group-item-secondary;
-    margin-bottom: $border-width;
-  }
-  img{
-    @extend .border-right;
-    @extend .border-info;
-    width: 80px;
-  }
-  span{ @extend .px-3; }
+.thumbnail-links{
+  @extend .list-unstyled;
+  
+  li{ margin-bottom: $border-width; }
+  
+  a{ @extend .text-secondary; }
+
+  img{ max-width: 80px; }
+  span.title{ @extend .px-3; }
 }
 ////////////////////////////////////////
 // Link Lists

@@ -417,51 +417,30 @@
                       <span>CCF Headquarters, Namibia</span>
                   </ul>
 
-                  <!-- <hr class="mb-4 opacity-20"> -->
-
-                  <div class="list-group thumbnail-links d-xl-none">
-                    <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
-                      <img class="" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
-                      <span class="title">Research</span>
-                      <span class="fas fa-angle-right ml-auto"></span>
-                    </a>
-                    <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
-                      <img class="" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
-                      <span class="title">Education</span>
-                      <span class="fas fa-angle-right ml-auto"></span>
-                    </a>
-                    <a class="list-group-item list-group-item-action d-flex align-items-center" href="#">
-                      <img class="" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
-                      <span class="title">Conservation</span>
-                      <span class="fas fa-angle-right ml-auto"></span>
-                    </a>
-                  </div>
-
-                  <div class="row no-gutters text-center d-none d-xl-flex">
-
-                    <div class="col pr-4">
-                      <img class="rounded-circle mx-auto mb-3" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
-                      <h5>
-                        <a href="#" class="h5 text-primary">Research</a>
-                      </h5>
-                    </div>
-                    <div class="col pr-4">
-                      <img class="rounded-circle mx-auto mb-3" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
-                      <h5>
-                        <a href="#" class="h5 text-primary">Education</a>
-                      </h5>
-                    </div>
-                    <div class="col pr-4">
-                      <img class="rounded-circle mx-auto mb-3" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
-                      <h5>
-                        <a href="#" class="h5 text-primary">Conservation</a>
-                      </h5>
-                    </div>
-
-                  </div>
+                  <ul class="link-list horizontal d-none d-lg-block">
+                    <li>
+                      <a href="#" class="text-primary text-center">
+                        <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
+                        <h4>Research</h4> 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-primary text-center">
+                        <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
+                        <h4>Education</h4>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-primary text-center">
+                        <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
+                        <h4>Conservation</h4>
+                      </a>
+                    </li>
+                  </ul>
 
                 </div>
                 <!-- .narrow -->
+
               </div>
               <!-- .col -->
             </div>
