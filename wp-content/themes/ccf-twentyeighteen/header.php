@@ -21,10 +21,10 @@
     <header id="global-header">
 
         <div class="container-fluid shadow-sm z-index-900">
+        
+            <div class="row align-items-center justify-content-between">
 
-            <div class="row align-items-center">
-
-                <div id="wrap-logo" class="col-md text-center text-md-left py-2">
+                <div id="wrap-logo" class="col-md-auto text-center text-md-left py-2">
                     <a class="d-inline-block" href="/" title="Home">
                         <?php the_custom_logo(); ?>
                     </a>

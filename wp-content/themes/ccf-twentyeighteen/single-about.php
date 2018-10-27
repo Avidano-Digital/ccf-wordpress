@@ -6,6 +6,14 @@ Template Name: About
 
 get_header(); ?>
 
+<?php                             
+    $current = $post->ID;
+    $parent = $post->post_parent;
+    $grandparent_get = get_post($parent);
+    $grandparent = $grandparent_get->post_parent;
+    $siblings = wp_list_pages('title_li=&child_of=' . $parent . '&echo=0&post_type=about');
+?>
+
 <main id="content">
 
     <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
@@ -22,17 +30,9 @@ get_header(); ?>
             </div>
             <div class="card-img-overlay d-flex">
                 <div class="align-self-end container-fluid">
-                    <h1 class="display-1 text-right text-muted">
-                    
-                        <?php                             
-                            $current = $post->ID;
-                            $parent = $post->post_parent;
-                            $grandparent_get = get_post($parent);
-                            $grandparent = $grandparent_get->post_parent;
-                            $siblings = wp_list_pages('title_li=&child_of=' . $parent . '&echo=0&post_type=about');
-                        ?>
-
-                        <?php echo get_the_title($parent); ?>
+                    <h1 class="text-right text-secondary">
+                
+                        <em><?php echo get_the_title($parent); ?></em>
 
                     </h1>
                 </div>
@@ -47,7 +47,7 @@ get_header(); ?>
 
         <div class="row">
 
-            <div class="col-xl-3 bg-dark">
+            <div class="col-xl-3 bg-dark px-xl-4">
 
                 <div class="py-xl-5">
 

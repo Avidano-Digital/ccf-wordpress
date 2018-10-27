@@ -58,7 +58,7 @@ $gradients: true;
       @extend .position-absolute;
       @extend .w-100;
       @extend .h-100;
-      // bottom: -1px;
+      bottom: -1px;
     }
   }
 
@@ -75,7 +75,7 @@ $gradients: true;
       $second-color-opacity: 0.85,
       $first-color-position: 25%,
       $second-color-position: 100%
-        );
+    );
   }
 
 } // end if
@@ -152,6 +152,7 @@ $featured-panel: true;
     overflow: hidden;
 
     h1{ 
+      @extend .display-1;
       line-height: 1;
       margin-bottom: -($spacer-3);
       font-size: 8rem;

@@ -381,18 +381,27 @@ dl p{ margin-bottom: 0.5rem; }
 
 .blog section{
 
-  p:first-child:first-letter {
-    @extend .text-secondary;
-    float: left;
-    font-size: 6.5rem;
-    line-height: 4rem;
-    margin-right: 1.5rem;
-    margin-top: .815rem;
-  }
+  // p:first-child:first-letter {
+  //   @extend .text-secondary;
+  //   float: left;
+  //   font-size: 6.5rem;
+  //   line-height: 4rem;
+  //   margin-right: 1.5rem;
+  //   margin-top: .815rem;
+  // }
 
 }
 
 
+figure{
+  @extend .figure;
+
+  figcaption{
+    @extend .figure-caption;
+    @extend .fs-md;
+  }
+
+}
 
 
 
