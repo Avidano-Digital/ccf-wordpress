@@ -31,6 +31,7 @@
         add_image_size( 'Feature Tertiary', 500, 250, true );
 
         add_image_size( 'Hero', 1500, 500, true );
+        add_image_size( 'Article Feature', 1500, 1000, true );
 
         // Custom JPG Compression
 

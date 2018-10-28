@@ -54,20 +54,20 @@ get_header(); ?>
                     <div class="btn-toggle d-xl-none offset-gutter-x">
 
                         <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
-                            <span class="title">Jump To</span>
+                            <span class="title"><?php echo get_the_title($parent); ?></span>
                         </a>
 
                     </div>
 
                     <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
-                        <?php if ($siblings) : ?>
+                        <?php if ( is_single( 'research' ) ) : ?>
 
-                        <ul class="link-list text-white py-4 py-xl-0 d-none">
+                        <ul class="link-list text-white py-4 py-xl-0">
                             <?php echo $siblings; ?>
                         </ul>
 
-                        <?php endif; ?>
+                        <?php else: ?>
 
                         <ul class="link-list text-white py-4 py-xl-0">
                             <li><a href="#" title="Mission and Vision">Mission and Vision</a></li>
@@ -78,6 +78,7 @@ get_header(); ?>
                             <li <?php if ( is_single( 'ccf-global' ) ){ echo 'class="current_page_item"'; } ?>><a href="/about-us/who-we-are/ccf-global/" title="CCF Global">CCF Global</a></li>
                         </ul>
 
+                        <?php endif; ?>
 
                     </nav>
 
@@ -92,15 +93,6 @@ get_header(); ?>
                 <header class="narrow">
                     <h1 class="display-3 text-center mb-3"><?php the_title(); ?></h1>
                 </header>
-
-                <section class="mb-5">
-
-                    <div class="narrow">
-                        <p><?php the_content(); ?></p> 
-                    </div>
-                    <!-- .narrow -->
-
-                </section>
 
                 <?php if ( is_single( 'ccf-global' ) ) : ?>
                 

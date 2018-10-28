@@ -8,7 +8,7 @@
 
         ?>
 
-        <section class="mb-5" id="<?php if ($id){ echo $id; } ?>">
+        <section class="mb-5">
 
             <?php if( have_rows('section_content') ): while( have_rows('section_content') ): the_row(); ?>
 
@@ -146,9 +146,9 @@
                         <div class="card-img-overlay d-flex">
                             <div class="align-self-end">
                                 <div class="container px-0 py-3">
-                                    <div class="narrow">
+                                    <div class="narrow text-shadow">
 
-                                        <blockquote class="blockquote text-white text-shadow">
+                                        <blockquote class="blockquote text-white">
                                             
                                             <div class="fs-lg mb-2">
                                                 <?php echo $text; ?>
@@ -216,7 +216,7 @@
                         <div class="card-img-overlay d-flex">
                             <div class="align-self-end">
                                 <div class="container px-0 py-3">
-                                    <div class="narrow">
+                                    <div class="narrow text-shadow">
 
                                         <h3 class="text-primary"><?php echo $headline; ?></h3>
                                         
