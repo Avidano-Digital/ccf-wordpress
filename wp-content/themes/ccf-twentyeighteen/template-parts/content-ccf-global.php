@@ -67,7 +67,44 @@
             <h2><?php echo $title; ?></h2>
             <p><?php echo $description; ?></p>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
+        <!-- affiliate -->
 
         <?php endwhile; endif; /* section */ ?>
 
