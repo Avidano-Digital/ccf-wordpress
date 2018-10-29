@@ -42,21 +42,48 @@
 
 <section class="narrow mb-5 mb-xl-6">
 
-    <h1 class="font-weight-light display-4 text-muted mb-4">Headquarters</h2>
+    <h1 class="display-4 font-weight-light text-muted mb-4">Headquarters</h2>
 
         <section id="namibia" class="mb-5 mb-xl-6">
 
             <h2 class="font-weight-bold">Namibia</h2>
 
             <p>The Cheetah Conservation Fund is a registered Trust in Namibia (Incorporated Association Not
-                For Gain). You can
-                <a href="#">donate</a> to the CCF account in Namibia.</p>
+                For Gain). You can <a href="#">donate</a> to the CCF account in Namibia.</p>
 
             <address class="f-serif">
                 <strong>Address:</strong>
                 <br> P.O. Box 1755
                 <br> Otjiwarongo, Namibia
             </address>
+
+            <div class="my-4">
+
+                <dl class="row no-gutters justify-content-between border-top py-2 mb-0 fs-md">
+
+                    <dt class="col-sm-auto">
+                        Charitable Registration #:
+                    </dt>
+
+                    <dd class="col-sm-auto">
+                        21/20002/341
+                    </dd>
+
+                </dl>
+
+                <dl class="row no-gutters justify-content-between border-top py-2 mb-0 fs-md">
+
+                    <dt class="col-sm-auto">
+                        Phone:
+                    </dt>
+
+                    <dd class="col-sm-auto">
+                        +264 (0) 67 306 247
+                    </dd>
+
+                </dl>
+
+            </div>
 
             <ul class="two-column-list-group mb-4">
                 <li>
