@@ -1,3 +1,12 @@
+<div class="mb-5 mb-xl-6">
+
+    <div class="narrow">
+        <p>The Cheetah Conservation Fund is an international non-profit organization headquartered in Namibia, Africa. CCF has operations in the United States, Canada, the United Kingdom, and Australia, with partner organizations in several other nations.</p>
+    </div>
+    <!-- .narrow -->
+
+</div>
+
 <div class="offset-gutter-x">
     <figure class="mb-5 mb-xl-6 w-100">
 
@@ -39,6 +48,7 @@
 
     </figure>
 </div>
+<!-- .offset-gutter-x -->
 
 <?php if( have_rows('ccf_global_content') ):
 
@@ -62,46 +72,51 @@
         
         ?>
 
-        <section class="mb-5 mb-xl-6" id="<?php echo $id; ?>">
+        <section class="mb-5 mb-xl-6" <?php if($id !== '') echo 'id="' . $id . '"' ?>>
 
             <h2><?php echo $title; ?></h2>
             <p><?php echo $description; ?></p>
 
+            <?php if( have_rows('details') ): ?>
 
+            <div class="my-4">
+                    
+            <?php while( have_rows('details') ): the_row();
 
+            $type = get_sub_field('type');
+            $title = get_sub_field('title');
+            $text = get_sub_field('text');
+            $link = get_sub_field('link');
 
+            ?>
+        
+                <dl class="row no-gutters justify-content-between border-top py-2 mb-0 fs-md">
 
+                    <dt class="col-sm-auto">
+                        <?php echo $title; ?>
+                    </dt>
 
+                    <?php if ( $type == 'Static Text' ) : ?>
+                    
+                    <dd class="col-sm-auto">
+                        <?php echo $text; ?>
+                    </dd>
 
+                    <?php elseif ( $type == 'Link' ) : ?>
 
+                    <dd class="col-sm-auto">
+                        <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+                    </dd>
 
+                    <?php endif; ?>
+                </dl>
 
+            <?php endwhile; ?>
 
+            </div>
+            <!-- .my-5 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <?php endif; /* details */ ?>
 
         </section>
         <!-- affiliate -->
