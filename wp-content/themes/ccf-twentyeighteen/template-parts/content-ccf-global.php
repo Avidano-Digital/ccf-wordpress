@@ -79,7 +79,7 @@
 
             <?php if( have_rows('details') ): ?>
 
-            <div class="my-4">
+            <div class="my-4 border-bottom">
                     
             <?php while( have_rows('details') ): the_row();
 
