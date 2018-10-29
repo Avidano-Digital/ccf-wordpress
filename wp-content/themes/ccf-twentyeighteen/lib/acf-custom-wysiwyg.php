@@ -55,29 +55,29 @@
         // Define the style_formats array and insert into 'style_formats'
         $style_formats = array(
 
-                array(
-                    'title' => 'Headline (h2)',
-                    'block' => 'h2',
-                    'classes' => 'display-4 font-weight-bold',
-                ),
-                array(
-                    'title' => 'Headline (h2) Light',
-                    'block' => 'h2',
-                    'classes' => 'display-4 font-weight-light text-muted mb-4',
-                ),
-                array(
-                    'title' => 'Headline (h3)',
-                    'block' => 'h3',
-                ),
-                array(
-                    'title' => 'Headline (h4)',
-                    'block' => 'h4',
-                ),
-                array(
-                    'title' => 'Paragraph',
-                    'block' => 'p',
-                )
-            );
+            array(
+                'title' => 'Headline (h2)',
+                'block' => 'h2',
+                'classes' => 'h1',
+                'exact' => false,
+            ),
+            array(
+                'title' => 'Headline (h3)',
+                'block' => 'h3',
+            ),
+            array(
+                'title' => 'Headline (h4)',
+                'block' => 'h4',
+            ),
+            array(
+                'title' => 'Headline (h5)',
+                'block' => 'h5',
+            ),
+            array(
+                'title' => 'Paragraph',
+                'block' => 'p',
+            )
+        );
 
         $init_array['style_formats'] = json_encode( $style_formats );  
         return $init_array;  
