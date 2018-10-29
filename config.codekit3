@@ -16465,6 +16465,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentyeighteen/acf-json/group_5bd6d7aec65bd.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentyeighteen/acf-json/group_5bd6d7aec65bd-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentyeighteen/bootstrap.4.1.3/scss/_alert.scss": {
 		"aP": 0,
 		"bl": 0,
