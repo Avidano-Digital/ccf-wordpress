@@ -61,25 +61,10 @@ get_header(); ?>
 
                     <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
-                        <?php if ( is_single( 'research' ) ) : ?>
-
                         <ul class="link-list text-white py-4 py-xl-0">
                             <?php echo $siblings; ?>
                         </ul>
-
-                        <?php else: ?>
-
-                        <ul class="link-list text-white py-4 py-xl-0">
-                            <li><a href="#" title="Mission and Vision">Mission and Vision</a></li>
-                            <li <?php if ( is_single( 'dr-laurie-marker' ) ){ echo 'class="current_page_item"'; } ?>><a href="/about-us/who-we-are/dr-laurie-marker/" title="Dr. Laurie Marker">Dr. Laurie Marker</a></li>
-                            <li><a href="#" title="Our Center">Our Center</a></li>
-                            <li><a href="#" title="History of CCF">History of CCF</a></li>
-                            <li><a href="#" title="Staff and Board">Staff and Board</a></li>
-                            <li <?php if ( is_single( 'ccf-global' ) ){ echo 'class="current_page_item"'; } ?>><a href="/about-us/who-we-are/ccf-global/" title="CCF Global">CCF Global</a></li>
-                        </ul>
-
-                        <?php endif; ?>
-
+                        
                     </nav>
 
                     <?php get_template_part('template-parts/aside-donate'); ?>

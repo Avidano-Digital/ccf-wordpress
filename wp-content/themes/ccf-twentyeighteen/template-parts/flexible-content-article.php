@@ -253,6 +253,65 @@
         </div>
         <!-- .offset-gutter-x -->
 
-    <?php endif; /* section | banner */ ?>
+    <?php elseif( get_row_layout() == 'alternating_blocks' ):  
+
+        $row = get_sub_field('row');
+
+        ?>
+
+
+            <?php if( have_rows('row') ): ?>
+
+            <div class="my-6">
+                    
+            <?php while( have_rows('row') ): the_row();
+
+            $image = get_sub_field('image');
+            $headline = get_sub_field('headline');
+            $text = get_sub_field('text');
+
+            $i++
+
+            ?>
+
+                <div class="row no-gutters offset-gutter-x bg-info <?php if($i % 2 == 0) echo 'bg-green' ?>">
+
+                    <div class="col-xxl-6 <?php if($i % 2 == 0) echo 'order-xxl-last' ?>">
+                        <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-xxl-6 d-flex <?php if($i % 2 == 0) echo 'order-xxl-first' ?>">
+                        <div class="narrow text-white text-center align-self-center p-4">
+                            <h3><?php echo $headline; ?></h3> 
+                            <p class="fs-sm"><?php echo $text; ?></p> 
+                        </div>
+                    </div>
+                    <!-- .col -->
+
+                </div>
+                <!-- .row -->
+
+            <?php endwhile; ?>
+
+            </div>
+            <!-- .my-5 -->
+
+            <?php endif; /* details */ ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <?php endif; /* section | alternating_blocks */ ?>
     
 <?php endwhile; endif; /* article_content */ ?>
