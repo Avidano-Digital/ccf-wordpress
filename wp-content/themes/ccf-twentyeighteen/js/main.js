@@ -28,9 +28,6 @@ jQuery(document).ready(function ($) {
         timeout: 300
     });
 
-    // $(header_drop_downs).focus(sub_nav_hover_on);
-    // $(header_drop_downs).blur(sub_nav_hover_off);
-
     // Popovers
     $(document).ready(function () {
         $('[data-toggle="popover"]').popover();

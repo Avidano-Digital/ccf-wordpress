@@ -19,7 +19,7 @@
 
             ?>
 
-            <dl class="row no-gutters border-top py-3 my-0 fs-md">
+            <dl class="row no-gutters border-top py-2 mb-0 fs-md">
                 
                 <dt class="col-sm-3"><?php echo $date; ?></dt>
 
