@@ -17655,12 +17655,12 @@
 		"oAP": "/wp-content/themes/ccf-twentyeighteen/images/article/ccf-cheetah-museum.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentyeighteen/images/article/ccf-model-farm.jpg": {
 		"ft": 16384,
-		"iS": 108467,
+		"iS": 122885,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentyeighteen/images/article/ccf-model-farm.jpg",
@@ -20685,7 +20685,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-cheetah-museum-300x200.jpg": {
 		"ft": 16384,
-		"iS": 18895,
+		"iS": 18308,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-cheetah-museum-300x200.jpg",
@@ -20696,7 +20696,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-cheetah-museum-500x250.jpg": {
 		"ft": 16384,
-		"iS": 33764,
+		"iS": 33051,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-cheetah-museum-500x250.jpg",
@@ -20707,7 +20707,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-cheetah-museum-600x350.jpg": {
 		"ft": 16384,
-		"iS": 49683,
+		"iS": 48811,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-cheetah-museum-600x350.jpg",
@@ -20718,7 +20718,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-cheetah-museum-750x500.jpg": {
 		"ft": 16384,
-		"iS": 87853,
+		"iS": 85076,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-cheetah-museum-750x500.jpg",
@@ -20727,9 +20727,31 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2018/10/ccf-cheetah-museum-750x525.jpg": {
+		"ft": 16384,
+		"iS": 73728,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/ccf-cheetah-museum-750x525.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/ccf-cheetah-museum-750x750.jpg": {
+		"ft": 16384,
+		"iS": 120409,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/ccf-cheetah-museum-750x750.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2018/10/ccf-cheetah-museum.jpg": {
 		"ft": 16384,
-		"iS": 99250,
+		"iS": 134130,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-cheetah-museum.jpg",
@@ -20740,7 +20762,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-model-farm-300x200.jpg": {
 		"ft": 16384,
-		"iS": 21147,
+		"iS": 17595,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-model-farm-300x200.jpg",
@@ -20751,7 +20773,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-model-farm-500x250.jpg": {
 		"ft": 16384,
-		"iS": 36524,
+		"iS": 27622,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-model-farm-500x250.jpg",
@@ -20762,7 +20784,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-model-farm-600x350.jpg": {
 		"ft": 16384,
-		"iS": 55827,
+		"iS": 41762,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-model-farm-600x350.jpg",
@@ -20773,7 +20795,7 @@
 		},
 	"/wp-content/uploads/2018/10/ccf-model-farm-750x500.jpg": {
 		"ft": 16384,
-		"iS": 99808,
+		"iS": 70577,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-model-farm-750x500.jpg",
@@ -20782,9 +20804,31 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2018/10/ccf-model-farm-750x525.jpg": {
+		"ft": 16384,
+		"iS": 73974,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/ccf-model-farm-750x525.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/ccf-model-farm-750x750.jpg": {
+		"ft": 16384,
+		"iS": 111554,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/ccf-model-farm-750x750.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2018/10/ccf-model-farm.jpg": {
 		"ft": 16384,
-		"iS": 108467,
+		"iS": 122885,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/ccf-model-farm.jpg",
