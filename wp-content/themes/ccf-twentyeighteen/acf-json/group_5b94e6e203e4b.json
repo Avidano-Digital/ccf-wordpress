@@ -393,7 +393,7 @@
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
-                                        "class": "",
+                                        "class": "fs-md",
                                         "id": ""
                                     },
                                     "default_value": "",
@@ -442,5 +442,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1540833387
+    "modified": 1540835066
 }

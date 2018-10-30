@@ -36,9 +36,9 @@
     
     <?php endif; /* footer_features */ ?>
     
-    <div class="container-fluid" id="all-links">
+    <div class="container-fluid wide" id="all-links">
 
-        <div class="wide py-6">
+        <div class="wide px-lg-2 py-6">
 
             <nav class="row">
 
@@ -162,6 +162,12 @@
                             <a href="#">Press Kit</a>
                         </li>
                     </ul>
+
+                </div>
+                <!-- .col-* -->
+
+                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
+
                     <ul class="link-list">
                         <li>
                             <a href="#" title="Events">
@@ -169,12 +175,6 @@
                             </a>
                         </li>
                     </ul>
-
-                </div>
-                <!-- .col-* -->
-
-                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
-
                     <ul class="link-list px-0">
                         <li>
                             <a href="#" title="For Kids">
@@ -195,15 +195,12 @@
 
     <div class="container-fluid bg-light">
 
-        <h4 class="sr-only">Cheetah Conservation Fund Global Navigation</h4>
-
-        <div class="wide py-6">
+        <div class="wide px-lg-2 py-6">
 
             <div class="row">
 
                 <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
-
-                    <h5 class="">Cheetah Conservation Fund</h5>
+                    <h5>Cheetah Conservation Fund</h5>
                     <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
                         visitors to see our facilities in person.</p>
                     <p class="fs-md"><a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Come Join Us!</a></p>
@@ -212,9 +209,9 @@
 
                 <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
 
-                    <h5 class="">Where We Work</h5>
+                    <h5>Where We Work</h5>
                     <p class="fs-md">Cheetah Conservation Fund is an international non-profit organization with fundraising
-                        operations located in: Australia, Canada, Italy, The United Kingdom, and The United States, working
+                        operations located in: Australia, Canada, Italy, United Kingdom, and United States, working
                         in cooperation with staff and partners around the world.</p>
                     <p class="fs-md">
                         <a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Contact Us</a>
@@ -224,16 +221,11 @@
                 <!-- .col -->
 
                 <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
-                    <h5 class="">Keep Up With the Cheetahs</h5>
-                    <p class="fs-md">Never miss an update. Subscribe to the <a href="#" class="blended-link">CCF Newsletter</a>
-                        and follow us on social media.</p>
 
-                    <ul class="link-list horizontal">
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fas fa-envelope"></span>
-                            </a>
-                        </li>
+                    <h5>Keep Up With the Cheetahs</h5>
+                    <p class="fs-md">Never miss an update. Follow us on social media and recieve our newsletters.</p>
+
+                    <ul class="link-list horizontal fs-lg">
                         <li>
                             <a class="text-body" href="#">
                                 <span class="fab fa-facebook-f"></span>
@@ -261,12 +253,19 @@
                         </li>
                     </ul>
 
+
+                    <a class="btn btn-outline-dark" href="#">
+                        <span class="far fa-envelope-open"></span>
+                        <span class="mx-1">Join our Newletters</span>
+                    </a>
+
+
                 </div>
                 <!-- .col -->
 
                 <div class="col-sm-10 col-lg-6 col-xl-3 mx-auto">
-                    <h5 class="">Support CCF</h5>
-                    <p class="fs-md">You can help save the cheetah from exinction! Support our research and conservation initiatives.</p>
+                    <h5>Support CCF</h5>
+                    <p class="fs-md">You can help save the cheetah from exinction!</p>
 
                     <div class="row matrix-border">
 
@@ -294,7 +293,7 @@
 
     </div>
 
-    <hr class="dark">
+
 
     <div class="container-fluid bg-dark">
         <div class="wide py-2">

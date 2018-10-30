@@ -187,7 +187,7 @@ $matrix-gutter-padding: ($grid-gutter-width / 4);
   margin-bottom: -($matrix-border-padding);
   margin-left: -($matrix-border-padding);
 
-  > [class^="col-"]{ padding: $matrix-border-padding; }
+  > [class^="col"]{ padding: $matrix-border-padding; }
 }
 
 .matrix-gutter{
@@ -196,7 +196,7 @@ $matrix-gutter-padding: ($grid-gutter-width / 4);
   margin-bottom: -($matrix-gutter-padding);
   margin-left: -($matrix-gutter-padding);
 
-  > [class^="col-"]{ padding: $matrix-gutter-padding; }
+  > [class^="col"]{ padding: $matrix-gutter-padding; }
 }
 ////////////////////////////////////////
 // Accordions and Toggle Buttons 

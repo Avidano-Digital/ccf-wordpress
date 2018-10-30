@@ -284,7 +284,7 @@
                     <div class="col-xxl-6 d-flex <?php if($i % 2 == 0) echo 'order-xxl-first' ?>">
                         <div class="narrow text-white text-center align-self-center p-4">
                             <h3><?php echo $headline; ?></h3> 
-                            <p class="fs-sm"><?php echo $text; ?></p> 
+                            <?php echo $text; ?>
                         </div>
                     </div>
                     <!-- .col -->

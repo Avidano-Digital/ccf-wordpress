@@ -207,77 +207,87 @@
     <section class="py-5 py-xl-7">
 
       <h2 class="sr-only">News and Videos from CCF</h2>
+      
+      <section class="container-fluid mb-5" id="latest-news">
 
-      <section class="container-fluid wide mb-5" id="latest-news">
+        <div class="wide px-lg-2">
 
-        <header class="row align-items-end justify-content-between mb-3">
-          <div class="col-md-auto">
-            <h3 class="display-4">Latest News</h3>
+          <header class="row align-items-end justify-content-between mb-3">
+            <div class="col-md-auto">
+              <h3 class="display-4">Latest News</h3>
+            </div>
+            <div class="col-md-auto">
+              <a class="blended-link" href="#">All News</a>
+            </div>
+          </header>
+          <!-- .row -->
+
+          <div class="row matrix-border">
+
+            <?php
+            global $post;
+            $args = array( 'category' => 'news', 'posts_per_page' => 3, 'orderby' => 'date' );
+            $postslist = get_posts( $args );
+            foreach ( $postslist as $post ) :
+            setup_postdata( $post ); ?>
+
+            <div class="col-md-4 mb-4 mb-md-0">
+              <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                <div>
+                <span><?php the_date(); ?></span>
+                <img class="w-100" src="<?php the_post_thumbnail_url( 'medium' ); ?>" alt="<?php the_title(); ?>">
+                </div>
+                <h5><?php the_title(); ?></h5>
+              </a>
+            </div>
+
+            <?php
+            endforeach; 
+            wp_reset_postdata();
+            ?>
+
           </div>
-          <div class="col-md-auto">
-            <a class="blended-link" href="#">All News</a>
-          </div>
-        </header>
-        <!-- .row -->
-
-        <div class="row matrix-border">
-
-          <?php
-          global $post;
-          $args = array( 'category' => 'news', 'posts_per_page' => 3, 'orderby' => 'date' );
-          $postslist = get_posts( $args );
-          foreach ( $postslist as $post ) :
-          setup_postdata( $post ); ?>
-
-          <div class="col-md-4 mb-4 mb-md-0">
-            <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-              <div>
-              <span><?php the_date(); ?></span>
-              <img class="w-100" src="<?php the_post_thumbnail_url( 'medium' ); ?>" alt="<?php the_title(); ?>">
-              </div>
-              <h5><?php the_title(); ?></h5>
-            </a>
-          </div>
-
-          <?php
-          endforeach; 
-          wp_reset_postdata();
-          ?>
+          <!-- .matrix-border -->
 
         </div>
-        <!-- .matrix-border -->
+        <!-- .wide -->
 
       </section>
       <!-- #latest-news -->
 
-      <section class="container-fluid wide" id="videos">
+      <section class="container-fluid" id="videos">
 
-        <header class="row align-items-end justify-content-between mb-3">
-          <div class="col-md-auto">
-            <h3 class="display-4">Videos</h3>
-          </div>
-          <div class="col-md-auto">
-            <a class="blended-link" href="#">All Videos</a>
-          </div>
-        </header>
+        <div class="wide px-lg-2">
 
-        <div class="row matrix-border">
-
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ViEOxkiz5VI" frameborder="0" allowTransparency="true"
-                allowfullscreen="true"></iframe>
+          <header class="row align-items-end justify-content-between mb-3">
+            <div class="col-md-auto">
+              <h3 class="display-4">Videos</h3>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aew2okRVGl8" frameborder="0" allowTransparency="true"
-                allowfullscreen="true"></iframe>
+            <div class="col-md-auto">
+              <a class="blended-link" href="#">All Videos</a>
             </div>
+          </header>
+
+          <div class="row matrix-border">
+
+            <div class="col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ViEOxkiz5VI" frameborder="0" allowTransparency="true"
+                  allowfullscreen="true"></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aew2okRVGl8" frameborder="0" allowTransparency="true"
+                  allowfullscreen="true"></iframe>
+              </div>
+            </div>
+
           </div>
+          <!-- .matrix-border -->
 
         </div>
-        <!-- .matrix-border -->
+        <!-- .wide -->
 
       </section>
       <!-- #videos -->
@@ -395,7 +405,9 @@
         <img class="card-img d-none d-xl-block" src="<?php echo get_template_directory_uri(); ?>/images/cheetah-range-lg.svg" alt="Placeholder">
 
         <div class="card-img-overlay d-flex p-0">
-          <div class="container-fluid wide align-self-center">
+          <div class="container-fluid align-self-center">
+          <div class="wide px-lg-2">
+
             <div class="row">
               <div class="col-xl-5">
                 <div class="narrow text-white mb-5 mb-xl-0">
@@ -445,8 +457,11 @@
               <!-- .col -->
             </div>
             <!-- .row -->
+          
           </div>
-          <!-- .align-self-center -->
+          <!-- .row -->
+          </div>
+          <!-- .container-fluid -->
         </div>
       </div>
 
@@ -475,14 +490,6 @@
 
                 <div class="col-md-6">
                   <a class="btn btn-lg btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-12">
-                  <a class="btn btn-lg btn-block btn-light" href="#" title="Join Our Newsletter">
-                    <span class="fas fa-envelope-open"></span>
-                    <span class="mx-1">Join Our Newsletter</span> 
-                  </a>
                 </div>
                 <!-- .col -->
 
