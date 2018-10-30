@@ -461,41 +461,8 @@ $gallery: true;
 } // end if else
 
 ////////////////////////////////////////
-// Two Column List Group
+// Thumbnail Links
 ////////////////////////////////////////
-
-.two-column-list-group{
-  background: green;
-  @extend .list-group;
-  @extend .fs-md;
-  @extend .mt-4;
-
-  > li{
-    @extend .list-group-item;
-    @extend .px-0;
-    @extend .border-left-0;
-    @extend .border-right-0;
-    
-    > span{
-      display: block; 
-
-      &.title{ @extend .font-weight-bold; }
-    }
-
-  }
-
-  @include media-breakpoint-up(sm){
-    > li > span{ 
-      width: 50%;
-      
-      &.title{ float: left; }
-      &.info{
-        float: right;
-        text-align: right;
-      }
-    }
-  }
-}
 
 .thumbnail-links{
   @extend .list-unstyled;
@@ -507,6 +474,7 @@ $gallery: true;
   img{ max-width: 80px; }
   span.title{ @extend .px-3; }
 }
+
 ////////////////////////////////////////
 // Link Lists
 ////////////////////////////////////////
