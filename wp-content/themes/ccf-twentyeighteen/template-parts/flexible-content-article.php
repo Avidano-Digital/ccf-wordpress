@@ -261,7 +261,7 @@
 
             <?php if( have_rows('row') ): ?>
 
-            <div class="my-6">
+            <div class="my-7">
                     
             <?php while( have_rows('row') ): the_row();
 
@@ -275,34 +275,20 @@
 
                 <div class="row no-gutters offset-gutter-x bg-info <?php if($i % 2 == 0) echo 'bg-green' ?>">
 
-                    <div class="col-lg-4 col-xl-6 text-center <?php if($i % 2 != 0) echo 'order-lg-last' ?>">
+                    <div class="col-lg-6 col-xl-6 text-center <?php if($i % 2 != 0) echo 'order-lg-last' ?>">
 
                         <?php if ($image) : ?>
-                            
-                            <div class="p-5 mx-auto d-lg-none">
-                                <img class="card-img rounded-circle" src="<?php echo $image['url']; ?>" style="max-width:350px;" alt="<?php echo $image['alt'] ?>">
-                            </div>
-
-                            <div class="d-none d-lg-block">
-                                <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
-                            </div> 
-
+                            <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
                         <?php else : ?>
-                            <div class="p-5 mx-auto d-lg-none">
-                                <img class="card-img rounded-circle" src="http://via.placeholder.com/750x750/000000/333333/.jpg" style="max-width:400px;"  alt="Placeholder">
-                            </div>
-
-                            <div class="d-none d-lg-block">
-                                <img class="card-img" src="http://via.placeholder.com/750x750/000000/333333/.jpg" alt="Placeholder">
-                            </div> 
+                            <img class="card-img" src="http://via.placeholder.com/750x750/000000/333333/.jpg" alt="Placeholder">
                         <?php endif; ?>
 
                     </div>
                     <!-- .col -->
 
-                    <div class="col-lg-8 col-xl-6 d-flex <?php if($i % 2 != 0) echo 'order-lg-first' ?>">
-                        <div class="narrow text-white align-self-center px-4">
-                            <h4><?php echo $headline; ?></h4> 
+                    <div class="col-lg-6 col-xl-6 d-flex <?php if($i % 2 != 0) echo 'order-lg-first' ?>">
+                        <div class="narrow text-white text-center align-self-center p-4">
+                            <h3><?php echo $headline; ?></h3> 
                             <?php echo $text; ?>
                         </div>
                     </div>
