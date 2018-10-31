@@ -101,6 +101,9 @@
                             <a href="#">Ways to Give</a>
                         </li>
                         <li>
+                            <a href="#">Events</a>
+                        </li>
+                        <li>
                             <a href="#">Volunteer Locally</a>
                         </li>
                         <li>
@@ -169,13 +172,6 @@
                 <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
                     <ul class="link-list">
-                        <li>
-                            <a href="#" title="Events">
-                                <span class="font-weight-bold mb-2">Events</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="link-list px-0">
                         <li>
                             <a href="#" title="For Kids">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">

@@ -129,6 +129,9 @@
                             <a href="#">Ways to Give</a>
                         </li>
                         <li>
+                            <a href="#">Events</a>
+                        </li>
+                        <li>
                             <a href="#">Volunteer Locally</a>
                         </li>
                         <li>

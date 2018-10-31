@@ -43,6 +43,7 @@
         <a href="#" title="Take Action">Take Action</a>
         <ul class="sub">
             <li><a href="#">Ways to Give</a></li>
+            <li><a href="#">Events</a></li>
             <li><a href="#">Volunteer Locally</a></li>
             <li><a href="#">Volunteer in Namibia</a></li>
             <li><a href="#">Visit CCF</a></li>
@@ -67,9 +68,6 @@
             <li><a href="#">Press Releases</a></li>
             <li><a href="#">Press Kit</a></li>
         </ul>
-    </li>
-    <li>
-        <a href="#" title="Events">Events</a>
     </li>
     <li>
         <a class="btn btn-primary donate" href="#" title="Donate">Donate</a>

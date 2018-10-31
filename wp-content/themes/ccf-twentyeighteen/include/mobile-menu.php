@@ -107,26 +107,6 @@
             </div>
         </div>
 
-
-        <!-- <div>
-
-            <button data-toggle="collapse" data-target="#events" aria-expanded="false" aria-controls="events">
-                <span class="title">Events</span>
-            </button>
-
-            <div id="events" class="collapse" data-parent="#accordion">
-                <div class="bg-dark py-3">
-                    <ul>
-                        <li><a href="#">Upcoming Events</a></li>
-                        <li><a href="#">Past Event Highlights</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
-
     </div><!-- #accordion -->
 
-        <a class="" href="/">
-            Events
-        </a>
 </nav>
