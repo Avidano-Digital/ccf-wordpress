@@ -199,7 +199,7 @@
                     <h5>Cheetah Conservation Fund</h5>
                     <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
                         visitors to see our facilities in person.</p>
-                    <p class="fs-md"><a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Come Join Us!</a></p>
+                    <p class="fs-md"><a class="blended-link" href="#">Come Join Us!</a></p>
                 </div>
                 <!-- .col -->
 
@@ -210,7 +210,7 @@
                         operations located in: Australia, Canada, Italy, United Kingdom, and United States, working
                         in cooperation with staff and partners around the world.</p>
                     <p class="fs-md">
-                        <a class="blended-link" href="/about-us/who-we-are/ccf-global.php">Contact Us</a>
+                        <a class="blended-link" href="about-us/who-we-are/ccf-global/">CCF Global</a>
                     </p>
 
                 </div>

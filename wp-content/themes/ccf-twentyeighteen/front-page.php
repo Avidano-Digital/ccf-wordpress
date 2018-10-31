@@ -455,19 +455,19 @@
                     <ul class="link-list horizontal">
                       <li>
                         <a href="#" class="text-primary text-center">
-                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" style="max-width:150px" alt="Placeholder">
+                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
                           <h5>Research</h5> 
                         </a>
                       </li>
                       <li>
                         <a href="#" class="text-primary text-center">
-                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" style="max-width:150px" alt="Placeholder">
+                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
                           <h5>Education</h5>
                         </a>
                       </li>
                       <li>
                         <a href="#" class="text-primary text-center">
-                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" style="max-width:150px" alt="Placeholder">
+                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
                           <h5>Conservation</h5>
                         </a>
                       </li>
