@@ -121,8 +121,8 @@
 
                     <ul class="link-list px-0">
                         <li>
-                            <a href="#" title="Take Action">
-                                <span class="font-weight-bold mb-2">Take Action</span>
+                            <a href="#" title="Get Involved">
+                                <span class="font-weight-bold mb-2">Get Involved</span>
                             </a>
                         </li>
                         <li>

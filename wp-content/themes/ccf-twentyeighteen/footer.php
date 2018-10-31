@@ -95,7 +95,7 @@
 
                     <ul class="link-list">
                         <li>
-                            <span class="font-weight-bold mb-2">Take Action</span>
+                            <span class="font-weight-bold mb-2">Get Involved</span>
                         </li>
                         <li>
                             <a href="#">Ways to Give</a>

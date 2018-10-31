@@ -11,7 +11,7 @@
         </ul>
     </li>
     <li>
-        <a href="#" title="Take Action">Take Action</a>
+        <a href="#" title="Get Involved">Get Involved</a>
         
         <ul class="sub">
             <li><a href="#">Volunteer in Canada</a></li>

@@ -288,7 +288,7 @@
 
                     <div class="col-lg-6 col-xl-6 d-flex <?php if($i % 2 != 0) echo 'order-lg-first' ?>">
                         <div class="narrow text-white text-center align-self-center p-4">
-                            <h3><?php echo $headline; ?></h3> 
+                            <h3 class="text-primary"><?php echo $headline; ?></h3> 
                             <?php echo $text; ?>
                         </div>
                     </div>

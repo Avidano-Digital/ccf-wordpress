@@ -11,7 +11,7 @@ Gutenberg Ramp assumes one of the following states:
 - WordPress 4.9 and the Gutenberg plugin (either activated or not)
 - WordPress 5.0 and a fallback editor 
 
-Gutenberg Ramp makes a decision early in the WordPress load sequence (`plugins_loaded`) about whether to take action.  It will take action if the following are true:
+Gutenberg Ramp makes a decision early in the WordPress load sequence (`plugins_loaded`) about whether to Get Involved.  It will Get Involved if the following are true:
 
 - either the post edit or new post screens are going to load AND
 - according its user-supplied criteria either: Gutenberg should load for the current post and will not OR Gutenberg shouldn't load for the current post and will.

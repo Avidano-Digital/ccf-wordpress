@@ -56,7 +56,7 @@
 
         <div>
             <button data-toggle="collapse" data-target="#take-action" aria-expanded="false" aria-controls="take-action">
-                <span class="title">Take Action</span>
+                <span class="title">Get Involved</span>
             </button>
 
             <div id="take-action" class="collapse" data-parent="#accordion">
