@@ -49,7 +49,7 @@ get_header(); ?>
 
             <div class="col-xl-3 bg-dark px-xl-4">
 
-                <div class="py-xl-5">
+                <div class="py-xl-5 sticky-top">
 
                     <div class="btn-toggle d-xl-none offset-gutter-x">
 
@@ -73,7 +73,7 @@ get_header(); ?>
             </div>
             <!-- .col -->
 
-            <div class="col-xl-9 pt-4 pt-xl-6">
+            <div class="col-xl-9 pt-7">
 
                 <header class="narrow">
                     <h1 class="display-3 text-center mb-3"><?php the_title(); ?></h1>

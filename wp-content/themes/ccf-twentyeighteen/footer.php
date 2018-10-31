@@ -219,7 +219,7 @@
                 <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
 
                     <h5>Keep Up With the Cheetahs</h5>
-                    <p class="fs-md">Never miss an update. Follow us on social media and recieve our newsletters.</p>
+                    <p class="fs-md">Never miss an update.</p>
 
                     <ul class="link-list horizontal fs-lg">
                         <li>
@@ -248,13 +248,17 @@
                             </a>
                         </li>
                     </ul>
+                    
+                    <h6>CCF Newsletters</h6>
 
-
-                    <a class="btn btn-outline-dark" href="#">
-                        <span class="far fa-envelope-open"></span>
-                        <span class="mx-1">Join our Newletters</span>
-                    </a>
-
+                    <ul class="link-list horizontal fs-lg">
+                        <li>
+                            <a class="text-body" href="#">
+                                <span class="far fa-envelope-open"></span>
+                                <span class="mx-1 font-weight-bold fs-md">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
                 <!-- .col -->
