@@ -127,16 +127,7 @@ p{ @extend .f-serif; }
 // Mobile Menu
 
 #mobile-menu{
-
-  // Direct links (not in accordion)
   
-  nav > a{
-    @extend .fs-rg;
-    @extend .btn;
-    @extend .text-body;
-    @extend .font-weight-normal;
-  }
-
   // Child links (accordion)
   
   ul { @extend .px-3; }
