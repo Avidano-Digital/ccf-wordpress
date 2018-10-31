@@ -201,7 +201,7 @@
 
         ?>
 
-        <div class="offset-gutter-x mb-5">
+        <div class="offset-gutter-x my-7">
 
             <figure class="figure w-100">
 
