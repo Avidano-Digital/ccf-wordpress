@@ -3,7 +3,7 @@
 Plugin Name: GTranslate
 Plugin URI: https://gtranslate.io/?xyz=998
 Description: Makes your website <strong>multilingual</strong> and available to the world using Google Translate. For support visit <a href="https://wordpress.org/support/plugin/gtranslate">GTranslate Support</a>.
-Version: 2.8.42
+Version: 2.8.43
 Author: Translate AI Multilingual Solutions
 Author URI: https://gtranslate.io
 Text Domain: gtranslate
@@ -2053,6 +2053,10 @@ if($data['pro_version'] or $data['enterprise_version']) {
             'wc-country-select',
             'wc-add-to-cart',
             'wc-password-strength-meter',
+            'googlecode_regular',
+            'googlecode_property',
+            'googlecode_contact',
+            'mapfunctions',
 
         );
 

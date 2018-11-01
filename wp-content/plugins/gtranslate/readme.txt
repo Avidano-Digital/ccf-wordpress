@@ -4,7 +4,7 @@ Author: Translate AI Multilingual Solutions
 Tags: translate wordpress, multilingual, translate, translation, language, bilingual, localization, translation proxy, i18n, l10n, localisation, multilanguage, google translate
 Requires at least: 2.8.1
 Tested up to: 4.9
-Stable tag: 2.8.42
+Stable tag: 2.8.43
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://gtranslate.io/?xyz=998#pricing
@@ -218,8 +218,21 @@ You need to go to the language you want to edit, for instance, French: http://do
 5. Flags with language names
 6. Flags with language codes
 7. Settings page
+8. User Dashboard
 
 == Changelog ==
+= 2.8.43 =
+* New features in User Dashboard:
+* Find and Replace before and after translation
+* Skip Translation of Phrases
+* Skip Translation by CSS selector
+* Skip Translation by page URL
+* Define HTML Blocks to edit translation as a whole
+* Define JSON object keys which should be translated
+* Optimized translation of URL slugs
+* Fix for Sundanese flag
+* Fix for double language code when redirection happens based on referrer
+
 = 2.8.42 =
 * New dashboard for paid customers https://my.gtranslate.io/
 * Minor changes

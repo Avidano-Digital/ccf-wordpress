@@ -268,6 +268,7 @@
             $image = get_sub_field('image');
             $headline = get_sub_field('headline');
             $text = get_sub_field('text');
+            $link = get_sub_field('link');
 
             $i++;
 
@@ -290,6 +291,7 @@
                         <div class="narrow text-white text-center align-self-center p-4">
                             <h3 class="text-primary"><?php echo $headline; ?></h3> 
                             <?php echo $text; ?>
+                            <button class="btn btn-primary">View Gallery</button>
                         </div>
                     </div>
                     <!-- .col -->

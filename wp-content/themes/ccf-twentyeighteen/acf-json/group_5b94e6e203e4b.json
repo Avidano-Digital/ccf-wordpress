@@ -96,6 +96,58 @@
                                     "min": "",
                                     "max": ""
                                 },
+                                "layout_5bdaa9ec147d6": {
+                                    "key": "layout_5bdaa9ec147d6",
+                                    "name": "two_figure_block",
+                                    "label": "Two Figure Block",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5bdaaa12147d7",
+                                            "label": "Figure A",
+                                            "name": "figure_a",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_5b967efe3ffb4"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 1
+                                        },
+                                        {
+                                            "key": "field_5bdaac8fb076c",
+                                            "label": "Figure B",
+                                            "name": "figure_b",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_5b967efe3ffb4"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 1
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
                                 "layout_5b9a12ac863fd": {
                                     "key": "layout_5b9a12ac863fd",
                                     "name": "gallery_block",
@@ -401,6 +453,21 @@
                                     "toolbar": "very_simple",
                                     "media_upload": 0,
                                     "delay": 0
+                                },
+                                {
+                                    "key": "field_5bda9a68ff0ac",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
                                 }
                             ]
                         }
@@ -442,5 +509,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1540835066
+    "modified": 1541057740
 }

@@ -7175,7 +7175,7 @@
 		},
 	"/wp-content/plugins/gtranslate/16.png": {
 		"ft": 32768,
-		"iS": 7617,
+		"iS": 21082,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/16.png",
 		"oF": 0,
@@ -7201,8 +7201,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -8176,7 +8176,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/su.png": {
 		"ft": 32768,
-		"iS": 800,
+		"iS": 802,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/su.png",
 		"oF": 0,
@@ -8187,7 +8187,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/sv.png": {
 		"ft": 32768,
-		"iS": 547,
+		"iS": 846,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/sv.png",
 		"oF": 0,
@@ -8198,7 +8198,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/sw.png": {
 		"ft": 32768,
-		"iS": 844,
+		"iS": 1079,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/sw.png",
 		"oF": 0,
@@ -8209,7 +8209,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/ta.png": {
 		"ft": 32768,
-		"iS": 816,
+		"iS": 976,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/ta.png",
 		"oF": 0,
@@ -8220,7 +8220,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/te.png": {
 		"ft": 32768,
-		"iS": 816,
+		"iS": 976,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/te.png",
 		"oF": 0,
@@ -8231,7 +8231,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/tg.png": {
 		"ft": 32768,
-		"iS": 898,
+		"iS": 1008,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/tg.png",
 		"oF": 0,
@@ -8242,7 +8242,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/th.png": {
 		"ft": 32768,
-		"iS": 628,
+		"iS": 750,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/th.png",
 		"oF": 0,
@@ -8253,7 +8253,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/tl.png": {
 		"ft": 32768,
-		"iS": 1152,
+		"iS": 1294,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/tl.png",
 		"oF": 0,
@@ -8264,7 +8264,7 @@
 		},
 	"/wp-content/plugins/gtranslate/24/tr.png": {
 		"ft": 32768,
-		"iS": 684,
+		"iS": 1097,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/tr.png",
 		"oF": 0,
@@ -8279,8 +8279,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/uk.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -8290,14 +8290,14 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/ur.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"/wp-content/plugins/gtranslate/24/uz.png": {
 		"ft": 32768,
-		"iS": 808,
+		"iS": 987,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/uz.png",
 		"oF": 0,
@@ -8312,14 +8312,14 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/vi.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"/wp-content/plugins/gtranslate/24/xh.png": {
 		"ft": 32768,
-		"iS": 957,
+		"iS": 1141,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/xh.png",
 		"oF": 0,
@@ -8334,8 +8334,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/yi.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -8345,14 +8345,14 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/yo.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"/wp-content/plugins/gtranslate/24/zh-CN.png": {
 		"ft": 32768,
-		"iS": 664,
+		"iS": 996,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/zh-CN.png",
 		"oF": 0,
@@ -8367,8 +8367,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/zh-TW.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -8378,8 +8378,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24/zu.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -8389,8 +8389,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/24a.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -8400,8 +8400,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/32.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -13376,16 +13376,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/wp-content/plugins/gtranslate/gtranslate-notices-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gtranslate/gtranslate-notices-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/wp-content/plugins/gtranslate/gtranslate-notices.css": {
 		"aP": 1,
 		"bl": 0,
@@ -13393,16 +13383,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/gtranslate-notices-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/wp-content/plugins/gtranslate/gtranslate-style16-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gtranslate/gtranslate-style16-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -13416,16 +13396,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/wp-content/plugins/gtranslate/gtranslate-style24-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gtranslate/gtranslate-style24-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/wp-content/plugins/gtranslate/gtranslate-style24.css": {
 		"aP": 1,
 		"bl": 0,
@@ -13436,16 +13406,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/wp-content/plugins/gtranslate/gtranslate-style32-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gtranslate/gtranslate-style32-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/wp-content/plugins/gtranslate/gtranslate-style32.css": {
 		"aP": 1,
 		"bl": 0,
@@ -13453,16 +13413,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gtranslate/gtranslate-style32-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/wp-content/plugins/gtranslate/gtranslate-style48-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gtranslate/gtranslate-style48-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -13557,6 +13507,13 @@
 		"oAP": "/wp-content/plugins/gutenberg-ramp/inc/class-gutenberg-ramp.php",
 		"oF": 0
 		},
+	"/wp-content/plugins/gutenberg-ramp/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/gutenberg-ramp/README.html",
+		"oF": 0
+		},
 	"/wp-content/plugins/gutenberg-ramp/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -13629,23 +13586,23 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/wp-content/plugins/gutenberg/build/block-library/edit-blocks-rtl.css": {
+	"/wp-content/plugins/gutenberg/build/block-library/editor-rtl.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/wp-content/plugins/gutenberg/build/block-library/edit-blocks-rtl-min.css",
+		"oAP": "/wp-content/plugins/gutenberg/build/block-library/editor-rtl-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/wp-content/plugins/gutenberg/build/block-library/edit-blocks.css": {
+	"/wp-content/plugins/gutenberg/build/block-library/editor.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/wp-content/plugins/gutenberg/build/block-library/edit-blocks-min.css",
+		"oAP": "/wp-content/plugins/gutenberg/build/block-library/editor-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -13919,6 +13876,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/wp-content/plugins/gutenberg/build/escape-html/index.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/gutenberg/build/escape-html/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/wp-content/plugins/gutenberg/build/hooks/index.js": {
 		"ft": 64,
 		"ma": 0,
@@ -14045,6 +14012,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gutenberg/build/redux-routine/index-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/wp-content/plugins/gutenberg/build/rich-text/index.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/gutenberg/build/rich-text/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -14188,6 +14165,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gutenberg/lib/class-wp-rest-search-handler.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/gutenberg/lib/class-wp-rest-themes-controller.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/gutenberg/lib/class-wp-rest-themes-controller.php",
 		"oF": 0
 		},
 	"/wp-content/plugins/gutenberg/lib/client-assets.php": {
@@ -14454,6 +14438,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/wp-content/plugins/gutenberg/vendor/wp-polyfill-element-closest.bfe1f8a5.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/gutenberg/vendor/wp-polyfill-element-closest.bfe1f8a5-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/wp-content/plugins/gutenberg/vendor/wp-polyfill-fetch.fabf21df.js": {
 		"ft": 64,
 		"ma": 0,
@@ -14480,26 +14474,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/gutenberg/vendor/wp-polyfill-node-contains.7f2562fb-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/wp-content/plugins/gutenberg/vendor/wp-polyfill-promise.3030b08a.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gutenberg/vendor/wp-polyfill-promise.3030b08a-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/wp-content/plugins/gutenberg/vendor/wp-polyfill-promise.min.0f2d5308.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gutenberg/vendor/wp-polyfill-promise.min.0f2d5308-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -17646,6 +17620,28 @@
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentyeighteen/header.php",
 		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentyeighteen/images/article/biomass-A.jpg": {
+		"ft": 16384,
+		"iS": 194615,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentyeighteen/images/article/biomass-A.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentyeighteen/images/article/biomass-B.jpg": {
+		"ft": 16384,
+		"iS": 126618,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentyeighteen/images/article/biomass-B.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/wp-content/themes/ccf-twentyeighteen/images/article/ccf-cheetah-museum.jpg": {
 		"ft": 16384,
@@ -20799,6 +20795,116 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/128_SuziEszterhasPC.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-A-300x200.jpg": {
+		"ft": 16384,
+		"iS": 24449,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-A-300x200.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-A-500x250.jpg": {
+		"ft": 16384,
+		"iS": 40691,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-A-500x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-A-600x350.jpg": {
+		"ft": 16384,
+		"iS": 67204,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-A-600x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-A-600x500.jpg": {
+		"ft": 16384,
+		"iS": 94672,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-A-600x500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-A-600x525.jpg": {
+		"ft": 16384,
+		"iS": 97747,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-A-600x525.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-A.jpg": {
+		"ft": 16384,
+		"iS": 194615,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-A.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-B-300x200.jpg": {
+		"ft": 16384,
+		"iS": 15733,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-B-300x200.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-B-600x350.jpg": {
+		"ft": 16384,
+		"iS": 39910,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-B-600x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-B-600x525.jpg": {
+		"ft": 16384,
+		"iS": 60386,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-B-600x525.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/10/biomass-B.jpg": {
+		"ft": 16384,
+		"iS": 126618,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-B.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

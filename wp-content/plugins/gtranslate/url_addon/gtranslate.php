@@ -122,6 +122,7 @@ curl_setopt($ch, CURLOPT_URL, $page_url);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_HEADER, true);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
 
@@ -198,6 +199,7 @@ foreach($response_headers as $header) {
         if(preg_match('/^Location:/i', $header)) {
             $header = str_ireplace($host, $_SERVER['HTTP_HOST'] . '/' . $glang, $header);
             $header = str_ireplace('Location: /', 'Location: /' . $glang . '/', $header);
+            $header = str_replace('/' . $glang . '/' . $glang . '/', '/' . $glang . '/', $header);
         }
 
         // woocommerce cookie path fix

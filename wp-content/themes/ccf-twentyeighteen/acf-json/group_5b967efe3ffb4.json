@@ -44,25 +44,6 @@
             "maxlength": "",
             "rows": 4,
             "new_lines": ""
-        },
-        {
-            "key": "field_5b967f887c125",
-            "label": "Enlarge",
-            "name": "enlarge",
-            "type": "true_false",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
         }
     ],
     "location": [
@@ -82,5 +63,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1540807124
+    "modified": 1541057832
 }
