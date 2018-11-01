@@ -40,6 +40,63 @@
                 </div>
                 <!-- .narrow -->
 
+            <?php elseif( get_row_layout() == 'two_figure_block' ): 
+
+                $figure_inline_single_a = get_sub_field('figure_inline_single_a');
+
+                $image_a = $figure_inline_single_a['image'];
+                $caption_a = $figure_inline_single_a['caption'];
+                
+                $figure_inline_single_b = get_sub_field('figure_inline_single_b');
+
+                $image_b = $figure_inline_single_b['image'];
+                $caption_b = $figure_inline_single_b['caption'];
+
+                ?>
+
+                <div class="narrow my-6">
+                
+
+                <div class="row matrix-gutter">
+
+
+                
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <figure class="figure my-0">
+                        <a href="<?php echo $image_a['url']; ?>" class="figure-img" title="A caption for the above image.">
+                            <img class="w-100" src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                            <span class="fas fa-search-plus"></span>
+                        </a>
+                        <figcaption class="figure-caption"><?php echo $caption_a; ?></figcaption>
+                    </figure>
+                </div>
+                <!-- .col -->
+
+
+                <div class="col-lg-6 ">
+                    <figure class="figure my-0">
+                        <a href="<?php echo $image_b['url']; ?>" class="figure-img" title="A caption for the above image.">
+                            <img class="w-100" src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                            <span class="fas fa-search-plus"></span>
+                        </a>
+                        <figcaption class="figure-caption"><?php echo $caption_b; ?></figcaption>
+                    </figure>
+                </div>
+                <!-- .col -->
+
+
+                </div>
+                <!-- .row -->
+
+
+                </div>
+
+
+
+
+
+
+
             <?php elseif( get_row_layout() == 'gallery_block' ): 
             
                 $images = get_sub_field('images');
