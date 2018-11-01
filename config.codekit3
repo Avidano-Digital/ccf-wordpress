@@ -17629,7 +17629,7 @@
 		"oAP": "/wp-content/themes/ccf-twentyeighteen/images/article/biomass-A.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentyeighteen/images/article/biomass-B.jpg": {
@@ -17640,7 +17640,7 @@
 		"oAP": "/wp-content/themes/ccf-twentyeighteen/images/article/biomass-B.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentyeighteen/images/article/ccf-cheetah-museum.jpg": {
@@ -20800,75 +20800,9 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/wp-content/uploads/2018/10/biomass-A-300x200.jpg": {
-		"ft": 16384,
-		"iS": 24449,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/uploads/2018/10/biomass-A-300x200.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/uploads/2018/10/biomass-A-500x250.jpg": {
-		"ft": 16384,
-		"iS": 40691,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/uploads/2018/10/biomass-A-500x250.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/uploads/2018/10/biomass-A-600x350.jpg": {
-		"ft": 16384,
-		"iS": 67204,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/uploads/2018/10/biomass-A-600x350.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/uploads/2018/10/biomass-A-600x500.jpg": {
-		"ft": 16384,
-		"iS": 94672,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/uploads/2018/10/biomass-A-600x500.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/uploads/2018/10/biomass-A-600x525.jpg": {
-		"ft": 16384,
-		"iS": 97747,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/uploads/2018/10/biomass-A-600x525.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/uploads/2018/10/biomass-A.jpg": {
-		"ft": 16384,
-		"iS": 194615,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/uploads/2018/10/biomass-A.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/wp-content/uploads/2018/10/biomass-B-300x200.jpg": {
 		"ft": 16384,
-		"iS": 15733,
+		"iS": 16162,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/biomass-B-300x200.jpg",
@@ -20877,9 +20811,20 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2018/10/biomass-B-500x250.jpg": {
+		"ft": 16384,
+		"iS": 25884,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-B-500x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2018/10/biomass-B-600x350.jpg": {
 		"ft": 16384,
-		"iS": 39910,
+		"iS": 40987,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/biomass-B-600x350.jpg",
@@ -20888,9 +20833,20 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2018/10/biomass-B-600x500.jpg": {
+		"ft": 16384,
+		"iS": 58952,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/10/biomass-B-600x500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2018/10/biomass-B-600x525.jpg": {
 		"ft": 16384,
-		"iS": 60386,
+		"iS": 61642,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/biomass-B-600x525.jpg",
@@ -20901,7 +20857,7 @@
 		},
 	"/wp-content/uploads/2018/10/biomass-B.jpg": {
 		"ft": 16384,
-		"iS": 126618,
+		"iS": 126954,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/biomass-B.jpg",
@@ -22004,6 +21960,72 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2018/10/volunteer_500x250_acf_cropped.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/11/biomass-A-300x200.jpg": {
+		"ft": 16384,
+		"iS": 21124,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/11/biomass-A-300x200.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/11/biomass-A-500x250.jpg": {
+		"ft": 16384,
+		"iS": 34253,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/11/biomass-A-500x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/11/biomass-A-600x350.jpg": {
+		"ft": 16384,
+		"iS": 55740,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/11/biomass-A-600x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/11/biomass-A-600x500.jpg": {
+		"ft": 16384,
+		"iS": 78519,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/11/biomass-A-600x500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/11/biomass-A-600x525.jpg": {
+		"ft": 16384,
+		"iS": 81234,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/11/biomass-A-600x525.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/11/biomass-A.jpg": {
+		"ft": 16384,
+		"iS": 159895,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/11/biomass-A.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

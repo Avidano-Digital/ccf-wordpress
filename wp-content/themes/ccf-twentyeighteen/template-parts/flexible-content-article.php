@@ -8,7 +8,7 @@
 
         ?>
 
-        <section class="mb-5">
+        <section class="mb-7">
 
             <?php if( have_rows('section_content') ): while( have_rows('section_content') ): the_row(); ?>
 
@@ -56,46 +56,35 @@
 
                 <div class="narrow my-6">
                 
+                    <div class="row matrix-gutter">
 
-                <div class="row matrix-gutter">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <figure class="figure my-0">
+                                <a href="<?php echo $image_a['url']; ?>" class="figure-img" title="A caption for the above image.">
+                                    <img class="w-100" src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                                    <span class="fas fa-search-plus"></span>
+                                </a>
+                                <figcaption class="figure-caption"><?php echo $caption_a; ?></figcaption>
+                            </figure>
+                        </div>
+                        <!-- .col -->
 
+                        <div class="col-lg-6">
+                            <figure class="figure my-0">
+                                <a href="<?php echo $image_b['url']; ?>" class="figure-img" title="A caption for the above image.">
+                                    <img class="w-100" src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                                    <span class="fas fa-search-plus"></span>
+                                </a>
+                                <figcaption class="figure-caption"><?php echo $caption_b; ?></figcaption>
+                            </figure>
+                        </div>
+                        <!-- .col -->
 
-                
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <figure class="figure my-0">
-                        <a href="<?php echo $image_a['url']; ?>" class="figure-img" title="A caption for the above image.">
-                            <img class="w-100" src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
-                            <span class="fas fa-search-plus"></span>
-                        </a>
-                        <figcaption class="figure-caption"><?php echo $caption_a; ?></figcaption>
-                    </figure>
-                </div>
-                <!-- .col -->
-
-
-                <div class="col-lg-6 ">
-                    <figure class="figure my-0">
-                        <a href="<?php echo $image_b['url']; ?>" class="figure-img" title="A caption for the above image.">
-                            <img class="w-100" src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
-                            <span class="fas fa-search-plus"></span>
-                        </a>
-                        <figcaption class="figure-caption"><?php echo $caption_b; ?></figcaption>
-                    </figure>
-                </div>
-                <!-- .col -->
-
+                    </div>
+                    <!-- .row -->
 
                 </div>
-                <!-- .row -->
-
-
-                </div>
-
-
-
-
-
-
+                <!-- .narrow -->
 
             <?php elseif( get_row_layout() == 'gallery_block' ): 
             
@@ -169,7 +158,7 @@
 
             <?php endif; ?>
 
-            <?php endif; /* text_block | figure_block | gallery_slider */ ?>
+            <?php endif; /* text_block | figure_block | two_figure_block | gallery_slider */ ?>
 
             <?php endwhile; endif; /* flexible_content */ ?>
 
@@ -188,7 +177,7 @@
         
         ?>
 
-        <div class="offset-gutter-x mb-5">
+        <div class="offset-gutter-x my-7">
 
             <figure class="figure w-100">
 
@@ -362,19 +351,6 @@
             <!-- .my-5 -->
 
             <?php endif; /* details */ ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <?php endif; /* section | alternating_blocks */ ?>
     
