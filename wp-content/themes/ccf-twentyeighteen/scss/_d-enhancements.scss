@@ -256,11 +256,7 @@ article section div > ul {
 }
 
 article section div > blockquote {
-  // @extend .py-3;
-  // @extend .px-4;
   @extend .my-4;
-
-  // border-left: ($border-width * 2) solid theme-color("primary");
 
   > p{
     @extend .font-weight-light;
@@ -285,9 +281,6 @@ article section div > blockquote {
     
   }
   
-}
-
-.custom-underline {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
