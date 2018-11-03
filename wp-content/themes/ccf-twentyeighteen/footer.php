@@ -49,10 +49,10 @@
                             <span class="font-weight-bold mb-2">What We Do</span>
                         </li>
                         <li>
-                            <a href="#">Research</a>
+                            <a href="/about-us/what-we-do/research/">Research</a>
                         </li>
                         <li>
-                            <a href="#">Education</a>
+                            <a href="/about-us/what-we-do/education/">Education</a>
                         </li>
                         <li>
                             <a href="#">Conservation</a>
@@ -75,7 +75,7 @@
                             <a href="#">Mission and Vision</a>
                         </li>
                         <li>
-                            <a href="#">Dr. Laurie Marker</a>
+                            <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>
                         </li>
                         <li>
                             <a href="#">Our Centre</a>
@@ -84,7 +84,7 @@
                             <a href="#">Staff and Board</a>
                         </li>
                         <li>
-                            <a href="#">International Affiliates</a>
+                            <a href="/about-us/who-we-are/ccf-global/">CCF Global</a>
                         </li>
                     </ul>
 

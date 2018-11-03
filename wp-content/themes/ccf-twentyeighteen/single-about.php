@@ -12,6 +12,8 @@ get_header(); ?>
     $grandparent_get = get_post($parent);
     $grandparent = $grandparent_get->post_parent;
     $siblings = wp_list_pages('title_li=&child_of=' . $parent . '&echo=0&post_type=about');
+
+    $parent_title = get_the_title($parent);
 ?>
 
 <main id="content">
@@ -32,7 +34,7 @@ get_header(); ?>
                 <div class="align-self-end container-fluid">
                     <h1 class="text-right text-secondary">
                 
-                        <em><?php echo get_the_title($parent); ?></em>
+                        <em><?php echo $parent_title; ?></em>
 
                     </h1>
                 </div>
@@ -54,17 +56,58 @@ get_header(); ?>
                     <div class="btn-toggle d-xl-none offset-gutter-x">
 
                         <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
-                            <span class="title"><?php echo get_the_title($parent); ?></span>
+                            <span class="title"><?php echo $parent_title; ?></span>
                         </a>
 
                     </div>
 
                     <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
+                        <?php if ( $parent_title == "Who We Are" ) : ?>
+
                         <ul class="link-list text-white py-4 py-xl-0">
-                            <?php echo $siblings; ?>
+                            <li class="page_item <?php if ( is_single( 'mission-and-vision' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/who-we-are/mission-and-vision/">Mission and Vision</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'dr-laurie-marker' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'our-center' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">Our Centre</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'staff-and-board' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">Staff and Board</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'ccf-global' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/who-we-are/ccf-global/">CCF Global</a>
+                            </li>
                         </ul>
                         
+                        <?php elseif ( $parent_title == "What We Do" ) : ?>
+
+                        <ul class="link-list text-white py-4 py-xl-0">
+                            <li class="page_item <?php if ( is_single( 'research' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/what-we-do/research/">Research</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'education' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/what-we-do/education/">Education</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'conservation' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">Conservation</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'international-cheetah-day' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">International Cheetah Day</a>
+                            </li>
+                        </ul>
+
+                        <?php else : ?>
+
+                        <ul class="link-list text-white py-4 py-xl-0 d-none">
+                            <?php echo $siblings; ?>
+                        </ul>
+
+                        <?php endif; ?>
+
                     </nav>
 
                     <?php get_template_part('template-parts/aside-donate'); ?>
