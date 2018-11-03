@@ -101,7 +101,7 @@
                     data-ride="carousel" 
                     data-keyboard="true"
                     data-interval="false" 
-                    id="carouselExample">
+                    id="carousel-gallery">
 
                     <div class="carousel-inner">
 
@@ -120,7 +120,7 @@
 
                     <div class="row no-gutters align-items-center py-2">
                         <div class="col-2 text-left px-3">
-                            <a class="no-btn-style" href="#carouselExample" role="button" data-slide="prev">
+                            <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="prev">
                                 <span class="fas fa-chevron-left fa-lg" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
@@ -132,7 +132,7 @@
 
                             <?php foreach( $images as $image ): ?>
 
-                                <li data-target="#carouselExample" class="<?php if($count_b == 0){ echo 'active'; } ?>" data-slide-to="<?php echo $$count_b; ?>">
+                                <li data-target="#carousel-gallery" class="<?php if($count_b == 0){ echo 'active'; } ?>" data-slide-to="<?php echo $$count_b; ?>">
                                     <span class="sr-only">Slide 1</span>
                                 </li>
 
@@ -143,7 +143,7 @@
                         <!-- .col -->
                         
                         <div class="col-2 text-right px-3">
-                            <a class="no-btn-style" href="#carouselExample" role="button" data-slide="next">
+                            <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="next">
                                 <span class="fas fa-chevron-right fa-lg" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -154,7 +154,7 @@
                     <!-- .row -->
 
                 </div>
-                <!-- #carouselExample -->
+                <!-- #carousel-gallery -->
 
             <?php endif; ?>
 
@@ -337,7 +337,6 @@
                         <div class="narrow text-white text-center align-self-center p-4">
                             <h3 class="text-primary"><?php echo $headline; ?></h3> 
                             <?php echo $text; ?>
-                            <button class="btn btn-primary">View Gallery</button>
                         </div>
                     </div>
                     <!-- .col -->
