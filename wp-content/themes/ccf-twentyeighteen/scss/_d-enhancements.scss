@@ -166,7 +166,6 @@ th, td{ @extend .fs-md; }
 
 th, td{ white-space: nowrap; }
 
-
 ////////////////////////////////////////
 // Forms
 ////////////////////////////////////////
@@ -248,6 +247,28 @@ $accessible-hover-focus: false;
 
 } // end if
 
+article section div > ul { 
+  @extend .f-serif;
+  @extend .px-0;
+  margin-left: 1.25rem;
+  color: $umber;
+  li{ @extend .text-body; }
+}
+
+article section div > blockquote {
+  @extend .py-3;
+  @extend .px-4;
+  @extend .my-4;
+
+  border-left: ($border-width * 2) solid theme-color("primary");
+
+  > p{
+    @extend .font-weight-light;
+    @extend .f-sans-serif;
+    @extend .fs-xl;
+  }
+  
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -286,13 +307,6 @@ $accessible-hover-focus: false;
   .display-3{ font-size: $display3-size * 0.75; }
   .display-4{ font-size: $display4-size * 0.75; }
 }
-
-// @include media-breakpoint-down(md){
-//   main{
-//     .fs-xl{ font-size: $fs-lg; }
-//     .fs-lg{ font-size: $fs-rg; }
-//   }
-// }
 
 ////////////////////////////////////////
 // Opacity

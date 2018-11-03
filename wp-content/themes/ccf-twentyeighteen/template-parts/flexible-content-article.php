@@ -58,7 +58,7 @@
                 
                     <div class="row matrix-gutter">
 
-                        <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="col-sm-6 mb-4 mb-sm-0">
                             <figure class="figure my-0">
                                 <a href="<?php echo $image_a['url']; ?>" class="figure-img" title="A caption for the above image.">
                                     <img class="w-100" src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
@@ -69,7 +69,7 @@
                         </div>
                         <!-- .col -->
 
-                        <div class="col-lg-6">
+                        <div class="col-sm-6">
                             <figure class="figure my-0">
                                 <a href="<?php echo $image_b['url']; ?>" class="figure-img" title="A caption for the above image.">
                                     <img class="w-100" src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
@@ -97,7 +97,7 @@
 
             <?php if( $images ): ?>
 
-                <div class="narrow carousel slide mb-5" 
+                <div class="narrow carousel slide my-6" 
                     data-ride="carousel" 
                     data-keyboard="true"
                     data-interval="false" 
