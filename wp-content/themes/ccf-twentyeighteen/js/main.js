@@ -1,6 +1,8 @@
 jQuery(document).ready(function ($) {
 
+    ////////////////////////////////////////
     // Primary Navigation Dropdowns
+    ////////////////////////////////////////
 
     var header_drop_downs = $('#primary-navigation-desktop ul > li');
 
@@ -28,19 +30,9 @@ jQuery(document).ready(function ($) {
         timeout: 300
     });
 
-    // Popovers
-    $(document).ready(function () {
-        $('[data-toggle="popover"]').popover();
-    });
-    
-});
-
-
-//
-// Magnific Popups
-//
-
-jQuery(document).ready(function($) {
+    ////////////////////////////////////////
+    // Magnific Popups
+    ////////////////////////////////////////
 
     var main = $('body');
 
@@ -75,54 +67,30 @@ jQuery(document).ready(function($) {
       }
   
     }));
-  
-  });
-
-
-// Select the target node
-var target = document.querySelector('html');
-
-// Create an observer instance
-var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-
-        var classes = target.getAttribute('class');
-        var single_class = 'translated-rtl';
-
-        if(classes.includes(single_class)){
-        target.setAttribute('dir', 'rtl');
-        } else {
-        target.removeAttribute('dir');
-        }
-
-    });
-});
-
-// configuration of the observer:
-var config = { attributes: true, attributeFilter: ['class'] }
-    
-// pass in the target node, as well as the observer options
-observer.observe(target, config);
-    
-// Stop observing
-// observer.disconnect();
-
 
     ////////////////////////////////////////
-    // Google Translate Links
+    // Mutation observer - watch for RTL
     ////////////////////////////////////////
 
-    jQuery(function ($) {
+    var target = document.querySelector('html');
 
-        $('#language-select').change(function() {
-
-            Cookies.set('currentLang', $(this).val());
-
+    var observer = new MutationObserver( function(mutations) {
+        mutations.forEach( function(mutation) {
+            var classes = target.getAttribute('class');
+            var single_class = 'translated-rtl';
+            if (classes.includes(single_class)) {
+                target.setAttribute('dir', 'rtl');
+            } else {
+                target.setAttribute('dir', 'ltr');
+            }
         });
+    });
 
-        // On page load, read out the cookie, and select the corresponding country
-        // If no cookie, take country1 as default
-        var lang = Cookies && Cookies.get('currentLang') || '#googtrans(en)';
-        $('#language-select').val(lang);
-    })
-    
+    var config = {
+        attributes: true,
+        attributeFilter: ['class']
+    }
+
+    observer.observe(target, config);
+
+}); // end document ready
