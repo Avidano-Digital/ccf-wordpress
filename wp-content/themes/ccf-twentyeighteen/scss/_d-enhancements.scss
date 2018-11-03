@@ -256,18 +256,38 @@ article section div > ul {
 }
 
 article section div > blockquote {
-  @extend .py-3;
-  @extend .px-4;
+  // @extend .py-3;
+  // @extend .px-4;
   @extend .my-4;
 
-  border-left: ($border-width * 2) solid theme-color("primary");
+  // border-left: ($border-width * 2) solid theme-color("primary");
 
   > p{
     @extend .font-weight-light;
     @extend .f-sans-serif;
-    @extend .fs-xl;
+    @extend .fs-xxl;
+
+    font-style: italic;
+
+    span{
+
+      background-image: linear-gradient(
+        45deg, 
+        rgba($yellow, 1) 0%, 
+        rgba($yellow, 0.5) 100%
+      );
+      
+      background-repeat: no-repeat;
+      background-size: 100% 0.5rem;
+      background-position: 0 100%;
+      padding: 0.25rem 0;
+    }
+    
   }
   
+}
+
+.custom-underline {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -296,6 +316,7 @@ article section div > blockquote {
 .fs-rg{ font-size: $fs-rg; }
 .fs-lg{ font-size: $fs-lg; }
 .fs-xl{ font-size: $fs-xl; }
+.fs-xxl{ font-size: $fs-xxl; }
 
 .font-weight-light{  font-weight: $font-weight-light; }
 
