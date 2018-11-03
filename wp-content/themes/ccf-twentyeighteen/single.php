@@ -16,7 +16,7 @@ get_header(); ?>
 
             <div class="col-xl-3 bg-dark">
 
-                <div class="py-xl-5">
+                <div class="sticky-top py-xl-5">
 
                     <div class="btn-toggle d-xl-none offset-gutter-x">
 
