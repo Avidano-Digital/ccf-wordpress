@@ -4,7 +4,7 @@
     
     function theme_support(){
 
-        global $color_palette;
+        // global $color_palette;
 
         ////////////////////////////////////////
         // Image Preferences

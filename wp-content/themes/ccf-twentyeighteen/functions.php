@@ -37,16 +37,5 @@
     ////////////////////////////////////////
 
     define('ACF_EARLY_ACCESS', '5');
-
-    ////////////////////////////////////////
-    // Gutenberg Body Class
-    ////////////////////////////////////////
-
-    // add_filter( 'body_class', __NAMESPACE__ . '\add_gutenberg_compatible_body_class' );
     
-    function add_gutenberg_compatible_body_class( $classes ) {
-        if( is_singular() )
-            $classes[] = 'gutenberg-compatible-template';
-        return $classes;
-    }
 ?>
