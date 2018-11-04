@@ -86,7 +86,7 @@ $container-max-widths: (
 
 $site-width: 2400px;
 $wide-width: $grid-bp-xxxl;     // 1800px
-$narrow-width: 70ch;            // 65 characters
+$narrow-width: 65ch;            // 65 characters
 // $narrow-width: $grid-bp-md;     // grid-bp-md
      
 $narrow-width-ie: $grid-bp-md;  // IE character count (ch) is too narrow, so for IE we use pixel width instead 
@@ -257,7 +257,7 @@ $text-muted: $gray-600;
 
 // Accessible Gray Assignments
 
-$blockquote-small-color: $gray-700;
+$blockquote-small-color: currentColor;
 $input-placeholder-color: $gray-700;
 $dropdown-header-color: $gray-700;
 $figure-caption-color: $body-color;

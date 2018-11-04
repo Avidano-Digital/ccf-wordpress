@@ -192,25 +192,26 @@
                         <div class="card-img-overlay d-flex">
                             <div class="align-self-end">
                                 <div class="container px-0 py-3">
-                                    <div class="narrow text-shadow">
 
-                                        <blockquote class="blockquote text-white">
+                                    <div class="narrow text-white">
+
+                                        <blockquote class="blockquote text-shadow">
                                             
-                                            <div class="fs-lg mb-2">
-                                                <?php echo $text; ?>
-                                            </div>
+                                            <span class="fs-xl text-primary mb-2"><span class="fas fa-quote-left"></span></span>
                                             
+                                            <?php echo $text; ?>
+
                                             <img class="mb-2" src="<?php echo $signature['url']; ?>" alt="<?php echo $signature['alt']; ?>">
-
-                                            <p class="fs-md f-sans-serif">
-                                                <strong><?php echo $credit_name; ?></strong>
-                                                <br><?php echo $credit_title; ?>
-                                            </p>
+                                            
+                                            <footer class="blockquote-footer">
+                                                <?php echo $credit_name; ?> <cite title="Source Title"><?php echo $credit_title; ?></cite>
+                                            </footer>
 
                                         </blockquote>
 
                                     </div>
                                     <!-- .narrow -->
+
                                 </div>
                                 <!-- .container -->
                             </div>

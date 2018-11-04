@@ -119,10 +119,6 @@ body{
 
 img{ @extend .img-fluid; }
 
-// <hr> classes
-
-hr.dark{ border-top-color: $black; }
-
 ////////////////////////////////////////
 // Sticky Top
 ////////////////////////////////////////
@@ -139,28 +135,38 @@ hr.dark{ border-top-color: $black; }
 }
 
 ////////////////////////////////////////
-// Blockquote
+// Blockquotes
 ////////////////////////////////////////
 
-// Note: Add hanging left quote to blockquote
-
-$hanging-left-quote-width: 1rem;
-
-.hanging-left-quote {
-  @extend .position-relative;
-
-  &::before{
-    content: "\201C";
-    @extend .position-absolute;
-    margin-left: -($hanging-left-quote-width);
+blockquote{
+  @extend .blockquote;
+  
+  .blockquote-footer {
+    font-size: $fs-md;
+    cite{ @extend .d-block; }
+    &::before { @extend .d-none;  }
   }
+
+  p > span.underline{
+    
+    background-image: linear-gradient(
+      45deg, 
+      rgba($yellow, 1) 0%, 
+      rgba($yellow, 0.5) 100%
+    );
+    
+    background-repeat: no-repeat;
+    background-size: 100% 0.5rem;
+    background-position: 0 100%;
+    padding: 0.25rem 0;
+  }
+
 }
+
 
 ////////////////////////////////////////
 // Tables
 ////////////////////////////////////////
-
-// table{ min-width: 600px; }
 
 th, td{ @extend .fs-md; }
 
@@ -247,6 +253,9 @@ $accessible-hover-focus: false;
 
 } // end if
 
+
+
+
 article section div > ul { 
   @extend .f-serif;
   @extend .px-0;
@@ -255,33 +264,23 @@ article section div > ul {
   li{ @extend .text-body; }
 }
 
-article section div > blockquote {
-  @extend .my-4;
+// article blockquote {
+//   // @extend .my-4;
 
-  > p{
-    @extend .font-weight-light;
-    @extend .f-sans-serif;
-    @extend .fs-xxl;
+//   > p{
+//     @extend .font-weight-bold;
+//     @extend .f-sans-serif;
+//     @extend .fs-xl;
 
-    font-style: italic;
+//     font-style: italic;
 
-    span{
 
-      background-image: linear-gradient(
-        45deg, 
-        rgba($yellow, 1) 0%, 
-        rgba($yellow, 0.5) 100%
-      );
-      
-      background-repeat: no-repeat;
-      background-size: 100% 0.5rem;
-      background-position: 0 100%;
-      padding: 0.25rem 0;
-    }
     
-  }
+//   }
   
-}
+// }
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 //
