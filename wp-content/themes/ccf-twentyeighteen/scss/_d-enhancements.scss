@@ -140,6 +140,7 @@ img{ @extend .img-fluid; }
 
 blockquote{
   @extend .blockquote;
+
   > p { 
     @extend .f-sans-serif;
     @extend .font-weight-bold;
@@ -147,26 +148,27 @@ blockquote{
 
   }
 
-  blockquote-font
-  
   .blockquote-footer {
-    font-size: $fs-md;
+    @extend .fs-md;
+
     cite{ @extend .d-block; }
     &::before { @extend .d-none;  }
   }
 
-  p > span.underline{
+   &.pullout > p{
+
+    @extend .d-inline;
     
     background-image: linear-gradient(
       45deg, 
-      rgba($yellow, 1) 0%, 
-      rgba($yellow, 0.5) 100%
+      rgba($yellow, 0.75) 0%, 
+      rgba($yellow, 0.75) 100%
     );
     
     background-repeat: no-repeat;
-    background-size: 100% 0.5rem;
+    background-size: 100% 0.35rem;
     background-position: 0 100%;
-    padding: 0.25rem 0;
+    padding: 0.125rem 0;
   }
 
 }

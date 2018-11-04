@@ -14,22 +14,32 @@
             unset( $toolbars['Full' ][2][$key] );
         }
 
-        // remove the 'Basic' toolbar completely
+        // Remove the 'Basic' toolbar completely
         unset( $toolbars['Basic' ] );
 
-        // return $toolbars - IMPORTANT!
+        // Return $toolbars
         return $toolbars;
     }
 
-    
     ////////////////////////////////////////
     // Remove default format select
     ////////////////////////////////////////
 
-    add_filter( 'mce_buttons', 'remove_default_format_select' );
+    add_filter( 'mce_buttons', 'remove_default_tiny_mce_buttons' );
 
-    function remove_default_format_select( $buttons ) {
-        $remove = array( 'formatselect' );
+    function remove_default_tiny_mce_buttons( $buttons ) {
+        $remove = array( 
+            'formatselect',
+            'blockquote',
+            'hr', // horizontal line
+            'alignleft',
+            'aligncenter',
+            'alignright',
+            'wp_more', // read more link
+            'spellchecker',
+            'dfw', // distraction free writing mode
+            'wp_adv', // kitchen sink toggle (if removed, kitchen sink will always display)
+         );
         return array_diff( $buttons, $remove );
     }
 
@@ -73,10 +83,14 @@
                 'title' => 'Headline (h5)',
                 'block' => 'h5',
             ),
-            
             array(
                 'title' => 'Paragraph',
                 'block' => 'p',
+            ),
+            array(
+                'title' => 'Blockquote',
+                'block' => 'blockquote',
+                'classes' => 'pullout my-4',
             )
         );
 

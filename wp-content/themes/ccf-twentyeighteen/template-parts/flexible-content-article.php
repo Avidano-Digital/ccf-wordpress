@@ -201,7 +201,7 @@
                                             
                                             <?php echo $text; ?>
 
-                                            <img class="mb-2" src="<?php echo $signature['url']; ?>" alt="<?php echo $signature['alt']; ?>">
+                                            <img class="mb-2 d-none" src="<?php echo $signature['url']; ?>" alt="<?php echo $signature['alt']; ?>">
                                             
                                             <footer class="blockquote-footer">
                                                 <?php echo $credit_name; ?> <cite title="Source Title"><?php echo $credit_title; ?></cite>
