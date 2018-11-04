@@ -229,7 +229,7 @@
                             "key": "field_5b9a0195c1bb5",
                             "label": "Image",
                             "name": "image",
-                            "type": "image",
+                            "type": "image_crop",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
@@ -238,16 +238,16 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "crop_type": "hard",
+                            "target_size": "Article Feature",
+                            "width": "",
+                            "height": "",
                             "preview_size": "medium",
-                            "library": "all",
-                            "min_width": 800,
-                            "min_height": 600,
-                            "min_size": "",
-                            "max_width": 2000,
-                            "max_height": 1200,
-                            "max_size": "",
-                            "mime_types": ""
+                            "force_crop": "no",
+                            "save_in_media_library": "yes",
+                            "retina_mode": "no",
+                            "save_format": "id",
+                            "library": "all"
                         },
                         {
                             "key": "field_5b9a01eafca93",
@@ -509,5 +509,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1541060064
+    "modified": 1541316996
 }
