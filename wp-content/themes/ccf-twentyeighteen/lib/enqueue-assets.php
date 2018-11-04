@@ -1,11 +1,5 @@
 <?php
     
-    ////////////////////////////////////////////////////////////////////////////////
-    // 
-    // Front-end only assets
-    // 
-    ////////////////////////////////////////////////////////////////////////////////
-
     add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_theme_assets' );
 
     function enqueue_theme_assets(){
@@ -74,7 +68,6 @@
             true 
         );
 
-
         wp_enqueue_script( 
             'cookies', 
             'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js',
@@ -82,7 +75,6 @@
             '3.4.4', 
             true 
         );
-
 
         wp_enqueue_script( 
             'main', 
@@ -126,48 +118,3 @@
         }
 
     } // enqueue_theme_assets
-
-    ////////////////////////////////////////
-    // Front-end and Editor assets
-    ////////////////////////////////////////
-
-    // add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_assets' );
-
-    function enqueue_assets() {
-        
-        wp_enqueue_style(
-            'ccf-blocks-css',
-            get_stylesheet_directory_uri() . '/css/blocks.css',
-            [ 'wp-blocks' ],
-            time() // Change for production
-        );
-        wp_enqueue_script(
-            'ccf-blocks-js',
-            get_stylesheet_directory_uri() . '/js/blocks.js',
-            [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components' ],
-            time() // Change for production
-        );
-    }
-
-    ////////////////////////////////////////
-    // Editor only assets
-    ////////////////////////////////////////
-
-    // add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
-
-    function enqueue_block_editor_assets() {
-
-        wp_enqueue_style(
-            'ccf-editor-css',
-            get_stylesheet_directory_uri() . '/css/editor.css',
-            [ 'wp-blocks' ],
-            time() // Change for production
-        );
-
-        wp_enqueue_script(
-            'ccf-editor-js',
-            get_stylesheet_directory_uri() . '/js/editor.js',
-            [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components' ],
-            time() // Change for production
-        );
-    }
