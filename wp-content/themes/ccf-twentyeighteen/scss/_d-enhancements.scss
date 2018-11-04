@@ -140,6 +140,14 @@ img{ @extend .img-fluid; }
 
 blockquote{
   @extend .blockquote;
+  > p { 
+    @extend .f-sans-serif;
+    @extend .font-weight-bold;
+    @extend .font-italic;
+
+  }
+
+  blockquote-font
   
   .blockquote-footer {
     font-size: $fs-md;
