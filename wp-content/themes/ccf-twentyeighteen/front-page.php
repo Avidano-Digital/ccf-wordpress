@@ -501,9 +501,10 @@
 
           <div class="container align-self-center">
 
-            <div class="narrow">
+            <div class="narrow py-4">
 
-              <h5 class="card-title h1 text-white text-center text-shadow">Join the race to
+              <h5 class="card-title h1 text-white text-center text-shadow">
+                Join the race to
                 <a class="text-primary" href="#">#SaveTheCheetah</a>
               </h5>
 
