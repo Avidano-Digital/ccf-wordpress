@@ -17468,13 +17468,6 @@
 		"oAP": "/wp-content/themes/ccf-twentyeighteen/lib/acf-theme-options.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentyeighteen/lib/color-palette.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentyeighteen/lib/color-palette.php",
-		"oF": 0
-		},
 	"/wp-content/themes/ccf-twentyeighteen/lib/enqueue-assets.php": {
 		"cB": 0,
 		"ft": 8192,
