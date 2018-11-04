@@ -18,7 +18,7 @@ get_header(); ?>
 
 <main id="content">
 
-    <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <section class="banner">
 
@@ -33,9 +33,7 @@ get_header(); ?>
             <div class="card-img-overlay d-flex">
                 <div class="align-self-end container-fluid">
                     <h1 class="text-right text-secondary">
-                
                         <em><?php echo $parent_title; ?></em>
-
                     </h1>
                 </div>
                 <!-- .align-self-center -->

@@ -24,7 +24,7 @@
         update_option( 'large_size_h', 525 );
         update_option( 'large_crop', 1 );
         
-        // Custom Sizes
+        // Custom Image Sizes
 
         add_image_size( 'Feature Primary', 1500, 750, true );
         add_image_size( 'Feature Secondary', 1000, 500, true );
@@ -40,16 +40,6 @@
         }
          
         add_filter( 'jpeg_quality', 'my_prefix_regenerate_thumbnail_quality');
-
-        ////////////////////////////////////////
-        // Gutenberg support
-        ////////////////////////////////////////
-
-        add_theme_support( 'align-wide' );
-        add_theme_support( 'align-full' );
-
-        add_theme_support( 'wp-block-styles' );
-        add_theme_support( 'editor-color-palette', $color_palette );
 
     } // theme_support
 
@@ -113,7 +103,7 @@
     }
 
     ////////////////////////////////////////
-    // Remove Menu Items
+    // Remove Dashboard Menu Items
     ////////////////////////////////////////
     
     add_action( 'admin_menu', __NAMESPACE__ . '\remove_menus' );
