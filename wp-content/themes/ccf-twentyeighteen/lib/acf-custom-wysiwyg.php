@@ -73,6 +73,7 @@
                 'title' => 'Headline (h5)',
                 'block' => 'h5',
             ),
+            
             array(
                 'title' => 'Paragraph',
                 'block' => 'p',
