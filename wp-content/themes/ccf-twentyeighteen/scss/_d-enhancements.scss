@@ -145,7 +145,6 @@ blockquote{
     @extend .f-sans-serif;
     @extend .font-weight-bold;
     @extend .font-italic;
-
   }
 
   .blockquote-footer {
@@ -156,7 +155,6 @@ blockquote{
   }
 
    &.pullout > p{
-
     @extend .d-inline;
     
     background-image: linear-gradient(
@@ -172,7 +170,6 @@ blockquote{
   }
 
 }
-
 
 ////////////////////////////////////////
 // Tables
