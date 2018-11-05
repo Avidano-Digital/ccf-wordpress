@@ -367,6 +367,114 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5bdffb5f0e769": {
+                    "key": "layout_5bdffb5f0e769",
+                    "name": "stackable_banners",
+                    "label": "Stackable Banners",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bdffb5f0e76a",
+                            "label": "Row",
+                            "name": "row",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5bdffb5f0e76b",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image_crop",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "crop_type": "hard",
+                                    "target_size": "Article Feature",
+                                    "width": "",
+                                    "height": "",
+                                    "preview_size": "medium",
+                                    "force_crop": "yes",
+                                    "save_in_media_library": "yes",
+                                    "retina_mode": "no",
+                                    "save_format": "object",
+                                    "library": "all"
+                                },
+                                {
+                                    "key": "field_5bdffb5f0e76c",
+                                    "label": "Headline",
+                                    "name": "headline",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5bdffb5f0e76d",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "fs-md",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "very_simple",
+                                    "media_upload": 0,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_5bdffb5f0e76e",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5bd72ee33bef5": {
                     "key": "layout_5bd72ee33bef5",
                     "name": "alternating_blocks",
@@ -509,5 +617,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1541325949
+    "modified": 1541407979
 }

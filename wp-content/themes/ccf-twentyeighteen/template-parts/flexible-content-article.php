@@ -236,7 +236,7 @@
         </div>
         <!-- .offset-gutter-x -->
 
-    <?php elseif( get_row_layout() == 'banner_with_page_summary' ):  
+        <?php elseif( get_row_layout() == 'banner_with_page_summary' ):  
 
         $image = get_sub_field('image');
         $caption = get_sub_field('caption');
@@ -300,13 +300,13 @@
         </div>
         <!-- .offset-gutter-x -->
 
-    <?php elseif( get_row_layout() == 'alternating_blocks' ):  
+        <?php elseif( get_row_layout() == 'alternating_blocks' ):  
 
         $row = get_sub_field('row');
 
         ?>
 
-            <?php if( have_rows('row') ): ?>
+        <?php if( have_rows('row') ): ?>
 
             <div class="my-7">
                     
@@ -321,37 +321,107 @@
 
             ?>
 
-                <div class="row no-gutters offset-gutter-x bg-info <?php if($i % 2 == 0) echo 'bg-green' ?>">
+            <div class="row no-gutters offset-gutter-x bg-info <?php if($i % 2 == 0) echo 'bg-green' ?>">
 
-                    <div class="col-lg-6 col-xl-6 text-center <?php if($i % 2 != 0) echo 'order-lg-last' ?>">
+                <div class="col-lg-6 col-xl-6 text-center <?php if($i % 2 != 0) echo 'order-lg-last' ?>">
 
-                        <?php if ($image) : ?>
-                            <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
-                        <?php else : ?>
-                            <img class="card-img" src="http://via.placeholder.com/750x750/000000/333333/.jpg" alt="Placeholder">
-                        <?php endif; ?>
-
-                    </div>
-                    <!-- .col -->
-
-                    <div class="col-lg-6 col-xl-6 d-flex <?php if($i % 2 != 0) echo 'order-lg-first' ?>">
-                        <div class="narrow text-white text-center align-self-center p-4">
-                            <h3 class="text-primary"><?php echo $headline; ?></h3> 
-                            <?php echo $text; ?>
-                        </div>
-                    </div>
-                    <!-- .col -->
+                    <?php if ($image) : ?>
+                        <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                    <?php else : ?>
+                        <img class="card-img" src="http://via.placeholder.com/750x750/000000/333333/.jpg" alt="Placeholder">
+                    <?php endif; ?>
 
                 </div>
-                <!-- .row -->
+                <!-- .col -->
+
+                <div class="col-lg-6 col-xl-6 d-flex <?php if($i % 2 != 0) echo 'order-lg-first' ?>">
+                    <div class="narrow text-white text-center align-self-center p-4">
+                        <h3 class="text-primary"><?php echo $headline; ?></h3> 
+                        <?php echo $text; ?>
+                    </div>
+                </div>
+                <!-- .col -->
+
+            </div>
+            <!-- .row -->
 
             <?php endwhile; ?>
 
             </div>
             <!-- .my-5 -->
 
-            <?php endif; /* details */ ?>
+        <?php endif; /* row */ ?>
 
-    <?php endif; /* section | alternating_blocks */ ?>
-    
+        <?php elseif( get_row_layout() == 'stackable_banners' ):  
+
+            $row = get_sub_field('row');
+
+            ?>
+
+            <?php if( have_rows('row') ): ?>
+
+            <div class="offset-gutter-x my-7">
+                    
+            <?php while( have_rows('row') ): the_row();
+
+            $image = get_sub_field('image');
+            $headline = get_sub_field('headline');
+            $text = get_sub_field('text');
+            $link = get_sub_field('link');
+
+            $i++;
+
+            ?>
+
+            <div class="featured-panel responsive-lg border-bottom border-white">
+
+                <div class="card <?php if($i % 2 == 0): ?>bg-green<?php else: ?>bg-info<?php endif; ?>">
+
+                    <div class="overlay-gradient-y-black-tall">
+                        <?php if ($image) : ?>
+                            <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                        <?php else : ?>
+                            <img class="card-img" src="http://via.placeholder.com/1000x500/333333/000000/.jpg" alt="Placeholder">
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="card-img-overlay d-flex">
+                        <div class="align-self-end">
+                            <div class="container px-0 py-3">
+
+                                <div class="narrow text-white text-shadow">
+
+                                    <h3 class="text-primary"><?php echo $headline; ?></h3>
+                                    
+                                    <div class="fs-lg text-white">
+
+                                        <?php echo $text; ?>
+
+                                    </div>
+
+                                </div>
+                                <!-- .narrow -->
+
+                            </div>
+                            <!-- .container -->
+                        </div>
+                        <!-- .align-self-center -->
+                    </div>
+                    <!-- .card-img-overlay -->
+
+                </div>
+                <!-- .card -->
+
+                </div>
+                <!-- .featured-panel -->
+
+            <?php endwhile; ?>
+
+            </div>
+            <!-- .my-5 -->
+
+            <?php endif; /* row */ ?>
+
+        <?php endif; /* section | banner_with_quote | banner_with_page_summary | alternating_blocks | stackable_banners */ ?>
+
 <?php endwhile; endif; /* article_content */ ?>
