@@ -87,7 +87,6 @@ $container-max-widths: (
 $site-width: 2400px;
 $wide-width: $grid-bp-xxxl;     // 1800px
 $narrow-width: 65ch;            // 65 characters
-// $narrow-width: $grid-bp-md;     // grid-bp-md
      
 $narrow-width-ie: $grid-bp-md;  // IE character count (ch) is too narrow, so for IE we use pixel width instead 
 
@@ -184,7 +183,7 @@ $gray-900: #212529 !default;
 
 // Bootstrap Default Colors
 
-$blue:    #007bff !default
+$blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -195,7 +194,9 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-// Accessible Colors
+////////////////////////////////////////
+// Accessible Color Overrides
+////////////////////////////////////////
 
 $accessible-colors: true;
 @if($accessible-colors){
@@ -217,19 +218,22 @@ $accessible-colors: true;
 
 // Note: Every color added into the theme-color map adds 2-3k to the theme.css file size
 
-$purple:  #462B41;
 $yellow:  #fec34e;
 $orange:  #E3982E;
-$green:   #375339;
+$purple:  #462B41;
 $umber:   #896258;
+$green:   #375339;
 
-$light: #F7F5F0;
+$tan: #F7F5F0;
 
 $theme-colors: (
 
   "primary": $yellow,
   "secondary": $orange,
+
+  "light": $tan,
   "info": $purple,
+
   "umber": $umber,
   "green": $green,
 
