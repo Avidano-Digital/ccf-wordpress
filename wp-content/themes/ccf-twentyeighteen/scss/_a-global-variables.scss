@@ -120,8 +120,7 @@ $font-size-lg:    $fs-rg;
 
 // Line Height Adjustments
 
-$line-height-lg:              1.5 !default;
-$line-height-sm:              1.75;
+$line-height-sm: 1.75;
 
 // Font weights (required)
 
@@ -147,7 +146,7 @@ $h6-font-size:    $font-size-base * 1.125;
 
 $headings-font-weight: $font-weight-bold;
 
-// Lead font style
+// Styles for .lead selector
 
 $lead-font-size: $fs-lg;
 $lead-font-weight: $font-weight-light;
@@ -243,9 +242,8 @@ $theme-colors: (
 // Common Defaults
 ////////////////////////////////////////
 
-// $body-bg: $white !default;
+$body-bg: white !default;
 $body-color: $gray-900 !default;
-
 
 $border-color: $gray-400;
 
@@ -293,15 +291,9 @@ $enable-rounded: false;
 
 // Border Radius
 
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
-
-
-// $border-radius-sm: 0.25rem;
-// $border-radius: .5rem;
-// $border-radius-lg: 1rem;
-// $border-radius-xl: 2rem;
+$border-radius:     .25rem !default;
+$border-radius-lg:  .3rem !default;
+$border-radius-sm:  .2rem !default;
 
 // Set Others to Global Border Radius
 
@@ -374,9 +366,7 @@ $modal-backdrop-opacity: 0.85;
 $figure-caption-font-size:          $fs-md;
 $figure-caption-color:              $text-muted;
 
-////////////////////////////////////////
 // Carousel
-////////////////////////////////////////
 
 $carousel-control-color:            white;
 $carousel-control-bg:               $purple;
