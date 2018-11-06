@@ -71,7 +71,7 @@ get_header(); ?>
                                 <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'our-center' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="#">Our Centre</a>
+                                <a href="">Our Centre</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'staff-and-board' ) ) : ?>current_page_item<?php endif; ?>">
                                 <a href="#">Staff and Board</a>
@@ -91,7 +91,7 @@ get_header(); ?>
                                 <a href="/about-us/what-we-do/education/">Education</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'conservation' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="#">Conservation</a>
+                                <a href="/about-us/what-we-do/conservation/">Conservation</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'international-cheetah-day' ) ) : ?>current_page_item<?php endif; ?>">
                                 <a href="#">International Cheetah Day</a>

@@ -399,14 +399,7 @@
 
                                     </div>
 
-                                    <a class="btn btn-primary"
-                                    data-toggle="collapse"
-                                    href="#collapse-<?php echo $i; ?>"  
-                                    aria-controls="collapse-<?php echo $i; ?>"
-                                    aria-expanded="false" 
-                                    role="button">
-                                        <span class="title mr-2">Further Exploration</span> 
-                                    </a>
+                                    <a class="link" href="#collapse-<?php echo $i; ?>" title="">Further Exploration</a>
 
                                 </div>
                                 <!-- .narrow -->

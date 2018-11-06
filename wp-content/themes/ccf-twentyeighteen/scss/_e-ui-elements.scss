@@ -126,7 +126,6 @@ $featured-panel: true;
       > div{ 
         max-width: $grid-bp-xl;
         @extend .px-lg-2;
-        // @extend .bg-danger;
       }
     }
 
@@ -170,7 +169,7 @@ $featured-panel: true;
       font-size: 8rem;
     }
 
-    // .card-img-overlay{ @extend .p-0; }
+    .card-img-overlay{ @extend .p-0; }
 
     .align-self-end{ @extend .opacity-50; }
     
@@ -320,12 +319,7 @@ $custom-link: true;
   @extend .text-primary;
   @extend .font-weight-bold;
   
-  // add include here
-
-  @include custom-underline(
-    // $first-color: $orange,
-    // $second-color: $orange,
-  );
+  @include custom-underline;
 }
 
 } // end if
