@@ -290,7 +290,7 @@ $toggles-and-accordions: true;
 
       &[aria-expanded="true"]{
 
-        background-color: $transparent;
+        background-color: transparent;
         
         @if $accordion-button-shadow {
           @extend .shadow;
@@ -331,7 +331,7 @@ $custom-link: true;
 ////////////////////////////////////////
 
 @mixin responsive-nav-pills-and-tabs-settings(){
-  border-color: $transparent;
+  border-color: transparent;
 
   .nav-link.active{ border-bottom-color: $border-color; }
 
@@ -664,7 +664,7 @@ $carousel: true;
         @extend .py-1;
         @extend .px-2;
         @extend .fs-md;
-        @extend .text-black;
+        @extend .text-body;
         @include background-opacity($light, .9);
       }
     }

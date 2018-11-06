@@ -164,15 +164,11 @@ $blockquote-font-size: $fs-xl;
 ////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////
-// Colors (Predefined)
+// Predefined Colors
 ////////////////////////////////////////
 
 // Note: Colors must be defined before Bootstrap import, 
-// in this way, colors are injected across all utilites
-
-$white:     #fff;
-$black:     #000;
-$transparent: transparent;
+// Colors are injected across all utilites when scss is compiled
 
 // Bootstrap Default Grays
 
@@ -207,10 +203,8 @@ $accessible-colors: true;
   $blue:    #0072ef;
   $indigo:  #8f51f4;
   $purple:  #8762cd;
-  // $pink:    #e8006d;
   $red:     #ea172b;
   $orange:  #d3d3d3;
-  // $yellow:  #967100;
   $green:   #21883f;
   $teal:    #0c8763;
   $cyan:    #008299;
@@ -233,10 +227,6 @@ $light: #F7F5F0;
 
 $theme-colors: (
 
-  "white": $white,
-  "black": $black,
-  "light": $light,
-
   "primary": $yellow,
   "secondary": $orange,
   "info": $purple,
@@ -246,20 +236,24 @@ $theme-colors: (
 );
 
 ////////////////////////////////////////
-// Consolidated Grays
+// Common Defaults
 ////////////////////////////////////////
 
-// Common Defaults
+// $body-bg: $white !default;
+$body-color: $gray-900 !default;
 
-$body-bg: $white;
-$body-color: $gray-900;
+
 $border-color: $gray-400;
 
 $light: $gray-200;
 $dark: $gray-900;
 $text-muted: $gray-600;
 
-// Accessible Gray Assignments
+////////////////////////////////////////
+// Consolidated Grays
+////////////////////////////////////////
+
+// Note: Bootstrap uses to many gray variations - here we simplify the use of grays
 
 $blockquote-small-color: currentColor;
 $input-placeholder-color: $gray-700;
@@ -334,8 +328,8 @@ $card-spacer-x: $grid-gutter-width/2;
 
 $card-img-overlay-padding: $card-spacer-y $card-spacer-x;
 
-$card-cap-bg: rgba($black, .05);
-$card-border-color: rgba($black, .2);
+$card-cap-bg: rgba(black, .05);
+$card-border-color: rgba(black, .2);
 
 // Global Components
 
@@ -356,16 +350,16 @@ $component-active-bg: $yellow;
 // List Group
 
 $list-group-action-color: $body-color;
-$list-group-hover-bg: $white;
-$list-group-action-active-bg: $light;
+$list-group-hover-bg: white;
+$list-group-action-active-bg: white;
 
 // Box shadows 
 
 $box-shadow-opacity: .25;
 
-$box-shadow-sm:   0 0 .5rem rgba($black, $box-shadow-opacity);
-$box-shadow:      0 .25rem 1.5rem rgba($black, $box-shadow-opacity);
-$box-shadow-lg:   0 .5rem 2.5rem rgba($black, $box-shadow-opacity);
+$box-shadow-sm:   0 0 .5rem rgba(black, $box-shadow-opacity);
+$box-shadow:      0 .25rem 1.5rem rgba(black, $box-shadow-opacity);
+$box-shadow-lg:   0 .5rem 2.5rem rgba(black, $box-shadow-opacity);
 
 // Modals 
 
@@ -380,7 +374,7 @@ $figure-caption-color:              $text-muted;
 // Carousel
 ////////////////////////////////////////
 
-$carousel-control-color:            $white;
+$carousel-control-color:            white;
 $carousel-control-bg:               $purple;
 $carousel-control-opacity:          .5;
  
@@ -390,6 +384,3 @@ $carousel-indicator-spacer:         .25rem;
 $carousel-indicator-active-bg:      $carousel-control-color;
  
 $carousel-caption-width:            100%;
-
-
-// $custom-select-font-size-sm:        $fs-sm;
