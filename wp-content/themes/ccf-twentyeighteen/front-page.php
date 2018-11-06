@@ -46,10 +46,10 @@
 
             <div class="card-img-overlay d-flex">
                 <div class="align-self-end">
-                    <div class="text-white p-lg-4">
+                    <div class="text-white">
                         <h1><?php echo $headline; ?></h1>
                         <p class="fs-lg mb-2"><?php echo $text; ?></p>
-                        <a class="link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                        <a class="btn btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     </div>
                 </div>
                 <!-- .align-self-center -->
@@ -92,7 +92,7 @@
               </div>
               <div class="card-img-overlay d-flex">
                 <div class="align-self-end">
-                  <div class="text-white p-lg-4">
+                  <div class="text-white">
 
                     <?php if( $headline): ?>
                     <h1>
@@ -107,7 +107,7 @@
                     <?php endif; ?>
 
                     <?php if( $link): ?>
-                    <a class="link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                    <a class="btn btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     <?php endif; ?>
 
                   </div>
@@ -141,7 +141,7 @@
                 </div>
                 <!-- .overlay-gradient-y-black -->
 
-                <div class="card-img-overlay d-flex p-md-3">
+                <div class="card-img-overlay d-flex">
                   <div class="align-self-end">
 
                     <?php if( $link): ?>
@@ -176,7 +176,7 @@
                   </div>
                 <?php endif; ?>
 
-                <div class="card-img-overlay d-flex p-md-3">
+                <div class="card-img-overlay d-flex">
                   <div class="align-self-end">
                     <?php if( $link ): ?>
                       <a class="btn btn-block btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
@@ -210,7 +210,7 @@
       
       <section class="container-fluid mb-5" id="latest-news">
 
-        <div class="wide px-lg-2">
+        <div class="wide">
 
           <header class="row align-items-end justify-content-between mb-3">
             <div class="col-md-auto">
@@ -257,7 +257,7 @@
 
       <section class="container-fluid" id="videos">
 
-        <div class="wide px-lg-2">
+        <div class="wide">
 
           <header class="row align-items-end justify-content-between mb-3">
             <div class="col-md-auto">

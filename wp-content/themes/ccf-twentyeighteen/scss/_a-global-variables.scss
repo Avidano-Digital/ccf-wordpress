@@ -327,10 +327,19 @@ $btn-font-weight: $font-weight-bold;
 // Bootstrap Components
 ////////////////////////////////////////
 
+// Cards
+
+$card-spacer-y: $spacer-3;
+$card-spacer-x: $grid-gutter-width/2; 
+
+$card-img-overlay-padding: $card-spacer-y $card-spacer-x;
+
+$card-cap-bg: rgba($black, .05);
+$card-border-color: rgba($black, .2);
+
 // Global Components
 
 $component-active-color: $body-color;
-// $component-active-bg: $secondary;
 $component-link-color: $text-muted;
 
 // Navs (.nav)
@@ -366,15 +375,6 @@ $modal-backdrop-opacity: 0.85;
 
 $figure-caption-font-size:          $fs-md;
 $figure-caption-color:              $text-muted;
-
-////////////////////////////////////////
-// Cards
-////////////////////////////////////////
-
-$card-spacer-y:                     $spacer-3;
-$card-spacer-x:                     $grid-gutter-width / 2;
-$card-cap-bg:                       rgba($black, .05);
-$card-border-color:                 rgba($black, .2);
 
 ////////////////////////////////////////
 // Carousel

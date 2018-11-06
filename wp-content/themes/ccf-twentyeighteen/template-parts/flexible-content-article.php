@@ -373,15 +373,15 @@
 
             ?>
 
-            <div class="featured-panel responsive-lg border-bottom border-white">
+            <div class="featured-panel responsive-lg border-bottom border-white <?php if($i % 2 == 0): ?>bg-green<?php else: ?>bg-info<?php endif; ?>">
 
-                <div class="card <?php if($i % 2 == 0): ?>bg-green<?php else: ?>bg-info<?php endif; ?>">
+                <div class="card ">
 
                     <div class="overlay-gradient-y-black-tall">
                         <?php if ($image) : ?>
-                            <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                            <img class="card-img shadow-lg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
                         <?php else : ?>
-                            <img class="card-img" src="http://via.placeholder.com/1000x500/333333/000000/.jpg" alt="Placeholder">
+                            <img class="card-img shadow-lg" src="http://via.placeholder.com/1500x1000/333333/000000/.jpg" alt="Placeholder">
                         <?php endif; ?>
                     </div>
 
@@ -389,15 +389,24 @@
                         <div class="align-self-end">
                             <div class="container px-0 py-3">
 
-                                <div class="narrow text-white text-shadow">
+                                <div class="narrow">
 
-                                    <h3 class="text-primary"><?php echo $headline; ?></h3>
+                                    <h3 class="h2 text-primary text-shadow"><?php echo $headline; ?></h3>
                                     
-                                    <div class="fs-lg text-white">
+                                    <div class="fs-lg text-white text-shadow mb-3">
 
                                         <?php echo $text; ?>
 
                                     </div>
+
+                                    <a class="btn btn-primary"
+                                    data-toggle="collapse"
+                                    href="#collapse-<?php echo $i; ?>"  
+                                    aria-controls="collapse-<?php echo $i; ?>"
+                                    aria-expanded="false" 
+                                    role="button">
+                                        <span class="title mr-2">Further Exploration</span> 
+                                    </a>
 
                                 </div>
                                 <!-- .narrow -->
@@ -412,8 +421,14 @@
                 </div>
                 <!-- .card -->
 
+                <div class="collapse" id="collapse-<?php echo $i; ?>">
+                    <div class="narrow py-7 text-white">
+                        <p>More Info</p>
+                    </div>
                 </div>
-                <!-- .featured-panel -->
+
+            </div>
+            <!-- .featured-panel -->
 
             <?php endwhile; ?>
 
