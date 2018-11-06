@@ -68,6 +68,7 @@ $spacers: (
 // Note: Default is 30px
 
 $grid-gutter-width: $spacer-4;
+$grid-gutter-width-half: ( $grid-gutter-width / 2 );
 
 // Max container width
 
@@ -319,8 +320,8 @@ $btn-font-weight: $font-weight-bold;
 
 // Cards
 
-$card-spacer-y: $spacer-3;
-$card-spacer-x: $grid-gutter-width/2; 
+$card-spacer-y: $grid-gutter-width;
+$card-spacer-x: $grid-gutter-width-half; 
 
 $card-img-overlay-padding: $card-spacer-y $card-spacer-x;
 
@@ -334,7 +335,7 @@ $component-link-color: $text-muted;
 
 // Navs (.nav)
 
-$input-btn-padding-x: $grid-gutter-width/2;
+$input-btn-padding-x: $grid-gutter-width-half;
 $nav-link-padding-x: $input-btn-padding-x;
 $nav-link-padding-y: .75rem;
 

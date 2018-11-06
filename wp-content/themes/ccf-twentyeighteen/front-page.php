@@ -49,7 +49,7 @@
                     <div class="text-white">
                         <h1><?php echo $headline; ?></h1>
                         <p class="fs-lg mb-2"><?php echo $text; ?></p>
-                        <a class="btn btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                        <a class="link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     </div>
                 </div>
                 <!-- .align-self-center -->
@@ -107,7 +107,7 @@
                     <?php endif; ?>
 
                     <?php if( $link): ?>
-                    <a class="btn btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                    <a class="link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     <?php endif; ?>
 
                   </div>
@@ -210,11 +210,11 @@
       
       <section class="container-fluid mb-5" id="latest-news">
 
-        <div class="wide">
+        <div class="wide px-lg-2">
 
           <header class="row align-items-end justify-content-between mb-3">
             <div class="col-md-auto">
-              <h3 class="display-4">Latest News</h3>
+              <h2 class="display-4">Latest News</h2>
             </div>
             <div class="col-md-auto">
               <a class="blended-link" href="#">All News</a>
@@ -257,7 +257,7 @@
 
       <section class="container-fluid" id="videos">
 
-        <div class="wide">
+        <div class="wide px-lg-2">
 
           <header class="row align-items-end justify-content-between mb-3">
             <div class="col-md-auto">

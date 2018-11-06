@@ -123,7 +123,11 @@ $featured-panel: true;
   .featured-panel{
 
     .align-self-end{
-      > div{ max-width: $grid-bp-xl; }
+      > div{ 
+        max-width: $grid-bp-xl;
+        @extend .px-lg-2;
+        // @extend .bg-danger;
+      }
     }
 
     .bg-white{
@@ -147,15 +151,11 @@ $featured-panel: true;
   .featured-block{
 
     .card-img-overlay{ 
-      // @extend .p-0;
-      // @extend .p-md-3;
+      @extend .p-0;
+      @extend .p-md-3;
     }
 
     @include media-breakpoint-down(sm) {
-      margin-bottom: $border-width;
-    }
-
-    @include media-breakpoint-down(lg) {
       margin-bottom: $border-width;
     }
   }
@@ -242,8 +242,6 @@ $toggles-and-accordions: true;
     &::after {
       content: "\f067";
       @extend %fa-icon;
-
-      // @extend .ml-auto;
     }
 
     &[aria-expanded="true"]::after {
@@ -318,10 +316,16 @@ $custom-link: true;
 @if($custom-link){
 
 .link{
-  @extend .fs-md;
-  @extend .font-weight-bold;
-  @extend .text-uppercase;
+  @extend .fs-rg;
   @extend .text-primary;
+  @extend .font-weight-bold;
+  
+  // add include here
+
+  @include custom-underline(
+    // $first-color: $orange,
+    // $second-color: $orange,
+  );
 }
 
 } // end if

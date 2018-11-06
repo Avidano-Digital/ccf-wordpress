@@ -57,6 +57,38 @@
 }
 
 ////////////////////////////////////////
+// Custom Underline
+////////////////////////////////////////
+
+@mixin custom-underline(
+  
+  $first-color: currentColor,
+  $second-color: currentColor,
+
+  $first-color-opacity: 0.75,
+  $second-color-opacity: 0.75,
+
+  $underline-height: 0.125em,
+  $underline-distance: 0.25em,
+
+  $direction: to right
+
+){
+  background-image: linear-gradient(
+    $direction, 
+    $first-color 0%, 
+    $second-color 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: 100% $underline-height;
+  background-position: 0 100%;
+
+  padding-top: $underline-distance;
+  padding-bottom: $underline-distance;
+}
+
+////////////////////////////////////////
 // Background image
 ////////////////////////////////////////
 
