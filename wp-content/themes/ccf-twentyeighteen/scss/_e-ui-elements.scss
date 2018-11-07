@@ -44,6 +44,30 @@ $skip-to-content: true;
 } // end if
 
 ////////////////////////////////////////
+// Custom Link
+////////////////////////////////////////
+
+$custom-link: true;
+
+@if($custom-link){
+
+.link{
+  @extend .fs-rg;
+  @extend .font-weight-bold;
+
+  color: currentColor;
+
+  @include custom-underline;
+
+  @include hover-focus {
+    @extend .opacity-90;
+    color: currentColor;
+  }
+}
+
+} // end if
+
+////////////////////////////////////////
 // Gradient Classes
 ////////////////////////////////////////
 
@@ -78,7 +102,7 @@ $gradients: true;
       $first-color: black,
       $second-color: black,
       $first-color-opacity: 0,
-      $second-color-opacity: 0.85,
+      $second-color-opacity: 0.9,
       $first-color-position: 25%,
       $second-color-position: 100%
     );
@@ -303,29 +327,6 @@ $toggles-and-accordions: true;
     }
     
   }
-
-} // end if
-
-////////////////////////////////////////
-// Custom Link
-////////////////////////////////////////
-
-$custom-link: true;
-
-@if($custom-link){
-
-.link{
-  @extend .fs-rg;
-  @extend .font-weight-bold;
-  color:currentColor;
-
-  @include custom-underline;
-
-  @include hover-focus {
-    @extend .opacity-90;
-    color: currentColor;
-  }
-}
 
 } // end if
 

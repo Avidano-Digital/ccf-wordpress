@@ -49,7 +49,7 @@
                     <div class="text-white">
                         <h1><?php echo $headline; ?></h1>
                         <p class="fs-lg mb-2"><?php echo $text; ?></p>
-                        <a class="link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                        <a class="link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     </div>
                 </div>
                 <!-- .align-self-center -->
@@ -107,7 +107,7 @@
                     <?php endif; ?>
 
                     <?php if( $link): ?>
-                    <a class="link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                    <a class="link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     <?php endif; ?>
 
                   </div>
@@ -217,7 +217,7 @@
               <h2 class="display-4">Latest News</h2>
             </div>
             <div class="col-md-auto">
-              <a class="link" href="#">All News</a>
+              <a class="link text-body" href="#">All News</a>
             </div>
           </header>
           <!-- .row -->
@@ -264,7 +264,7 @@
               <h3 class="display-4">Videos</h3>
             </div>
             <div class="col-md-auto">
-              <a class="blended-link" href="#">All Videos</a>
+              <a class="link text-body" href="#">All Videos</a>
             </div>
           </header>
 
@@ -319,7 +319,7 @@
                 <div class="align-self-end">
                   <div class="text-white">
                     <h4 class="h3 font-weight-bold"><?php echo $headline; ?></h4>
-                    <a href="<?php echo $link['url']; ?>" class="link"><?php echo $link['title']; ?></a>
+                    <a class="link text-primary" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
                   </div>
                 </div>
                 <!-- .align-self-center -->

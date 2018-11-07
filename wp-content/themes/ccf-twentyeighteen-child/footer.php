@@ -101,10 +101,10 @@
                             <a href="#">Mission and Vision</a>
                         </li>
                         <li>
-                            <a href="#">Dr. Laurie Marker</a>
+                            <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>
                         </li>
                         <li>
-                            <a href="#">Our Centre</a>
+                            <a href="/about-us/who-we-are/our-centre/">Our Centre</a>
                         </li>
                         <li>
                             <a href="#">Staff and Board</a>

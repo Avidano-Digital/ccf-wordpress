@@ -18,32 +18,8 @@
             "default_value": "",
             "tabs": "all",
             "toolbar": "very_simple",
-            "media_upload": 1,
+            "media_upload": 0,
             "delay": 0
-        },
-        {
-            "key": "field_5b96a38ba4e41",
-            "label": "Signature",
-            "name": "signature",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
         },
         {
             "key": "field_5b96a3a8a4e42",
@@ -101,5 +77,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1540806963
+    "modified": 1541576065
 }

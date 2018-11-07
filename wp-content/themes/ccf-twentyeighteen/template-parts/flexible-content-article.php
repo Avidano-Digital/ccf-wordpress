@@ -97,11 +97,12 @@
 
             <?php if( $images ): ?>
 
-                <div class="narrow carousel slide my-6" 
+                <div class="offset-gutter-x carousel slide my-7" 
                     data-ride="carousel" 
                     data-keyboard="true"
                     data-interval="false" 
-                    id="carousel-gallery">
+                    id="carousel-gallery"
+                    dir="ltr">
 
                     <div class="carousel-inner">
 
@@ -270,7 +271,7 @@
                                         <div class="fs-lg text-white">
 
                                             <?php echo $text; ?>
-                                            <a class="link" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+                                            <a class="link text-primary" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
 
                                         </div>
 
@@ -399,7 +400,7 @@
 
                                     </div>
 
-                                    <a class="link" href="#collapse-<?php echo $i; ?>" title="">Further Exploration</a>
+                                    <a class="link text-primary" href="#collapse-<?php echo $i; ?>" title="">Further Exploration</a>
 
                                 </div>
                                 <!-- .narrow -->
