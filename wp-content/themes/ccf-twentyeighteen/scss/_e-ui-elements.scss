@@ -671,6 +671,7 @@ $carousel: true;
 
     .carousel-caption{
       bottom: 0;
+      @extend .py-1;
 
       > p{ 
         @extend .f-sans-serif;

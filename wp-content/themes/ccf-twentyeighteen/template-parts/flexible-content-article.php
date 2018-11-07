@@ -205,8 +205,6 @@
                                             <span class="fs-xl text-primary mb-2"><span class="fas fa-quote-left"></span></span>
                                             
                                             <?php echo $text; ?>
-
-                                            <img class="mb-2 d-none" src="<?php echo $signature['url']; ?>" alt="<?php echo $signature['alt']; ?>">
                                             
                                             <footer class="blockquote-footer">
                                                 <?php echo $credit_name; ?> <cite title="Source Title"><?php echo $credit_title; ?></cite>
@@ -272,9 +270,12 @@
 
                                         <h3 class="text-primary"><?php echo $headline; ?></h3>
                                         
-                                        <div class="fs-lg text-white">
+                                        <div class="text-white">
 
-                                            <?php echo $text; ?>
+                                            <div class="fs-lg mb-2">
+                                                <?php echo $text; ?>
+                                            </div>
+
                                             <a class="link text-primary" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
 
                                         </div>
