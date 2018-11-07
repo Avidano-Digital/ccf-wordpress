@@ -119,21 +119,23 @@
 
                     </div>
 
-                    <div class="row no-gutters align-items-center py-2">
-                        <div class="col-2 text-left px-3">
+                    <div class="row no-gutters align-items-center justify-content-between py-2">
+
+                        <div class="col-auto text-left px-2">
                             <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="prev">
                                 <span class="fas fa-chevron-left fa-lg" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
                         </div>
                         <!-- .col -->
-                        <div class="col-8">
+
+                        <div class="col-auto">
 
                             <ol class="carousel-indicators">
 
                             <?php foreach( $images as $image ): ?>
 
-                                <li data-target="#carousel-gallery" class="<?php if($count_b == 0){ echo 'active'; } ?>" data-slide-to="<?php echo $$count_b; ?>">
+                                <li data-target="#carousel-gallery" class="<?php if($count_b == 0){ echo 'active'; } ?>" data-slide-to="<?php echo $count_b; ?>">
                                     <span class="sr-only">Slide 1</span>
                                 </li>
 
@@ -143,7 +145,7 @@
                         </div>
                         <!-- .col -->
                         
-                        <div class="col-2 text-right px-3">
+                        <div class="col-auto text-right px-2">
                             <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="next">
                                 <span class="fas fa-chevron-right fa-lg" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>

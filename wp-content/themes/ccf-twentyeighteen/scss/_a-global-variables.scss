@@ -370,12 +370,12 @@ $figure-caption-color:              $text-muted;
 // Carousel
 
 $carousel-control-color:            white;
-$carousel-control-bg:               $purple;
-$carousel-control-opacity:          .5;
+$carousel-control-bg:               $dark;
+$carousel-control-opacity:          .25;
  
 $carousel-indicator-width:          0.75rem;
 $carousel-indicator-height:         0.75rem;
-$carousel-indicator-spacer:         .25rem;
+$carousel-indicator-spacer:         0.25rem;
 $carousel-indicator-active-bg:      $carousel-control-color;
  
 $carousel-caption-width:            100%;
