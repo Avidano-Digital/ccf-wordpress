@@ -109,8 +109,11 @@
                     <?php foreach( $images as $image ): ?>
 
                         <div class="carousel-item <?php if($count_a == 0){ echo 'active'; } ?>">
-                            <img class="d-block w-100" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
-                            <div class="carousel-caption">
+                            <div class="overlay-gradient-y-black-shorty">
+
+                            <img class="w-100" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
+                            </div>
+                            <div class="carousel-caption bg-opacity-black-60">
                                 <p><?php echo $image['caption']; ?></p>
                             </div>
                         </div>
@@ -196,9 +199,9 @@
                             <div class="align-self-end">
                                 <div class="container px-0 py-3">
 
-                                    <div class="narrow text-white">
+                                    <div class="narrow text-white text-shadow">
 
-                                        <blockquote class="blockquote text-shadow">
+                                        <blockquote class="blockquote ">
                                             
                                             <span class="fs-xl text-primary mb-2"><span class="fas fa-quote-left"></span></span>
                                             

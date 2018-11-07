@@ -348,6 +348,7 @@ article section div > ul {
 
 .bg-opacity-black-10{ @include background-opacity(black, 0.1); }
 .bg-opacity-black-20{ @include background-opacity(black, 0.2); }
+.bg-opacity-black-60{ @include background-opacity(black, 0.6); }
 .bg-opacity-black-80{ @include background-opacity(black, 0.8); }
 .bg-opacity-black-90{ @include background-opacity(black, 0.9); }
 

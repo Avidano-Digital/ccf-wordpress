@@ -101,8 +101,20 @@ $gradients: true;
       $first-color: black,
       $second-color: black,
       $first-color-opacity: 0,
-      $second-color-opacity: 0.9,
+      $second-color-opacity: 0.85,
       $first-color-position: 25%,
+      $second-color-position: 100%
+    );
+  }
+
+  .overlay-gradient-y-black-short::before{
+    @include linear-gradient(
+      $direction: to bottom,
+      $first-color: black,
+      $second-color: black,
+      $first-color-opacity: 0,
+      $second-color-opacity: 0.85,
+      $first-color-position: 50%,
       $second-color-position: 100%
     );
   }
@@ -124,7 +136,7 @@ $gradients: true;
     a.link{ color: $orange !important; }
   }
   .bg-info{
-    h1, h2, h3, h4, p, a.link{ text-shadow: none; }
+    h1, h2, h3, h4, p, a.link, blockquote, div { text-shadow: none; }
   }
   
 }
@@ -632,6 +644,7 @@ $carousel: true;
 @if($carousel){
  
   .carousel{
+    @extend .bg-dark;
  
     a[data-slide="prev"],
     a[data-slide="next"]
@@ -657,31 +670,26 @@ $carousel: true;
     }
 
     .carousel-caption{
-      @extend .p-0;
-      bottom: 0.75rem;
+      bottom: 0;
 
       > p{ 
         @extend .f-sans-serif;
         @extend .d-inline-block;
-        @extend .shadow-sm;
-        @extend .py-1;
         @extend .px-2;
+        @extend .mb-0;
         @extend .fs-md;
-        @extend .text-body;
-        @include background-opacity($light, .9);
+        @extend .text-white;
+        @extend .text-shadow;
       }
     }
  
     @include media-breakpoint-down(md){
- 
+
+  [class^="overlay-gradient-"]::before{ display: none; }
       .carousel-caption{
         position: static;
-        background: $light;
-
-        > p{
-          @include border-radius(0);
-          box-shadow: none !important;
-        }
+        background: black;
+        margin-bottom: $border-width;
       }
     }
   }
