@@ -86,7 +86,7 @@
                 </div>
                 <!-- .narrow -->
 
-            <?php elseif( get_row_layout() == 'gallery_block' ): 
+            <?php elseif( get_row_layout() == 'gallery_carousel_block' ): 
             
                 $images = get_sub_field('images');
 
@@ -110,8 +110,7 @@
 
                         <div class="carousel-item <?php if($count_a == 0){ echo 'active'; } ?>">
                             <div class="overlay-gradient-y-black-shorty">
-
-                            <img class="w-100" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
+                            <img class="w-100" src="<?php echo $image['sizes']['Article Feature']; ?>" alt="<?php echo $image['alt']; ?>">
                             </div>
                             <div class="carousel-caption bg-opacity-black-60">
                                 <p><?php echo $image['caption']; ?></p>
@@ -124,7 +123,7 @@
 
                     <div class="row no-gutters align-items-center justify-content-between py-2">
 
-                        <div class="col-auto text-left px-2">
+                        <div class="col-auto text-left px-3">
                             <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="prev">
                                 <span class="fas fa-chevron-left fa-lg" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
@@ -148,7 +147,7 @@
                         </div>
                         <!-- .col -->
                         
-                        <div class="col-auto text-right px-2">
+                        <div class="col-auto text-right px-3">
                             <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="next">
                                 <span class="fas fa-chevron-right fa-lg" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>

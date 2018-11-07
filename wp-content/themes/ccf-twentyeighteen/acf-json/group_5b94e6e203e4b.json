@@ -150,37 +150,10 @@
                                 },
                                 "layout_5b9a12ac863fd": {
                                     "key": "layout_5b9a12ac863fd",
-                                    "name": "gallery_block",
-                                    "label": "Gallery Block",
+                                    "name": "gallery_carousel_block",
+                                    "label": "Gallery Carousel Block",
                                     "display": "block",
                                     "sub_fields": [
-                                        {
-                                            "key": "field_5b9a130c863ff",
-                                            "label": "Type",
-                                            "name": "type",
-                                            "type": "select",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "choices": {
-                                                "Carousel": "Carousel",
-                                                "Thumbnails": "Thumbnails"
-                                            },
-                                            "default_value": [
-                                                "Carousel"
-                                            ],
-                                            "allow_null": 0,
-                                            "multiple": 0,
-                                            "ui": 0,
-                                            "return_format": "value",
-                                            "ajax": 0,
-                                            "placeholder": ""
-                                        },
                                         {
                                             "key": "field_5b9a12b9863fe",
                                             "label": "Images",
@@ -617,5 +590,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1541407979
+    "modified": 1541596306
 }
