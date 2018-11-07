@@ -71,7 +71,7 @@ get_header(); ?>
                                 <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'our-centre' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="">Our Centre</a>
+                                <a href="/about-us/who-we-are/our-centre/">Our Centre</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'staff-and-board' ) ) : ?>current_page_item<?php endif; ?>">
                                 <a href="#">Staff and Board</a>
