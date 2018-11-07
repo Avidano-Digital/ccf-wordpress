@@ -94,7 +94,7 @@ get_header(); ?>
                                 <a href="/about-us/what-we-do/conservation/">Conservation</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'international-cheetah-day' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="#">International Cheetah Day</a>
+                                <a href="/about-us/what-we-do/international-cheetah-day/">International Cheetah Day</a>
                             </li>
                         </ul>
 

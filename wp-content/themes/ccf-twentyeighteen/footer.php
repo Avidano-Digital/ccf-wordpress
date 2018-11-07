@@ -55,10 +55,10 @@
                             <a href="/about-us/what-we-do/education/">Education</a>
                         </li>
                         <li>
-                            <a href="#">Conservation</a>
+                            <a href="/about-us/what-we-do/conservation/">Conservation</a>
                         </li>
                         <li>
-                            <a href="#">International Cheetah Day</a>
+                            <a href="#/about-us/what-we-do/international-cheetah-day/">International Cheetah Day</a>
                         </li>
                     </ul>
 
