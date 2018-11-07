@@ -316,10 +316,15 @@ $custom-link: true;
 
 .link{
   @extend .fs-rg;
-  @extend .text-primary;
   @extend .font-weight-bold;
-  
+  color:currentColor;
+
   @include custom-underline;
+
+  @include hover-focus {
+    @extend .opacity-90;
+    color: currentColor;
+  }
 }
 
 } // end if

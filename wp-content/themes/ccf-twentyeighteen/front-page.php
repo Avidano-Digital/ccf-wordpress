@@ -217,7 +217,7 @@
               <h2 class="display-4">Latest News</h2>
             </div>
             <div class="col-md-auto">
-              <a class="blended-link" href="#">All News</a>
+              <a class="link" href="#">All News</a>
             </div>
           </header>
           <!-- .row -->
@@ -317,7 +317,7 @@
               </div>
               <div class="card-img-overlay d-flex">
                 <div class="align-self-end">
-                  <div class="text-white p-lg-4">
+                  <div class="text-white">
                     <h4 class="h3 font-weight-bold"><?php echo $headline; ?></h4>
                     <a href="<?php echo $link['url']; ?>" class="link"><?php echo $link['title']; ?></a>
                   </div>

@@ -373,7 +373,7 @@
 
             ?>
 
-            <div class="featured-panel responsive-lg border-bottom border-white <?php if($i % 2 == 0): ?>bg-green<?php else: ?>bg-info<?php endif; ?>">
+            <div class="featured-panel responsive-lg <?php if($i % 2 == 0): ?>bg-green<?php else: ?>bg-info<?php endif; ?>">
 
                 <div class="card ">
 
