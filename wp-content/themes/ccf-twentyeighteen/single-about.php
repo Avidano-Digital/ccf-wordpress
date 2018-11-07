@@ -9,6 +9,7 @@ get_header(); ?>
 <?php                             
     $current = $post->ID;
     $parent = $post->post_parent;
+    
     $grandparent_get = get_post($parent);
     $grandparent = $grandparent_get->post_parent;
     $siblings = wp_list_pages('title_li=&child_of=' . $parent . '&echo=0&post_type=about');
