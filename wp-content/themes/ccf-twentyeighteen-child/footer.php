@@ -98,7 +98,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">Mission and Vision</a>
+                            <a href="/about-us/who-we-are/mission-and-vision/">Mission and Vision</a>
                         </li>
                         <li>
                             <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>

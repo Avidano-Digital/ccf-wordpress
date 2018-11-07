@@ -70,7 +70,7 @@ get_header(); ?>
                             <li class="page_item <?php if ( is_single( 'dr-laurie-marker' ) ) : ?>current_page_item<?php endif; ?>">
                                 <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>
                             </li>
-                            <li class="page_item <?php if ( is_single( 'our-center' ) ) : ?>current_page_item<?php endif; ?>">
+                            <li class="page_item <?php if ( is_single( 'our-centre' ) ) : ?>current_page_item<?php endif; ?>">
                                 <a href="">Our Centre</a>
                             </li>
                             <li class="page_item <?php if ( is_single( 'staff-and-board' ) ) : ?>current_page_item<?php endif; ?>">
