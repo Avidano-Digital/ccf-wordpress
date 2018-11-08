@@ -398,7 +398,7 @@
 
     <?php endif; /* Facts */ ?>
 
-    <section id="cheetah-range" class="featured-panel responsive-xl">
+    <section id="cheetah-range" class="featured-panel responsive-xl" dir="ltr">
 
       <div class="card bg-info">
         <img class="card-img d-xl-none" src="<?php echo get_template_directory_uri(); ?>/images/cheetah-range-sm.svg" alt="Placeholder">
