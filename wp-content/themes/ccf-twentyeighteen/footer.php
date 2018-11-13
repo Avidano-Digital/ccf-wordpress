@@ -293,11 +293,9 @@
 
     </div>
 
-
-
     <div class="container-fluid bg-dark">
         <div class="wide py-2">
-            <p class="fs-md text-white">
+            <p class="fs-sm text-white">
                 <span class="d-block d-sm-inline-block">© 2019 Cheetah Conservation Fund</span>
                 <span class="d-none d-sm-inline-block mx-1">•</span>
                 <a class="blended-link" href="#">Privacy Policy</a>
