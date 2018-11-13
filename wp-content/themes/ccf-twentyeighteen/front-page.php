@@ -206,7 +206,7 @@
 
     <section class="py-5 py-xl-7">
 
-      <h2 class="">News and Videos from CCF</h2>
+      <h2 class="sr-only">News and Videos from CCF</h2>
       
       <section class="container-fluid mb-5" id="latest-news">
 

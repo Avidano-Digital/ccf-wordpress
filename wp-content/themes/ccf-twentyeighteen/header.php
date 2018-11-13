@@ -15,10 +15,6 @@
 
 <body <?php body_class(); ?>>
 
-    <div class="collapse" id="desktop-search">
-        <?php include( 'include/site-search.php' ); ?>
-    </div>
-
     <header id="global-header">
 
         <div class="container-fluid shadow-sm z-index-900">

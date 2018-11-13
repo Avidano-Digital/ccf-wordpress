@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 
 <head>
@@ -6,7 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Canada • Cheetah Conservation Fund</title>
+    <title><?php the_title(); ?> • Cheetah Conservation Fund</title>
 
     <?php wp_head(); ?>
 
@@ -14,45 +15,50 @@
 
 <body <?php body_class(); ?>>
 
-    <div class="collapse" id="desktop-search">
-        <?php include( 'include/site-search.php' ); ?>
-    </div>
-
     <header id="global-header">
         
         <div class="container-fluid shadow-sm z-index-900">
 
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
 
-                <div id="logo" class="col-sm text-center text-sm-left py-2">
-                    <a href="/canada/" class="home" title="Cheetah Conservation Fund home">
+                <div id="wrap-logo" class="col-md-auto text-center text-md-left py-2">
+                    <a class="d-inline-block" href="/canada/" title="Home">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ccf-canada-logo.svg" alt="Cheetah Conservation Fund logo">
                     </a>
                 </div>
-
-                <div class="col-sm-auto d-flex d-sm-none align-items-center border-top py-2">
-
-                    <button class="btn no-btn-style fs-lg" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false"
-                        aria-controls="mobile-menu">
-                        <span class="fas fa-bars"></span>
-                        <span class="sr-only">Main Navigation</span>
-                    </button>
-
-                    <a class="btn btn-primary donate ml-auto" href="#" title="Donate">Donate</a>
-
-                </div>
                 <!-- .col -->
 
-                <!-- col c -->
-                <div class="col-sm-auto d-none d-sm-flex d-xl-none align-items-center">
+                <!-- separator -->
+                <div class="col-12 border-top d-md-none"></div>
 
-                    <a class="btn btn-primary donate ml-auto" href="#" title="Donate">Donate</a>
+                <div class="col d-xl-none py-2">
 
-                    <button class="btn no-btn-style ml-3" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false"
-                        aria-controls="mobile-menu">
-                        <span class="fas fa-bars fa-lg"></span>
-                        <span class="sr-only">Main Navigation</span>
-                    </button>
+                    <div class="row align-items-center justify-content-between justify-content-md-end">
+
+                        <div class="col-auto order-md-last">
+
+                            <button class="btn no-btn-style fs-lg" type="button" data-toggle="collapse" data-target="#mobile-menu"
+                                aria-expanded="false" aria-controls="mobile-menu">
+                                <span class="fas fa-bars"></span>
+                                <span class="sr-only">Main Navigation</span>
+                            </button>
+
+                        </div>
+                        <!-- .col -->
+
+                        <div class="col-auto">
+
+                            <ul class="link-list horizontal no-reverse">
+                                <li>
+                                    <a class="btn btn-primary donate" href="#" title="Donate">Donate</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- .col -->
+
+                    </div>
+                    <!-- .row -->
 
                 </div>
                 <!-- .col -->
