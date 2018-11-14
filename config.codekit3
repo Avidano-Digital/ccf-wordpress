@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -17117,7 +17124,7 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/wp-content/themes/ccf-twentyeighteen/images/feature/resource-library.jpg": {
+	"/wp-content/themes/ccf-twentyeighteen/images/feature/resource-library.JPG": {
 		"ft": 16384,
 		"iS": 691698,
 		"jF": 0,
