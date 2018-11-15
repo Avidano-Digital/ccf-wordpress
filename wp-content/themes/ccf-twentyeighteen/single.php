@@ -70,19 +70,23 @@ get_header(); ?>
                     <p class="f-sans-serif "> </p>
                 </header>
 
-                <?php if ( has_post_thumbnail()) : ?>
+                <?php $featured_image = get_field('featured_image');	
+                
+                if( $featured_image ): ?>
 
                 <div class="narrow mb-5">
 
-                <figure class="figure my-0">
-                    <?php the_post_thumbnail( 'large', array( 'class' => 'figure-img' ) ); ?>
-                    <figcaption class="figure-caption"><?php the_post_thumbnail_caption(); ?></figcaption>
-                </figure>
-                
+                    <figure class="figure my-0">
+                        <img class="figure-img" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>" />
+                        <?php if( $featured_image['caption'] ): ?>
+                            <figcaption class="figure-caption"><?php echo $featured_image['caption'] ?></figcaption>
+                        <?php endif; ?>
+                    </figure>
+
                 </div>
+                <!-- .narrow -->
 
-                <?php endif; /* has_post_thumbnail */ ?>
-
+                <?php endif; /* featured_image */ ?>
 
                 <?php get_template_part('template-parts/flexible-content-post'); ?>
 

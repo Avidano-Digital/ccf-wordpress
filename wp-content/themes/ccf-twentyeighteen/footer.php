@@ -16,12 +16,19 @@
             <div class="card">
 
                 <div class="overlay-gradient-y-black">
-                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+
+                    <?php if ( $image ) : ?>
+                        <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    <?php else : ?>
+                        <img class="card-img" src="http://via.placeholder.com/500x250/000000/333333/.jpg" alt="Placeholder">
+                    <?php endif; ?>
+
                 </div>
 
                 <div class="card-img-overlay d-flex p-md-3">
                     <div class="align-self-end">
-                        <a class="btn btn-block btn-primary" href="<?php echo $link['url']; ?>" title="Resource Library"><?php echo $link['title']; ?></a>
+                        <a class="btn btn-block btn-primary" href="<?php echo $link['url']; ?>" title="Resource Library">
+                            <?php echo $link['title']; ?></a>
                     </div>
                 </div>
 
@@ -33,9 +40,9 @@
         <?php endwhile; ?>
 
     </section>
-    
+
     <?php endif; /* footer_features */ ?>
-    
+
     <div class="container-fluid wide" id="all-links">
 
         <div class="wide px-lg-2 py-6">
@@ -153,7 +160,7 @@
 
                     <ul class="link-list">
                         <li>
-                             <span class="font-weight-bold mb-2">News</span>
+                            <span class="font-weight-bold mb-2">News</span>
                         </li>
                         <li>
                             <a href="#">Blog</a>
@@ -248,7 +255,7 @@
                             </a>
                         </li>
                     </ul>
-                    
+
                     <h6>CCF Newsletters</h6>
 
                     <ul class="link-list horizontal fs-lg">

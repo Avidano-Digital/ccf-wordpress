@@ -235,7 +235,15 @@
               <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <div>
                 <span><?php the_date(); ?></span>
-                <img class="w-100" src="<?php the_post_thumbnail_url( 'medium' ); ?>" alt="<?php the_title(); ?>">
+
+                <?php $feature_image = get_field('featured_image');
+
+                if( !empty($feature_image) ): ?>
+
+                <img class="w-100" src="<?php echo $feature_image; ?>" alt="<?php the_title(); ?>" />
+
+                <?php endif; ?>
+                                
                 </div>
                 <h5><?php the_title(); ?></h5>
               </a>
