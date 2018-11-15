@@ -236,15 +236,16 @@
                 <div>
                 <span><?php the_date(); ?></span>
 
-                <?php $feature_image = get_field('featured_image');
+                <?php $featured_image = get_field('featured_image');	
+                
+                if( $featured_image ): ?>
+                
+                <img class="w-100" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>" />
+                
+                <?php endif; /* featured_image */ ?>
 
-                if( !empty($feature_image) ): ?>
-
-                <img class="w-100" src="<?php echo $feature_image; ?>" alt="<?php the_title(); ?>" />
-
-                <?php endif; ?>
-                                
                 </div>
+
                 <h5><?php the_title(); ?></h5>
               </a>
             </div>
