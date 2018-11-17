@@ -23,6 +23,7 @@
       // Primary Feature Vars
       $primary_feature = get_field('primary_feature'); 
       $image = $primary_feature['image'];
+      $image_alt = $primary_feature['image_alt'];
       $headline = $primary_feature['headline'];
       $text = $primary_feature['text'];
       $link = $primary_feature['link'];
@@ -36,7 +37,7 @@
           <div class="overlay-gradient-y-black">
             
             <?php if( $image ): ?>
-              <img class="card-img" src="<?php echo $image; ?>" alt="<?php echo $image['alt']; ?>">
+              <img class="card-img" src="<?php echo $image; ?>" alt="<?php echo $image_alt; ?>">
             <?php else : ?>
               <img class="card-img" src="https://via.placeholder.com/1500x750" alt="Placeholder">
             <?php endif; ?>

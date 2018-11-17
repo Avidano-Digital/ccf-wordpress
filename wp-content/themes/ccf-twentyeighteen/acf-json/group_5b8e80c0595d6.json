@@ -27,6 +27,25 @@
             "library": "all"
         },
         {
+            "key": "field_5bf0070e73008",
+            "label": "Image Alt",
+            "name": "image_alt",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5b98d5b169238",
             "label": "Headline",
             "name": "headline",
@@ -97,5 +116,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1542455871
+    "modified": 1542457184
 }
