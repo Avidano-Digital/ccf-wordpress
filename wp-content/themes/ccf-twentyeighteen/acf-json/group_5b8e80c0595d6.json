@@ -16,14 +16,14 @@
                 "id": ""
             },
             "crop_type": "hard",
-            "target_size": "Feature Primary",
-            "width": "",
-            "height": "",
-            "preview_size": "medium",
+            "target_size": "custom",
+            "width": 1500,
+            "height": 750,
+            "preview_size": "thumbnail",
             "force_crop": "yes",
-            "save_in_media_library": "yes",
+            "save_in_media_library": "no",
             "retina_mode": "no",
-            "save_format": "object",
+            "save_format": "url",
             "library": "all"
         },
         {
@@ -97,5 +97,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1540807189
+    "modified": 1542455871
 }

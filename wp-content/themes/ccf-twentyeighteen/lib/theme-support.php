@@ -12,26 +12,27 @@
 
         add_theme_support( 'post-thumbnails' );
 
-        update_option( 'thumbnail_size_w', 300 );
-        update_option( 'thumbnail_size_h', 200 );
-        update_option( 'thumbnail_crop', 1 );
+        update_option( 'thumbnail_size_w', 320 );
+        update_option( 'thumbnail_size_h', 320 );
+        update_option( 'thumbnail_crop', false );
 
-        update_option( 'medium_size_w', 600 );
-        update_option( 'medium_size_h', 350 );
-        update_option( 'medium_crop', 1 );
+        update_option( 'medium_size_w', 0 );
+        update_option( 'medium_size_h', 0 );
 
-        update_option( 'large_size_w', 900 );
-        update_option( 'large_size_h', 525 );
-        update_option( 'large_crop', 1 );
+        update_option( 'medium_large_size_w', 0 );
+        update_option( 'medium_large_size_h', 0 );
+
+        update_option( 'large_size_w', 0 );
+        update_option( 'large_size_h', 0 );
         
         // Custom Image Sizes
 
-        add_image_size( 'Feature Primary', 1500, 750, true );
-        add_image_size( 'Feature Secondary', 1000, 500, true );
-        add_image_size( 'Feature Tertiary', 500, 250, true );
+        // add_image_size( 'Feature Primary', 1500, 750, true );
+        // add_image_size( 'Feature Secondary', 1000, 500, true );
+        // add_image_size( 'Feature Tertiary', 500, 250, true );
 
-        add_image_size( 'Hero', 1500, 500, true );
-        add_image_size( 'Article Feature', 1500, 1000, true );
+        // add_image_size( 'Hero', 1500, 500, true );
+        // add_image_size( 'Article Feature', 1500, 1000, true );
 
         // Custom JPG Compression
 
