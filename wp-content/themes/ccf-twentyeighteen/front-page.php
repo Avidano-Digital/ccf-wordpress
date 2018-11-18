@@ -70,9 +70,10 @@
 
           <?php
 
-          // Primary Feature Options
+          // Secondary Feature Vars
           $secondary_feature = get_field('secondary_feature'); 
           $image = $secondary_feature['image'];
+          $image_alt = $secondary_feature['image_alt'];
           $headline = $secondary_feature['headline'];
           $text = $secondary_feature['text'];
           $link = $secondary_feature['link'];
@@ -85,9 +86,9 @@
               <div class="overlay-gradient-y-black">
 
                 <?php if( $image ): ?>
-                  <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                  <img class="card-img" src="<?php echo $image; ?>" alt="<?php echo $image_alt; ?>">
                 <?php else : ?>
-                  <img class="card-img" src="https://via.placeholder.com/1500x750" alt="Placeholder">
+                  <img class="card-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
                 <?php endif; ?>
 
               </div>
@@ -134,7 +135,7 @@
                 <div class="overlay-gradient-y-black">
 
                   <?php if( $image ): ?>
-                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image_alt; ?>">
                   <?php else : ?>
                     <img class="card-img" src="https://via.placeholder.com/1500x750" alt="Placeholder">
                   <?php endif; ?>
@@ -160,9 +161,10 @@
 
             <?php endif; /* Secondary Feature */ ?>
 
-            <?php while( have_rows('tertiary_features') ): the_row(); 
-    
+            <?php if( have_rows('tertiary_features') ) : while( have_rows('tertiary_features') ): the_row();     
+
             $image = get_sub_field('image');
+            $image_alt = get_sub_field['image_alt'];
             $link = get_sub_field('link');
 
             ?>
@@ -173,7 +175,7 @@
 
                 <?php if( $image ): ?>
                   <div class="overlay-gradient-y-black">
-                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                    <img class="card-img" src="<?php echo $image; ?>" alt="<?php echo $image_alt; ?>">
                   </div>
                 <?php endif; ?>
 
@@ -191,7 +193,7 @@
             </div>
             <!-- .col-* -->
 
-            <?php endwhile; /* Tertiary feature */ ?>
+            <?php endwhile; endif; /* Tertiary feature */ ?>
 
           </div>
           <!-- .row -->

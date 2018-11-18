@@ -80,10 +80,10 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5b8e985f594ce",
+                    "key": "field_5bf11d80844e1",
                     "label": "Image",
                     "name": "image",
-                    "type": "image",
+                    "type": "image_crop",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
@@ -92,19 +92,38 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "crop_type": "hard",
+                    "target_size": "custom",
+                    "width": 500,
+                    "height": 250,
+                    "preview_size": "thumbnail",
+                    "force_crop": "yes",
+                    "save_in_media_library": "no",
+                    "retina_mode": "no",
+                    "save_format": "url",
+                    "library": "all"
                 },
                 {
-                    "key": "field_5b8e98ce75dd3",
+                    "key": "field_5bf11e40844e2",
+                    "label": "Image Alt",
+                    "name": "image_alt",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Placeholder",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bf11e68844e3",
                     "label": "Link",
                     "name": "link",
                     "type": "link",
@@ -382,5 +401,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1536577623
+    "modified": 1542529052
 }

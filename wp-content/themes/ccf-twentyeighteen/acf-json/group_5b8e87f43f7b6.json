@@ -16,15 +16,34 @@
                 "id": ""
             },
             "crop_type": "hard",
-            "target_size": "Feature Secondary",
-            "width": "",
-            "height": "",
+            "target_size": "custom",
+            "width": 1000,
+            "height": 500,
             "preview_size": "thumbnail",
             "force_crop": "yes",
-            "save_in_media_library": "yes",
+            "save_in_media_library": "no",
             "retina_mode": "no",
-            "save_format": "object",
+            "save_format": "url",
             "library": "all"
+        },
+        {
+            "key": "field_5bf008dfb5caa",
+            "label": "Image Alt",
+            "name": "image_alt",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5b8e8821ae2c0",
@@ -97,5 +116,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1542276664
+    "modified": 1542457689
 }
