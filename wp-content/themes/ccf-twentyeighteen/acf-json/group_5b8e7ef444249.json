@@ -176,19 +176,19 @@
                     "width": 1000,
                     "height": 500,
                     "preview_size": "thumbnail",
-                    "force_crop": "no",
+                    "force_crop": "yes",
                     "save_in_media_library": "no",
                     "retina_mode": "no",
                     "save_format": "url",
                     "library": "all"
                 },
                 {
-                    "key": "field_5b90d9a48dded",
-                    "label": "Headline",
-                    "name": "headline",
+                    "key": "field_5bf1278c66b36",
+                    "label": "Image Alt",
+                    "name": "image_alt",
                     "type": "text",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -202,12 +202,12 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5bf1278c66b36",
-                    "label": "Image Alt",
-                    "name": "image_alt",
+                    "key": "field_5b90d9a48dded",
+                    "label": "Headline",
+                    "name": "headline",
                     "type": "text",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -420,5 +420,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1542531033
+    "modified": 1542533529
 }

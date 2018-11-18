@@ -315,6 +315,7 @@
         <?php while( have_rows('quaternary_features') ): the_row(); 
         
         $image = get_sub_field('image');
+        $image_alt = get_sub_field('image_alt');
         $headline = get_sub_field('headline');
         $link = get_sub_field('link');
 
@@ -325,7 +326,7 @@
 
             <div class="card bg-white">
               <div class="overlay-gradient-y-black">
-                <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+                <img class="card-img" src="<?php echo $image; ?>" alt="<?php echo $image_alt; ?>">
               </div>
               <div class="card-img-overlay d-flex">
                 <div class="align-self-end">
