@@ -1,7 +1,7 @@
 <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
     <ul class="link-list text-white py-4 py-xl-0">
-        <li class="current_page_item"><a href="#" title="CCF Insights">CCF Insights</a></li>
+        <li class="current_page_item"><a href="#" title="CCF Blog">CCF Blog</a></li>
         <li><a href="#" title="Our Center">Press Releases</a></li>
         <li><a href="#" title="History of CCF">Press Kits</a></li>
     </ul>

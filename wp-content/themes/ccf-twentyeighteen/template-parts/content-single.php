@@ -13,7 +13,7 @@
             <div class="pt-4 pt-xl-6">
 
                 <header class="container narrow mb-5">
-                    <p class="f-sans-serif fs-lg text-muted mb-0">CCF Insights</p>
+                    <p class="f-sans-serif fs-lg text-muted mb-0">CCF Blog</p>
                     <h1 class="display-3">
                         <?php the_title(); ?>
                     </h1>

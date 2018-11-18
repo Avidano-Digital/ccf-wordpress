@@ -110,7 +110,7 @@
 
                         <div class="carousel-item <?php if($count_a == 0){ echo 'active'; } ?>">
                             <div class="overlay-gradient-y-black-shorty">
-                            <img class="w-100" src="<?php echo $image['sizes']['Article Feature']; ?>" alt="<?php echo $image['alt']; ?>">
+                            <img class="w-100" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                             </div>
                             <div class="carousel-caption bg-opacity-black-60">
                                 <p><?php echo $image['caption']; ?></p>

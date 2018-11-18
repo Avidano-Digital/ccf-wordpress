@@ -64,7 +64,7 @@
     <li>
         <a href="#" title="News">News</a>
         <ul class="sub">
-            <li><a href="#">CCF Insights</a></li>
+            <li><a href="#">CCF Blog</a></li>
             <li><a href="#">Press Releases</a></li>
             <li><a href="#">Press Kit</a></li>
         </ul>
