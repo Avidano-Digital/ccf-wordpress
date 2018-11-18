@@ -200,13 +200,12 @@ $featured-panel: true;
     h1{ 
       @extend .display-1;
       line-height: 1;
-      margin-bottom: -($spacer-3);
       font-size: 8rem;
     }
 
     .card-img-overlay{ @extend .p-0; }
 
-    .align-self-end{ @extend .opacity-50; }
+    .align-self-end{ @extend .opacity-70; }
     
     @include media-breakpoint-down(lg) {
       h1{ display: none; }
