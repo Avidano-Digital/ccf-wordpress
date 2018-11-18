@@ -25,8 +25,20 @@ get_header(); ?>
 
         <div class="card bg-white">
             <div class="overlay-gradient-y-black">
-                <?php if ( has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail( 'Hero', array( 'class' => 'card-img' ) ); ?>
+
+            <?php 
+
+            $hero = get_field('hero_image');
+
+            $image = $hero['image'];
+            $image_alt = $hero['image_alt'];
+
+            ?>
+
+            <?php if( $hero ): ?>
+
+                <img class="card-img" src="<?php echo $image; ?>" alt="<?php echo $image_alt; ?>">
+
                 <?php else : ?>
                     <img class="card-img" src="http://via.placeholder.com/1500x500/000000/333333/.jpg" alt="Placeholder">
                 <?php endif; ?>

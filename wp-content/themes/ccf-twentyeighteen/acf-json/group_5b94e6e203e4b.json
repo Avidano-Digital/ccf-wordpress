@@ -3,6 +3,27 @@
     "title": "About Pages",
     "fields": [
         {
+            "key": "field_5bf146835dbfe",
+            "label": "Hero Image",
+            "name": "hero_image",
+            "type": "clone",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5bf1422e56c7f"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_5b94e6f32ffb7",
             "label": "Article Content",
             "name": "article_content",
@@ -590,5 +611,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1541596306
+    "modified": 1542538988
 }
