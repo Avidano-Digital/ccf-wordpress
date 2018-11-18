@@ -6,7 +6,8 @@ Template Name: About
 
 get_header(); ?>
 
-<?php                             
+<?php
+
     $current = $post->ID;
     $parent = $post->post_parent;
     
@@ -111,6 +112,29 @@ get_header(); ?>
                             </li>
                         </ul>
 
+                        <?php elseif ( $parent_title == "Learn" ) : ?>
+
+                        <ul class="link-list text-white py-4 py-xl-0">
+                            <li class="page_item <?php if ( is_single( 'resource-library' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/learn/resource-library/">Resource Library</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'about-cheetahs' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">About Cheetahs</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'human-wildlife-conflict' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">Human Wildlife Conflict</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'illegal-pet-trade' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">Illegal Pet Trade</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'habitat-loss' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">Habitat Loss</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'ccf-videos' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="#">CCF Videos</a>
+                            </li>
+                        </ul>
+
                         <?php else : ?>
 
                         <ul class="link-list text-white py-4 py-xl-0 d-none">
@@ -147,6 +171,80 @@ get_header(); ?>
                 
                     <?php get_template_part('template-parts/dr-laurie-awards-and-activities'); ?>
 
+                <?php endif; ?>
+
+                <?php if ( is_single( 'resource-library' ) ) : ?>
+
+                <div class="narrow mb-6 ">
+
+                <div class="row matrix-border">
+                
+                    <div class="col-sm-6 col-lg-4">
+                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                            <div class="w-100 align-self-center">
+                                <span class="fas fa-microscope d-block fa-2x mb-1"></span>
+                                <span>Scientific Papers</span>                      
+                            </div>
+                        </a>      
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-sm-6 col-lg-4">
+                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                            <div class="w-100 align-self-center">
+                                <span class="fas fa-chart-pie d-block fa-2x mb-1"></span>
+                                <span>Fact Sheets</span>                
+                            </div>
+                        </a>
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-sm-6 col-lg-4">
+                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                            <div class="w-100 align-self-center">
+                                <span class="fas fa-microphone d-block fa-2x mb-1"></span>
+                                <span>Lectures &amp; Presentations</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- .col -->
+                
+                    <div class="col-sm-6 col-lg-4">
+                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                            <div class="w-100 align-self-center">
+                                <span class="fas fa-chart-line d-block fa-2x mb-1"></span>
+                                <span>Progress Reports</span>            
+                            </div>            
+                        </a>      
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-sm-6 col-lg-4">
+                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                            <div class="w-100 align-self-center">
+                                <span class="fas fa-globe-africa d-block fa-2x mb-1"></span>
+                                <span>International Studbooks</span>            
+                            </div>            
+                        </a>
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-sm-6 col-lg-4">
+                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                            <div class="w-100 align-self-center">
+                                <span class="fas fa-paw d-block fa-2x mb-1"></span>
+                                <span>Cheetah Strides &amp; Newsletters</span>            
+                            </div>                                        
+                        </a>
+                    </div>
+                    <!-- .col -->
+                
+                </div>
+                <!-- .row -->
+                
+                </div>
+                
+                
                 <?php endif; ?>
 
                 </section>

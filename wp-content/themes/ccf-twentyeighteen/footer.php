@@ -134,7 +134,7 @@
                             <span class="font-weight-bold mb-2">Learn</span>
                         </li>
                         <li>
-                            <a href="#">Resource Library</a>
+                            <a href="/about-us/learn/resource-library/">Resource Library</a>
                         </li>
                         <li>
                             <a href="#">About Cheetahs</a>

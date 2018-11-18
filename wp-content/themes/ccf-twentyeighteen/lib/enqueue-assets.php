@@ -24,7 +24,7 @@
 
         wp_enqueue_style( 
             'fontAwesome', 
-            'https://use.fontawesome.com/releases/v5.1.0/css/all.css'
+            'https://use.fontawesome.com/releases/v5.5.0/css/all.css'
         );
         
         wp_enqueue_style( 

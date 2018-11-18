@@ -80,7 +80,7 @@
             <div id="learn" class="collapse" data-parent="#accordion">
                 <div class="bg-dark py-3">
                     <ul>
-                        <li><a href="#">Resource Library</a></li>
+                        <li><a href="/about-us/learn/resource-library/">Resource Library</a></li>
                         <li><a href="#">About Cheetahs</a></li>
                         <li><a href="#">Human Wildlife Conflict</a></li>
                         <li><a href="#">Illegal Pet Trade</a></li>

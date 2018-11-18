@@ -119,6 +119,17 @@ body{
 
 img{ @extend .img-fluid; }
 
+// Allow .btn selectors to wrap
+
+.btn{ white-space: normal !important; }
+
+.line-height-sm{ 
+  line-height: 1.25 !important;
+  
+  font { line-height: 1 !important;  }
+
+}
+
 ////////////////////////////////////////
 // Sticky Top
 ////////////////////////////////////////

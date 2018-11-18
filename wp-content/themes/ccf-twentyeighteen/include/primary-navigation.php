@@ -53,7 +53,7 @@
     <li>
         <a href="#" title="Learn ">Learn</a>
         <ul class="sub">
-            <li><a href="#">Resource Library</a></li>
+            <li><a href="/about-us/learn/resource-library/">Resource Library</a></li>
             <li><a href="#">About Cheetahs</a></li>
             <li><a href="#">Human Wildlife Conflict</a></li>
             <li><a href="#">Illegal Pet Trade</a></li>
