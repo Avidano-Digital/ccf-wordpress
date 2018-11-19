@@ -54,7 +54,7 @@
             "name": "featured_image",
             "type": "group",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -69,7 +69,7 @@
                     "name": "image",
                     "type": "image_crop",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -77,15 +77,34 @@
                         "id": ""
                     },
                     "crop_type": "hard",
-                    "target_size": "large",
-                    "width": "",
-                    "height": "",
+                    "target_size": "custom",
+                    "width": 900,
+                    "height": 525,
                     "preview_size": "medium",
                     "force_crop": "yes",
                     "save_in_media_library": "no",
                     "retina_mode": "no",
                     "save_format": "url",
                     "library": "all"
+                },
+                {
+                    "key": "field_5bf27c35c3541",
+                    "label": "Image Alt",
+                    "name": "image_alt",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_5bed27e26dc33",
@@ -207,5 +226,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1542534455
+    "modified": 1542618192
 }
