@@ -7,7 +7,6 @@
             <li><a href="#">Board Members</a></li>
             <li><a href="#">Volunteers</a></li>
             <li><a href="#">Corporate Sponsors</a></li>
-            <li><a href="#">Contact Us</a></li>
         </ul>
     </li>
     <li>

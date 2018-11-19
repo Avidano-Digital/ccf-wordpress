@@ -1,16 +1,23 @@
-<div id="search-site" class="bg-light">
-	<form class="container narrow py-4" aria-label="Search" role="search">
-		<div class="form-group mb-0">
-			<input class="form-control form-control-lg shadow" placeholder="Search cheetah.org">
-				<button type="button" class="btn btn-lg btn-white">
-					<span class="fas fa-search"></span>
-					<span class="sr-only">Search</span>
-				</button>
-			</div>
-	</form>
+<div class="container-fluid bg-light py-3">
+
+    <div class="row matrix-gutter">
+
+        <div class="col-xs">
+            <?php echo do_shortcode('[gtranslate]'); ?>
+        </div>
+        <!-- .col -->
+
+        <div class="col-xs">            
+            <?php get_template_part('template-parts/site-search'); ?>
+        </div>
+        <!-- .col -->
+
+    </div>
+    <!-- .row -->
+
 </div>
 
-<nav class="py-4">
+<nav class="shadow-sm">
     
     <div id="accordion" class="accordion-group" role="tablist">
 
@@ -34,6 +41,7 @@
                         <li><a href="#">Board Members</a></li>
                         <li><a href="#">Volunteers</a></li>
                         <li><a href="#">Corporate Sponsors</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                     
                 </div>
@@ -53,6 +61,7 @@
             <div id="take-action" class="collapse" data-parent="#accordion">
                 <div class="bg-dark py-3">
                     <ul>
+                        <li><a href="#">Events</a></li>
                         <li><a href="#">Volunteer in Canada</a></li>
                         <li><a href="#">Young Canadians</a></li>
                         <li><a href="#">International Cheetah Day</a></li>
@@ -65,13 +74,9 @@
         <a href="#" title="News">
             <span class="title">News</span> 
         </a>
-        <a href="#" title="Events">
-            <span class="title">Events</span>
+        <a href="#" title="Contact">
+            <span class="title">Contact</span> 
         </a>
-        <a href="#" title="News">
-            <span class="title">Contact</span>
-        </a>
-        
     </div><!-- #accordion -->
 
 </nav>
