@@ -16783,6 +16783,13 @@
 		"oAP": "/wp-content/themes/ccf-twentyeighteen/template-parts/dr-laurie-awards-and-activities.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentyeighteen/template-parts/featured-news.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentyeighteen/template-parts/featured-news.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentyeighteen/template-parts/flexible-content-article.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -22617,6 +22624,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/sites/2/2018/11/preview_volunteer-in-canada_0x0_acf_cropped.jpg": {
+		"ft": 16384,
+		"iS": 83690,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2018/11/preview_volunteer-in-canada_0x0_acf_cropped.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/sites/2/2018/11/volunteer-in-canada-300x200.jpg": {
 		"ft": 16384,
 		"iS": 22200,
@@ -22667,6 +22685,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/sites/2/2018/11/volunteer-in-canada.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2018/11/volunteer-in-canada_0x0_acf_cropped.jpg": {
+		"ft": 16384,
+		"iS": 213049,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2018/11/volunteer-in-canada_0x0_acf_cropped.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
