@@ -4,16 +4,17 @@
         
         <ul class="sub">
             <li><a href="#">Programs We Support</a></li>
-            <li><a href="#">Who We Are</a></li>
             <li><a href="#">Board Members</a></li>
             <li><a href="#">Volunteers</a></li>
             <li><a href="#">Corporate Sponsors</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
     </li>
     <li>
         <a href="#" title="Get Involved">Get Involved</a>
         
         <ul class="sub">
+            <li><a href="#">Events</a></li>
             <li><a href="#">Volunteer in Canada</a></li>
             <li><a href="#">Young Canadians</a></li>
             <li><a href="#">International Cheetah Day</a></li>
@@ -21,10 +22,7 @@
         </ul>
     </li>
     <li>
-        <a <?php if( is_singular( 'post' ) ){ echo 'class="active"'; } ?> href="#" title="News">News</a>
-    </li>
-    <li>
-        <a href="/about" title="Events">Events</a>
+        <a href="#" title="Blog">Blog</a>
     </li>
     <li>
         <a href="#" title="News">Contact</a>
