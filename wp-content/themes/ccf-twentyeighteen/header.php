@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
 
