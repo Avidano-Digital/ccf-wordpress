@@ -16,36 +16,76 @@
 
   <main id="content">
 
-    <section class="py-7" id="introduction">
+    <section class="py-7 bg-danger" id="introduction">
 
       <div class="container-fluid wide">
 
         <div class="narrow mb-5">
-          <h1 class="text-center">We help the world’s greatest scientists save endangered animals</h1>      
+          <h1 class="text-center">We help the world’s greatest scientists save endangered animals</h1>
         </div>
 
-      <div class="row matrix-border border">
+        <div class="row matrix-border">
 
-        <div class="col-6">
+          <?php $i=1; while( $i <= 6) : ?>
 
-          <img src="https://via.placeholder.com/800x400" alt="Placeholder">
+          <div class="col-6">
+
+            <a href="#" class="project-link">
+              <img src="https://via.placeholder.com/800x400" alt="Placeholder">
+            </a>
+
+          </div>
+          <!-- .col -->
+
+          <?php $i++; endwhile; ?>
+
+          <div class="col-6">
+
+          </div>
+          <!-- .col -->
+
+        </div>
+        <!-- .row -->
+
+      </div>
+      <!-- .container-fluid -->
+
+    </section>
+    <!-- #introduction -->
+
+    <section class="py-7 bg-warning">
+
+      <div class="container-fluid wide">
+
+      <h2 class="text-center mb-4">Painted Dog Shorts</h2>
+
+      <div class="row matrix-border">
+
+        <?php $i=1; while( $i <= 3) : ?>
+
+        <div class="col-4">
+
+          <a href="#" class="project-link">
+            <img src="https://via.placeholder.com/800x400" alt="Placeholder">
+          </a>
 
         </div>
         <!-- .col -->
 
+        <?php $i++; endwhile; ?>
+
         <div class="col-6">
-        
+
         </div>
         <!-- .col -->
 
       </div>
       <!-- .row -->
+      
       </div>
       <!-- .container-fluid -->
 
-
     </section>
-    <!-- #introduction -->
 
   </main>
   <!-- #content -->
