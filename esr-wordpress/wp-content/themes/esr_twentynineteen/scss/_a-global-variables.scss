@@ -120,13 +120,29 @@ $sizes: (
 
 $font-awesome: 'Font Awesome 5 Free';
 
+
+////////////////////////////////////////
+// Custom fonts and sizes
+////////////////////////////////////////
+
+$f-primary: 'Montserrat', sans-serif;
+$f-secondary: 'Oswald', sans-serif;
+
+$display1-size: 6rem;
+$display2-size: 5rem;
+$display3-size: 4rem;
+$display4-size: 3rem;
+
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
+
 // Font sizes
 // Note: Instead of manipulation Bootstrap Default variables, 
 // we create our own opt-in font size variables
 
 $fs-sm: 0.875rem;   // 14px
 $fs-md: 1rem;       // 16px
-$fs-rg: 1.167rem;   // 18.667px
+$fs-rg: 1.25rem;    // 20px
 $fs-lg: 1.5rem;     // 20px
 $fs-xl: 1.75rem;    // 28px
 
@@ -135,6 +151,7 @@ $fs-xl: 1.75rem;    // 28px
 $font-weight-light: 200;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
+$font-weight-black: 900;
 
 // h1 - h6 font weight
 
@@ -142,10 +159,10 @@ $headings-font-weight: $font-weight-bold;
 
 // .display-* selector font weight
 
-$display1-weight: $font-weight-bold;
-$display2-weight: $font-weight-bold;
-$display3-weight: $font-weight-bold;
-$display4-weight: $font-weight-bold;
+$display1-weight: $font-weight-black;
+$display2-weight: $font-weight-black;
+$display3-weight: $font-weight-black;
+$display4-weight: $font-weight-black;
 
 // Lead font style
 

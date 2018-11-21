@@ -23,7 +23,7 @@
         <div class="mb-5" id="featured-projects">
         
           <div class="narrow mb-5">
-            <h1 class="text-center">We help the world’s greatest scientists save endangered animals</h1>
+            <h1 class="display-4 text-center">We help the world’s greatest scientists save endangered animals</h1>
           </div>
 
           <div class="row matrix-border">
@@ -53,30 +53,32 @@
         <!-- #featured-projects -->
 
         <div id="featured-shorts">
-              <h2 class="text-center mb-4">Painted Dog Shorts</h2>
+            
+          <h2 class="text-center mb-4">Painted Dog Shorts</h2>
 
-      <div class="row matrix-border">
+          <div class="row matrix-border">
 
-        <?php $i=1; while( $i <= 3) : ?>
+            <?php $i=1; while( $i <= 3) : ?>
 
-        <div class="col-4">
+            <div class="col-4">
 
-          <a href="#" class="project-link">
-            <img src="https://via.placeholder.com/800x400" alt="Placeholder">
-          </a>
+              <a href="#" class="project-link">
+                <img src="https://via.placeholder.com/800x400" alt="Placeholder">
+              </a>
 
-        </div>
-        <!-- .col -->
+            </div>
+            <!-- .col -->
 
-        <?php $i++; endwhile; ?>
+            <?php $i++; endwhile; ?>
 
-        <div class="col-6">
+            <div class="col-6">
 
-        </div>
-        <!-- .col -->
+            </div>
+            <!-- .col -->
 
-      </div>
-      <!-- .row -->
+          </div>
+          <!-- .row -->
+
         </div>
         <!-- #featured-shorts -->
 

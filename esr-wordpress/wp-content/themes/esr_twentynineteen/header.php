@@ -34,54 +34,23 @@
                     </div>
                     <!-- .col -->
 
-                    <div class="col-lg-auto bg-secondary">
+                    <div class="col-lg-auto text-right bg-secondary">
 
-                        <!-- row 02 -->
-                        <div class="row no-gutters justify-content-between py-2">
+                        <div class="d-xl-none">
 
-                            <!-- Menu Toggle -->
-                            <div class="col-auto d-flex d-lg-none">
-
-                                <button class="btn no-btn-style" type="button" data-toggle="collapse" data-target="#device-menu"
-                                    aria-controls="device-menu" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="d-flex align-items-center">
-                                        <span class="fas fa-bars fs-lg"></span>
-                                        <span class="px-2 fs-rg">Menu</span>
-                                    </span>
-                                    <span class="sr-only">Main Navigation</span>
-                                </button>
-
-                            </div>
-                            <!-- .col -->
-
-                            <div class="col-auto">
-
-                                <ul class="link-list horizontal">
-                                    <li>
-                                        <!-- Language -->
-                                        <button class="btn no-btn-style" type="button" data-toggle="collapse"
-                                            data-target="#global-language" aria-controls="global-language"
-                                            aria-expanded="false" aria-label="Toggle Language">
-                                            <span class="fas fa-language fs-lg"></span>
-                                            <span class="sr-only">Language</span>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <!-- Search -->
-                                        <button class="btn no-btn-style" type="button" data-toggle="collapse"
-                                            data-target="#global-search" aria-controls="global-search" aria-expanded="false"
-                                            aria-label="Toggle Search">
-                                            <span class="fas fa-search fs-lg"></span>
-                                            <span class="sr-only">Global Search</span>
-                                        </button>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!-- .col -->
+                            <button>
+                            hello johnnie!!!
+                            </button>
 
                         </div>
-                        <!-- .row -->
+                        <!-- . d-xl-none -->
+
+                        <div class="d-none d-xl-block">
+
+                            goodbye johnnie!!!
+
+                        </div>
+                        <!-- .d-none  -->
 
                     </div>
                     <!-- .col -->

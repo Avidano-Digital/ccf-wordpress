@@ -302,6 +302,18 @@ section > ul{
 	font-size: inherit;
 }
 
+////////////////////////////////////////
+// Custom fonts
+////////////////////////////////////////
+
+.f-primary{ font-family: $f-primary; }
+.f-secondary{ font-family: $f-secondary; }
+
+.fw-light { font-weight: 200; }
+.fw-regular { font-weight: 400; }
+.fw-bold { font-weight: 700; }
+.fw-black { font-weight: 900; }
+
 // Font-size classes
 // Note: Define Font Awesome for use in psuedo classes
 

@@ -788,3 +788,49 @@ $gallery: true;
 } @else {
   figure{ @extend %enlarge; }
 } // end if else
+
+
+////////////////////////////////////////
+// CSS Arrows
+////////////////////////////////////////
+
+$arrow-size: 12px;
+$arrow-color: $yellow;
+
+$css-arrows: true;
+
+@if($css-arrows){
+
+  .arrow-up, 
+  .arrow-right,
+  .arrow-down,
+  .arrow-left{
+    width: 0; 
+    height: 0;
+  }
+
+  .arrow-up {
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid $arrow-color; 
+  }
+
+  .arrow-right {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent;
+    border-left: $arrow-size solid $arrow-color;
+  }
+
+  .arrow-down {
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    border-top: $arrow-size solid $arrow-color;
+  }
+
+  .arrow-left {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent; 
+    border-right:$arrow-size solid $arrow-color; 
+  }
+
+} // end if

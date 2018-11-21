@@ -18,111 +18,184 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
+
+////////////////////////////////////////
+// Fonts
+////////////////////////////////////////
+
+body, 
+h1, .h1,  
+h2, .h2, 
+h3, .h3,
+h4, .h4,
+nav, 
+
+.btn,
+.link,
+button,
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+label
+
+{ @extend .f-primary; }
+
+h4, .h4, 
+h5, .h5
+{ @extend .f-secondary; }
+
+// Font weights
+
+h1, .h1,  
+h3, .h3,
+.btn
+{ @extend .fw-black; }
+
+h2, .h2, 
+.link{ @extend .fw-bold; }
+
+h4, .h4, 
+h5, .h5
+{ @extend .fw-regular; }
+
 ////////////////////////////////////////
 // Navigation
 ////////////////////////////////////////
 
-#aside-nav{
-    .link-list{
-        a{
-            @extend .text-muted;
-            
-            &.active{
-                @extend .text-info;
-                @extend .font-weight-bold;
-            }
-        }
+////////////////////////
+//                    //
+// Primary navigation //
+//                    //
+////////////////////////
+
+#secondary-navigation,
+#primary-navigation-desktop{
+    a.active{
+      @extend .text-secondary;
     }
 }
 
-#tear-sheet-top-nav{
-    a{
-        @extend .text-secondary;
-        &.active{
-            @extend .text-white;
-        }
-    }
-}
+#secondary-navigation{
+  @extend .mb-3;
 
-#global-links{
-    .link-list{
-        a{
-            @extend .text-body;
-            &.active{
-                @extend .text-primary;
-                @extend .font-weight-bold;
-            }
-        }
-    }
-}
-
-////////////////////////////////////////
-// Tables
-////////////////////////////////////////
-
-// table{ min-width: 600px; }
-
-th, td{ @extend .fs-md; }
-
-th, td{ white-space: nowrap; }
-
-////////////////////////////////////////
-// Forms
-////////////////////////////////////////
-
-.mobile-margin-offset-x{
-        
-    @include media-breakpoint-down('xs') {
-
-        fieldset,
-        .fieldset, 
-        .card
-        {
-            margin-left: -(($grid-gutter-width/2) + $border-width);
-            margin-right: -(($grid-gutter-width/2) + $border-width);
-        }
-    }
-}
-
-fieldset, 
-.fieldset
-{
-    @extend .mb-5;
-    @extend .border;
-    @extend .clearfix;
-}
-
-legend, 
-.legend
-{
-    @extend .bg-info;
-    @extend .text-white;
-    @extend .px-4;
-    @extend .py-3;
+  a {
+    @extend .p-0;
+    @extend .ml-2;
     @extend .fs-md;
-    @extend .font-weight-normal;
-    @extend .mb-0;
-}
-
-// Note: Checkboxes and radios are wrapped in a list to ensure spacing
-
-ul.checkbox-radio-list{
-    @extend .list-unstyled;
-    
-    
-    li{ 
-        @extend .mx-0; 
-        @extend .mb-3; 
+    &.fw-bold{
+      text-transform: uppercase;
     }
-}
-  
-
-.modal-content{
-    @extend .border-0;
-    @extend .shadow-lg; 
+  }
 }
 
-// Remove Bootstrap's default modal-footer flex property
+#primary-navigation-desktop{
 
-.modal-footer{ @extend .d-block; }
+  ul{ @extend .list-unstyled; }
+
+  > ul{
+    @extend .d-flex;
+    @extend .flex-row;
+  }
+
+  > ul > li{
+    @extend .position-relative;
+    @extend .ml-3;
+  }
+  > ul > li > a{
+    @extend .f-secondary;
+    @extend .fs-lg;
+    @extend .d-flex;
+    // @extend .no-link-style;
+
+  }
+
+  > ul > li > a {
+    @extend .align-self-center;
+  }
+
+  > ul > li > ul > li {
+    display: block;
+  }
+
+  ul.sub{
+    @extend .position-absolute;
+    @extend .list-unstyled;
+    @extend .rounded;
+    @extend .p-2;
+    @extend .mt-2;
+
+    background: $yellow;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: auto;
+
+    &:before{ 
+      content:"";
+      position: absolute;
+      top: -($arrow-size);
+      left: 50%;
+      margin-left: -($arrow-size);
+      @extend .arrow-up;
+    }    
+
+    > li{
+      @extend .p-0;
+      @extend .mb-0;
+      @extend .text-center;
+    }
+    > li > a{
+      @extend .text-black;
+      @extend .fs-md;
+      white-space: nowrap;
+    }
+
+    display: none;
+
+    &.active{
+      display: block;
+    }
+  }
+}
+
+// #mobile-menu{ }
+
+button[data-toggle="collapse"]{
+  border: none;
+  background: none;
+  outline: 0;
+}
+
+button[data-target="#mobile-menu"]{
+  width:130px;
+  height:40px;
+  display: block;
+  @include apply-background-image('btn-explore', '.svg');
+  @include border-radius($border-radius);
+
+  &[aria-expanded="true"]{
+    background-position: 0 -40px;
+  }
+}
+
+div#wrap-toggle{
+  @include media-breakpoint-down(xs){
+    background: $yellow;
+  }
+}
+
+.mobile-edge{
+
+  @include media-breakpoint-down(sm){
+    padding-left: 0;
+    padding-right: 0;
+
+    h1, h2, h3{
+      padding-left: $grid-gutter-width/2;
+      padding-right: $grid-gutter-width/2;
+    }
   
+  }
+}
