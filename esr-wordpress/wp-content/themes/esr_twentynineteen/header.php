@@ -34,16 +34,20 @@
                     </div>
                     <!-- .col -->
 
-                    <div class="col-lg-auto text-right bg-secondary">
+                    <div class="col-lg-auto text-right">
 
-                        <div class="d-xl-none">
 
-                            <button>
-                            hello johnnie!!!
+                        <div class="d-xl-none py-1" id="wrap-toggle">
+
+                            <button class="align-self-center ml-auto"
+                                data-toggle="collapse" 
+                                data-target="#mobile-menu" 
+                                aria-expanded="false" 
+                                aria-controls="mobile-menu"
+                                type="button">
+                                <span class="sr-only">Toggle Menu</span>
                             </button>
-
                         </div>
-                        <!-- . d-xl-none -->
 
                         <div class="d-none d-xl-block">
 

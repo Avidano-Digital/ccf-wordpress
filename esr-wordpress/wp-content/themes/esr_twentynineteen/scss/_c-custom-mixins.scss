@@ -59,12 +59,12 @@
 // Background image
 ////////////////////////////////////////
 
-$background-image-path: '/images/hero/';
+$background-image-path: '/wp-content/themes/esr_twentynineteen/images/';
 
 @mixin apply-background-image(
     $image: '01', 
     $extension: '.jpg',
-    $cover: true
+    $cover: false
   ){
   
   @if $extension == '.svg'{
@@ -79,7 +79,8 @@ $background-image-path: '/images/hero/';
     background-size: cover;
     background-position: center center;
   } @else{
-    background-repeat: repeat;
+    // background-repeat: repeat;
+    background-position: left top;
   }
 
 }

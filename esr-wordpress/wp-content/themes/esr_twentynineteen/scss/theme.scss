@@ -18,7 +18,6 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-
 ////////////////////////////////////////
 // Fonts
 ////////////////////////////////////////
@@ -163,9 +162,8 @@ h5, .h5
 // #mobile-menu{ }
 
 button[data-toggle="collapse"]{
-  border: none;
-  background: none;
-  outline: 0;
+    @extend .border-0;
+    @extend .no-btn-style;
 }
 
 button[data-target="#mobile-menu"]{
@@ -181,9 +179,10 @@ button[data-target="#mobile-menu"]{
 }
 
 div#wrap-toggle{
-  @include media-breakpoint-down(xs){
-    background: $yellow;
-  }
+    @extend .offset-gutter-x;
+    @include media-breakpoint-down(xs){
+        background: theme-color("secondary");
+    }
 }
 
 .mobile-edge{
