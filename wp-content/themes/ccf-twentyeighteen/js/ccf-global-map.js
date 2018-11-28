@@ -67,7 +67,7 @@ jQuery(function ($) {
         'type': 'Feature',
         'properties': {
             'name': 'Australia',
-            'popupContent': '<p><a href="#australia"><strong>Australia</strong></a></p><p>Subsidiary</p><p class="location">Epping, Victoria</p>',
+            'popupContent': '<p><a href="#australia"><strong>Australia</strong></a></p><p>Affiliate</p><p class="location">Epping, Victoria</p>',
             icon : affiliateIcon
         },
         'geometry': {
@@ -80,7 +80,7 @@ jQuery(function ($) {
         'properties': {
             'name': 'Belgium',
             'popupContent': 
-            '<p><a href="#belgium"><strong>Belgium</strong></a></p><p>Subsidiary</p><p class="location">Brussels, Belgium</p>',
+            '<p><a href="#belgium"><strong>Belgium</strong></a></p><p>Affiliate</p><p class="location">Brussels, Belgium</p>',
             icon : affiliateIcon
         },
         'geometry': {
@@ -107,7 +107,7 @@ jQuery(function ($) {
         'type': 'Feature',
         'properties': {
             'name': 'Canada',
-            'popupContent': '<p><a href="#canada"><strong>Canada</strong></a></p><p>Subsidiary</p><p class="location">London, Ontario</p>',
+            'popupContent': '<p><a href="#canada"><strong>Canada</strong></a></p><p>Affiliate</p><p class="location">London, Ontario</p>',
             icon : affiliateIcon
         },
         'geometry': {
@@ -119,7 +119,7 @@ jQuery(function ($) {
         'type': 'Feature',
         'properties': {
             'name': 'Italy',
-            'popupContent': '<p><a href="#italy"><strong>Italy</strong></a></p><p>Subsidiary</p><p class="location">Biella, Italy</p>',
+            'popupContent': '<p><a href="#italy"><strong>Italy</strong></a></p><p>Affiliate</p><p class="location">Biella, Italy</p>',
             icon : affiliateIcon
         },
         'geometry': {
@@ -131,7 +131,7 @@ jQuery(function ($) {
         'type': 'Feature',
         'properties': {
             'name': 'Japan',
-            'popupContent': '<p><a href="#japan"><strong>Japan</strong></a></p><p>Subsidiary</p><p class="location">Tokyo, Japan</p>',
+            'popupContent': '<p><a href="#japan"><strong>Japan</strong></a></p><p>Affiliate</p><p class="location">Tokyo, Japan</p>',
             icon : affiliateIcon
         },
         'geometry': {
@@ -143,7 +143,7 @@ jQuery(function ($) {
         'type': 'Feature',
         'properties': {
             'name': 'UK',
-            'popupContent': '<p><a href="#uk"><strong>UK</strong></a></p><p>Subsidiary</p><p class="location">Toddington, Bedfordshire</p>',
+            'popupContent': '<p><a href="#uk"><strong>UK</strong></a></p><p>Affiliate</p><p class="location">Toddington, Bedfordshire</p>',
             icon : affiliateIcon
         },
         'geometry': {

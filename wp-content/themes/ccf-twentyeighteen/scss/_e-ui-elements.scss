@@ -551,7 +551,7 @@ $link-list-margin: 0.5em;
     a{ @extend .d-inline-block; }
 
     &.horizontal{
-      @extend .d-flex;
+      display: flex;
       @extend .flex-row;
       
       margin-left: -($link-list-margin);
@@ -559,7 +559,7 @@ $link-list-margin: 0.5em;
 
       li{
         // @extend .text-center;
-        @extend .d-flex;
+        display: flex;
         @extend .align-items-center;
         
         margin-left: $link-list-margin;

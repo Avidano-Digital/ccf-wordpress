@@ -175,74 +175,82 @@ get_header(); ?>
 
                 <?php if ( is_single( 'resource-library' ) ) : ?>
 
-                <div class="narrow mb-6 ">
+                <div class="narrow mb-5">
 
-                <div class="row matrix-border">
-                
-                    <div class="col-sm-6 col-lg-4">
-                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                            <div class="w-100 align-self-center">
-                                <span class="fas fa-microscope d-block fa-2x mb-1"></span>
-                                <span>Scientific Papers</span>                      
-                            </div>
-                        </a>      
-                    </div>
-                    <!-- .col -->
+                    <div class="row matrix-border">
+                    
+                        <div class="col-sm-6 col-lg-4">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <span class="fas fa-microscope d-block fa-2x mb-1"></span>
+                                    <span>Scientific Papers</span>                      
+                                </div>
+                            </a>      
+                        </div>
+                        <!-- .col -->
 
-                    <div class="col-sm-6 col-lg-4">
-                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                            <div class="w-100 align-self-center">
-                                <span class="fas fa-chart-pie d-block fa-2x mb-1"></span>
-                                <span>Fact Sheets</span>                
-                            </div>
-                        </a>
-                    </div>
-                    <!-- .col -->
+                        <div class="col-sm-6 col-lg-4">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <span class="fas fa-chart-pie d-block fa-2x mb-1"></span>
+                                    <span>Fact Sheets</span>                
+                                </div>
+                            </a>
+                        </div>
+                        <!-- .col -->
 
-                    <div class="col-sm-6 col-lg-4">
-                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                            <div class="w-100 align-self-center">
-                                <span class="fas fa-microphone d-block fa-2x mb-1"></span>
-                                <span>Lectures &amp; Presentations</span>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- .col -->
-                
-                    <div class="col-sm-6 col-lg-4">
-                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                            <div class="w-100 align-self-center">
-                                <span class="fas fa-chart-line d-block fa-2x mb-1"></span>
-                                <span>Progress Reports</span>            
-                            </div>            
-                        </a>      
-                    </div>
-                    <!-- .col -->
+                        <div class="col-sm-6 col-lg-4">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <span class="fas fa-microphone d-block fa-2x mb-1"></span>
+                                    <span>Lectures &amp; Presentations</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- .col -->
+                    
+                        <div class="col-sm-6 col-lg-4">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <span class="fas fa-chart-line d-block fa-2x mb-1"></span>
+                                    <span>Progress Reports</span>            
+                                </div>            
+                            </a>      
+                        </div>
+                        <!-- .col -->
 
-                    <div class="col-sm-6 col-lg-4">
-                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                            <div class="w-100 align-self-center">
-                                <span class="fas fa-globe-africa d-block fa-2x mb-1"></span>
-                                <span>International Studbooks</span>            
-                            </div>            
-                        </a>
-                    </div>
-                    <!-- .col -->
+                        <div class="col-sm-6 col-lg-4">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <span class="fas fa-globe-africa d-block fa-2x mb-1"></span>
+                                    <span>International Studbooks</span>            
+                                </div>            
+                            </a>
+                        </div>
+                        <!-- .col -->
 
-                    <div class="col-sm-6 col-lg-4">
-                        <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                            <div class="w-100 align-self-center">
-                                <span class="fas fa-paw d-block fa-2x mb-1"></span>
-                                <span>Cheetah Strides &amp; Newsletters</span>            
-                            </div>                                        
-                        </a>
+                        <div class="col-sm-6 col-lg-4">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <span class="fas fa-paw d-block fa-2x mb-1"></span>
+                                    <span>Cheetah Strides &amp; Newsletters</span>            
+                                </div>                                        
+                            </a>
+                        </div>
+                        <!-- .col -->
+                    
                     </div>
-                    <!-- .col -->
-                
+                    <!-- .row -->
+
                 </div>
-                <!-- .row -->
-                
-                </div>
+                <!-- .offset-gutter-x -->
+
+
+                    <div class="narrow">
+                    
+                    <h2>Latest Documents</h2> 
+
+                    </div>
                 
                 
                 <?php endif; ?>

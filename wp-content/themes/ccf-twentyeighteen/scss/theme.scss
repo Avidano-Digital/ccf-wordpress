@@ -417,3 +417,12 @@ figure{
 
   &:focus{ box-shadow: none; }
 }
+
+
+.btn-ccf-global{
+
+  > .mx-1{ 
+    @extend .font-weight-bold; }
+
+line-height: 100%;
+}
