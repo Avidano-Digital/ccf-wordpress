@@ -23,24 +23,9 @@
 
                 <div id="wrap-logo" class="col-md-auto py-2">
 
-                    <ul class="link-list horizontal justify-content-center">
-
-                        <li>
-                        
-                            <a class="d-inline-block" href="/" title="Home">
-                                <?php the_custom_logo(); ?>
-                            </a>
-                        </li>
-
-                        <li class="d-none d-xl-flex">
-                            <a href="#" class="fs-md text-body align-self-end btn-ccf-global">
-                                <span class="fas fa-globe-africa"></span>
-                                <span class="mx-1">CCF Global</span> 
-                                <i class="fas fa-caret-down"></i>
-                            </a>
-                        </li>
-                    
-                    </ul>
+                    <a class="d-inline-block" href="/" title="Home">
+                        <?php the_custom_logo(); ?>
+                    </a>
                     
                 </div>
                 <!-- .col -->
@@ -70,14 +55,6 @@
                         <div class="col-auto">
 
                             <ul class="link-list horizontal no-reverse">
-
-                                <li class="d-none d-md-flex">
-                                    <a href="#" class="fs-md text-body btn-ccf-global">
-                                        <span class="fas fa-globe-africa"></span>
-                                        <span class="mx-1">CCF Global</span>
-                                        <i class="fas fa-caret-down"></i>
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="#" title="For Kids">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
