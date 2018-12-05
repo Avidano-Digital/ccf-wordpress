@@ -1,1 +1,0 @@
-# mfta-front-end
