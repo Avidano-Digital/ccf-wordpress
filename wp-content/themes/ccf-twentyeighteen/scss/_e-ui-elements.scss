@@ -316,7 +316,6 @@ $toggles-and-accordions: true;
       &:after{ 
         content: "\f067";
         @extend %fa-icon;
-        // @extend .ml-auto;
       }
 
       &[aria-expanded="true"]{

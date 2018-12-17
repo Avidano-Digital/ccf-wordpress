@@ -396,14 +396,14 @@
                     cheetahs live in southern Africa. CCF is working in Namibia and across Africa to save the species throughout
                     its range.</p>
 
-                  <ul class="fa-bullets mb-5">
-                    <li>
+                  <ul class="list-unstyled mb-5">
+                    <li class="side-by-side">
                       <span class="fas fa-circle fa-fw text-umber"></span>
                       <span>Cheetah range pre-1900</span>
-                    <li>
+                    <li class="side-by-side">
                         <span class="fas fa-circle fa-fw text-primary"></span>
                         <span>Cheetah range today</span>
-                    <li>
+                    <li class="side-by-side">
                       <span class="fas fa-star fa-fw text-white"></span>
                       <span>CCF Headquarters, Namibia</span>
                   </ul>
