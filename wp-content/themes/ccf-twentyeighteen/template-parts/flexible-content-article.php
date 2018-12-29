@@ -133,7 +133,7 @@
 
                         <div class="col-auto">
 
-                            <ol class="carousel-indicators">
+                            <ol class="carousel-indicators bg-dark">
 
                             <?php foreach( $images as $image ): ?>
 

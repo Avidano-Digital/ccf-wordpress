@@ -146,3 +146,78 @@
         
         <?php endif;
     }
+
+
+
+      
+
+
+
+
+/*
+ * Always return an image with a <figure> tag, regardless of link or caption
+*/
+
+
+
+function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt ) {
+
+    //Grab the image tag
+    // $image_tag = get_image_tag($id, '', $title, $size, false); NOTE: Old code since we don't want image sizes
+    // $image_url = wp_get_attachment_image_src( $id, false );
+    // $image_meta = wp_get_attachment_metadata($id);
+    $image = wp_get_attachment($id);
+  
+  
+    //Let's see if this contains a link
+    $linkptrn = "/<a[^>]*>/";
+    $found = preg_match($linkptrn, $html, $a_elem);
+  
+     // If no link, do nothing
+    if($found > 0) {
+      $a_elem = $a_elem[0];
+  
+      if(strstr($a_elem, "class=\"") !== false){ // If link already has class defined inject it to attribute
+          $a_elem = str_replace("class=\"", "class=\"fancybox ", $a_elem);
+  
+      }
+    } else {
+      $a_elem = "";
+    }
+    // Set up the attributes for the caption <figure>
+    // NOTE: Commented out since we don't want the attachement id because of old code styling confilicts
+    // $attributes  = (!empty($id) ? ' id="attachment_' . esc_attr($id) . '"' : '' );
+  
+    $output  = '<figure>';
+  
+    //add the image back in
+    $output .= $a_elem;
+  
+    if($a_elem != "") {
+      $output .= '<span class="fa fa-search-plus"></span>';
+    }
+  
+    $output .= '<img src="' . $image['src'] . '" alt="' . $image['alt'] . '">';
+  
+    if($a_elem != "") {
+      $output .= '</a>';
+    }
+    
+    if ($caption) {
+      $output .= '<figcaption>'.$caption.'</figcaption>';
+    }
+    $output .= '</figure>';
+  
+    return $output;
+  
+    // $src  = wp_get_attachment_image_src( $id, $size, false );
+    // $html5 = "<figure class='fig-$align'><div class='fig-inner'>";
+    // $html5 .= "<img src='$src[0]' alt='$title' />&nbsp;";
+    // if ($caption) {
+    //   $html5 .= "<p class='fig-caption'>$caption</p>";
+    // }
+    // $html5 .= "</div></figure>";
+    // return $html5;
+  }
+  
+//   add_filter('image_send_to_editor', 'html5_insert_image', 10, 9);
