@@ -87,7 +87,7 @@ $container-max-widths: (
 
 $site-width: 2400px;
 $wide-width: $grid-bp-xxxl;     // 1800px
-$narrow-width: 65ch;            // 65 characters
+$narrow-width: 60ch;            // 65 characters
      
 $narrow-width-ie: $grid-bp-md;  // IE character count (ch) is too narrow, so for IE we use pixel width instead 
 
